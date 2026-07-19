@@ -11,7 +11,8 @@ The editor consists of a Fastify backend server and a Vite/React frontend. Open 
 ### Terminal 1: Backend Server
 Since the root script uses Unix environment variable syntax, run this command on Windows:
 ```powershell
-$env:BLOGSPACE_WORKSPACE="c:\Users\vdhaw\Documents\blog\fixtures"; npm run dev -w @blogspace/server
+$env:BLOGSPACE_WORKSPACE = (Resolve-Path .\fixtures).Path
+npm run dev -w @blogspace/server
 ```
 * **Server Port**: `http://127.0.0.1:4317`
 
@@ -58,7 +59,7 @@ Compiling the multi-blog landing page (`index.html`) along with all selected sub
 ### Method B: Programmatically via Terminal
 Run the following PowerShell command while the backend server is running:
 ```powershell
-$body = '{"spaceIds":["bharat-bhraman","book-reviews","movie-reviews"]}'
+$body = '{"spaceIds":["bharat-bhraman","book-reviews","morocco-2026","movie-reviews"]}'
 Invoke-RestMethod -Method Post -Uri "http://127.0.0.1:4317/api/export" -Headers @{ "Content-Type" = "application/json" } -Body $body
 ```
 
