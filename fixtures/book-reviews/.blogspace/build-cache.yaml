@@ -1,10 +1,10 @@
 version: 2
 compilerVersion: 0.0.2
-lastBuildAt: '2026-07-19T05:05:47.077Z'
-seriesSourceHash: 0d4337692f
+lastBuildAt: '2026-07-19T07:29:35.343Z'
+seriesSourceHash: 01354bcd49
 chapters:
   the-lost-bookshop:
     sourceHash: 610196bbea
-    renderDepsHash: 62cf473025
+    renderDepsHash: c984047818
     outputFilename: the-lost-bookshop.html
 assets: {}

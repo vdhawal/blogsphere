@@ -1,5 +1,6 @@
 node_modules/
 dist/
+dist-zip/
 *.tsbuildinfo
 .DS_Store
 .env
@@ -9,13 +10,21 @@ dist/
 **/.blogspace/cache/
 
 # Exclude compiler outputs and exports
-export/
-*.zip
+fixtures/export/
+fixtures/export.zip
 *.pdf
 
 # Exclude local preview outputs
 **/preview/
 
-# Exclude raw video assets (due to size limits)
-**/*.mov
-**/*.mp4
+# Raw iPhone .mov source videos — often exceed GitHub's 100 MB limit.
+# Only the large originals are excluded; the server-processed web MP4
+# variants in .variants/ are kept (they're compressed to <25 MB each
+# by the asset pipeline and are what the compiler copies to the export).
+fixtures/*/assets/**/*.mov
+fixtures/*/assets/**/*.MOV
+
+# Re-include processed web MP4 variants (they live under .variants/)
+# These are the deployable video files and must be in git.
+# Note: raw source MP4s in assets/<chapter>/ ARE tracked — they're
+# author uploads that are already web-ready and typically <25 MB.
