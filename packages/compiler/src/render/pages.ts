@@ -73,7 +73,7 @@ function buildCommentTree(comments: Comment[]): CommentNode[] {
   return roots;
 }
 
-function renderCommentNode(node: CommentNode, depth = 0): string {
+function renderCommentNode(node: CommentNode, depth = 0, websiteId?: string): string {
   const dateStr = new Date(node.date).toLocaleDateString(undefined, {
     year: "numeric",
     month: "long",
@@ -83,10 +83,12 @@ function renderCommentNode(node: CommentNode, depth = 0): string {
   });
   let repliesHtml = "";
   if (node.replies.length > 0) {
-    repliesHtml = `<ol class="comment__replies">${node.replies.map((r) => renderCommentNode(r, depth + 1)).join("\n")}</ol>`;
+    repliesHtml = `<ol class="comments-list">${node.replies.map((r) => renderCommentNode(r, depth + 1, websiteId)).join("\n")}</ol>`;
   }
-  const replyButton = depth < 3
-    ? `<button type="button" class="comment__reply-btn" onclick="window.welcommentsReply('${escapeHtml(node.id)}', '${escapeHtml(node.name)}')">Reply</button>`
+  const nestingClasses = ["welcomments__comment"];
+  if (depth > 0) nestingClasses.push(`welcomments__nesting-level-${depth}`);
+  const replyLink = depth < 3 && websiteId
+    ? `<a class="welcomments__comment-reply-link comment__reply-btn" href="https://welcomments.io/api/websites/${escapeHtml(websiteId)}/comments/${escapeHtml(node.id)}/reply">Reply to ${escapeHtml(node.name)}</a>`
     : "";
   const paragraphs = node.message
     .split("\n")
@@ -94,15 +96,15 @@ function renderCommentNode(node: CommentNode, depth = 0): string {
     .filter((p) => p.length > 0)
     .map((p) => `<p>${escapeHtml(p)}</p>`)
     .join("");
-  return `<li class="comment" id="comment-${escapeHtml(node.id)}">
-<div class="comment__meta">
-<span class="comment__author">${escapeHtml(node.name)}</span>
-<time class="comment__date" datetime="${escapeHtml(node.date)}">${escapeHtml(dateStr)}</time>
-${replyButton}
-</div>
-<div class="comment__body">${paragraphs}</div>
-${repliesHtml}
-</li>`;
+  return `<article class="${nestingClasses.join(" ")}" data-comment-id="${escapeHtml(node.id)}" data-author-name="${escapeHtml(node.name)}" data-nesting-level="${depth}">
+  <div class="comment__meta">
+    <span class="comment__author">${escapeHtml(node.name)}</span>
+    <time class="comment__date" datetime="${escapeHtml(node.date)}">${escapeHtml(dateStr)}</time>
+    ${replyLink}
+  </div>
+  <div class="comment__body">${paragraphs}</div>
+  ${repliesHtml}
+</article>`;
 }
 
 export interface RenderedChapter {
@@ -162,7 +164,7 @@ ${chapter.frontmatter.tags.length ? ` · <span class="chapter__tags">${chapter.f
   if (commentsConfig && commentsConfig.provider === "welcomments" && commentsConfig.welcommentsWebsiteId) {
     const commentsList = loadCommentsForChapter(space.rootDir, chapter.slug);
     const roots = buildCommentTree(commentsList);
-    const commentsThreadHtml = roots.map(r => renderCommentNode(r)).join("\n");
+    const commentsThreadHtml = roots.map((r) => renderCommentNode(r, 0, commentsConfig.welcommentsWebsiteId)).join("\n");
     const baseUrl = space.series.site?.baseUrl;
     const basePath = space.series.site?.basePath ?? "/";
     
@@ -174,34 +176,42 @@ ${chapter.frontmatter.tags.length ? ` · <span class="chapter__tags">${chapter.f
 
     commentsHtml = `
 <section class="comments-section" id="comments">
-<h3 style="font-family: var(--font-sans); margin-bottom: 2rem;">Comments (${commentsList.length})</h3>
-${commentsList.length > 0 ? `<ol class="comments-list">${commentsThreadHtml}</ol>` : `<p style="font-family: var(--font-sans); font-size: 0.9rem; color: var(--muted); margin-bottom: 2rem;">No comments yet. Be the first to share your thoughts!</p>`}
+<h3 id="welcomments__comment-count-title" style="font-family: var(--font-sans); margin-bottom: 2rem;">Comments (${commentsList.length})</h3>
+<div id="welcomments__comment-container">
+${commentsList.length > 0 ? commentsThreadHtml : `<p style="font-family: var(--font-sans); font-size: 0.9rem; color: var(--muted); margin-bottom: 2rem;">No comments yet. Be the first to share your thoughts!</p>`}
+</div>
 
 <div class="comment-form-section" style="margin-top: 3rem;">
 <h4 style="font-family: var(--font-sans); margin-bottom: 1rem;">Leave a comment</h4>
-<form id="welcomments__form" action="https://api.welcomments.io/api/comments" method="post" style="display: flex; flex-direction: column; gap: 1rem;">
-<input type="hidden" name="welcomments_website_id" value="${escapeHtml(commentsConfig.welcommentsWebsiteId)}" />
-<input type="hidden" name="welcomments_permalink" value="${escapeHtml(canonicalUrl)}" />
-<input type="hidden" name="welcomments_reply_to" id="welcomments_reply_to" value="" />
+<form id="welcomments__form" class="welcomments__comment-form" action="https://welcomments.io/api/comments" method="post" style="display: flex; flex-direction: column; gap: 1rem;">
+<input type="hidden" name="website-id" id="website-id" value="${escapeHtml(commentsConfig.welcommentsWebsiteId)}" />
+<input type="hidden" name="permalink" id="permalink" value="${escapeHtml(canonicalUrl)}" />
+<input type="hidden" name="page-slug" id="page-slug" value="${escapeHtml(chapter.slug)}" />
+<input type="hidden" name="replying-to" id="welcomments_reply_to" value="" />
 
 <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 1rem;">
 <div style="display: flex; flex-direction: column;">
 <label for="welcomments__author" style="font-family: var(--font-sans); font-size: 0.8rem; color: var(--muted); margin-bottom: 0.25rem;">Name</label>
-<input type="text" id="welcomments__author" name="welcomments_author" required style="font: inherit; padding: 0.5rem; border: 1px solid var(--rule); border-radius: 4px; background: var(--bg); color: var(--fg);" />
+<input type="text" id="welcomments__author" name="author-name" required style="font: inherit; padding: 0.5rem; border: 1px solid var(--rule); border-radius: 4px; background: var(--bg); color: var(--fg);" />
 </div>
 <div style="display: flex; flex-direction: column;">
-<label for="welcomments__email" style="font-family: var(--font-sans); font-size: 0.8rem; color: var(--muted); margin-bottom: 0.25rem;">Email (not published)</label>
-<input type="email" id="welcomments__email" name="welcomments_email" required style="font: inherit; padding: 0.5rem; border: 1px solid var(--rule); border-radius: 4px; background: var(--bg); color: var(--fg);" />
+<label for="welcomments__website" style="font-family: var(--font-sans); font-size: 0.8rem; color: var(--muted); margin-bottom: 0.25rem;">Website <span style="font-size: 0.75rem; color: var(--muted);">(optional)</span></label>
+<input type="url" id="welcomments__website" name="author-url" placeholder="https://example.com" style="font: inherit; padding: 0.5rem; border: 1px solid var(--rule); border-radius: 4px; background: var(--bg); color: var(--fg);" />
 </div>
+</div>
+
+<div style="display: flex; flex-direction: column;">
+<label for="welcomments__email" style="font-family: var(--font-sans); font-size: 0.8rem; color: var(--muted); margin-bottom: 0.25rem;">Email (not published)</label>
+<input type="email" id="welcomments__email" name="author-email" style="font: inherit; padding: 0.5rem; border: 1px solid var(--rule); border-radius: 4px; background: var(--bg); color: var(--fg);" />
 </div>
 
 <div style="display: flex; flex-direction: column;">
 <label for="welcomments__comment" style="font-family: var(--font-sans); font-size: 0.8rem; color: var(--muted); margin-bottom: 0.25rem;">Comment</label>
-<textarea id="welcomments__comment" name="welcomments_comment" required rows="4" style="font: inherit; padding: 0.5rem; border: 1px solid var(--rule); border-radius: 4px; background: var(--bg); color: var(--fg); resize: vertical;"></textarea>
+<textarea id="welcomments__comment" name="message" required rows="4" style="font: inherit; padding: 0.5rem; border: 1px solid var(--rule); border-radius: 4px; background: var(--bg); color: var(--fg); resize: vertical;"></textarea>
 </div>
 
 <div>
-<button type="submit" class="comment__reply-btn" style="margin-left: 0; padding: 0.5rem 1.25rem; font-size: 0.85rem; border: 1px solid var(--rule); border-radius: 4px;">Post Comment</button>
+<button type="submit" id="welcomments__submit-button" class="comment__reply-btn" style="margin-left: 0; padding: 0.5rem 1.25rem; font-size: 0.85rem; border: 1px solid var(--rule); border-radius: 4px;">Post Comment</button>
 </div>
 </form>
 </div>
