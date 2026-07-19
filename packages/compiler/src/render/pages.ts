@@ -34,10 +34,13 @@ interface CommentNode extends Comment {
 function loadCommentsForChapter(rootDir: string, slug: string): Comment[] {
   const comments: Comment[] = [];
   const possibleDirs = [slug, `chapters-${slug}`, `chapters_${slug}`];
+  const repoRoot = join(rootDir, "..", "..");
   for (const dir of possibleDirs) {
     const commentsDirs = [
       join(rootDir, "_data", "comments", dir),
       join(rootDir, "_data", "welcomments", dir),
+      join(repoRoot, "_data", "comments", dir),
+      join(repoRoot, "_data", "welcomments", dir),
     ];
     for (const commentsDir of commentsDirs) {
       if (existsSync(commentsDir)) {
@@ -47,7 +50,22 @@ function loadCommentsForChapter(rootDir: string, slug: string): Comment[] {
             const raw = readFileSync(join(commentsDir, file), "utf8");
             const data = JSON.parse(raw) as Record<string, unknown>;
             const id = String(data.id || data._id || file.replace(/\.json$/, ""));
-            const name = String(data.name || data.author || "Anonymous");
+            
+            // Handle flat vs nested author object from Welcomments JSON structure
+            let name = "Anonymous";
+            if (data.name) {
+              name = String(data.name);
+            } else if (data.author) {
+              if (typeof data.author === "string") {
+                name = data.author;
+              } else if (typeof data.author === "object" && data.author !== null) {
+                const authorObj = data.author as Record<string, unknown>;
+                if (authorObj.name) {
+                  name = String(authorObj.name);
+                }
+              }
+            }
+
             const message = String(data.message || data.comment || data.body || "");
             const date = String(data.date || data.createdAt || new Date().toISOString());
             const replyTo = data.reply_to || data.replyTo ? String(data.reply_to || data.replyTo) : null;
