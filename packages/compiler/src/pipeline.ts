@@ -33,6 +33,7 @@ import {
   chapterFilenameFor,
   hashChapterSource,
   hashSeriesSource,
+  hashChapterComments,
   loadBuildCache,
   pruneOrphanAssetFiles,
   pruneOrphanChapterFiles,
@@ -143,6 +144,7 @@ export async function compile(opts: CompileOptions): Promise<CompileResult> {
     const outboundChapterLinkTargetHashes = node.outbound
       .map((s) => sourceHashes.get(s))
       .filter((h): h is string => !!h);
+    const commentsHash = hashChapterComments(space.rootDir, slug);
     renderDepsHashes.set(
       slug,
       computeRenderDepsHash({
@@ -151,6 +153,7 @@ export async function compile(opts: CompileOptions): Promise<CompileResult> {
         neighborSourceHashes,
         inboundSourceHashes,
         outboundChapterLinkTargetHashes,
+        commentsHash,
         compilerVersion: COMPILER_VERSION,
       }),
     );

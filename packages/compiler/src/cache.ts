@@ -1,5 +1,6 @@
 import { createHash } from "node:crypto";
 import { readFile, writeFile, mkdir, readdir, rm, stat } from "node:fs/promises";
+import { existsSync, readdirSync, readFileSync } from "node:fs";
 import { join, dirname } from "node:path";
 import yaml from "js-yaml";
 import { z } from "zod";
@@ -35,7 +36,7 @@ import type { LoadedBlogSpace, LoadedChapter } from "./types.js";
  *     way that affects HTML output; old caches are then invalidated.
  */
 export const BUILD_CACHE_VERSION = 2;
-export const COMPILER_VERSION = "0.0.2";
+export const COMPILER_VERSION = "0.0.3";
 
 const chapterCacheSchema = z.object({
   sourceHash: z.string(),
@@ -125,6 +126,37 @@ export function hashSeriesSource(space: LoadedBlogSpace): string {
   return shortHash(seriesCanon);
 }
 
+/** Hash all comment files for a given chapter slug (both space-local and repo-root). */
+export function hashChapterComments(spaceRootDir: string, slug: string): string {
+  const possibleDirs = [slug, `chapters-${slug}`, `chapters_${slug}`];
+  const repoRoot = join(spaceRootDir, "..", "..");
+  let concatenated = "";
+  for (const dir of possibleDirs) {
+    const commentsDirs = [
+      join(spaceRootDir, "_data", "comments", dir),
+      join(spaceRootDir, "_data", "welcomments", dir),
+      join(repoRoot, "_data", "comments", dir),
+      join(repoRoot, "_data", "welcomments", dir),
+    ];
+    for (const commentsDir of commentsDirs) {
+      if (existsSync(commentsDir)) {
+        try {
+          const files = readdirSync(commentsDir)
+            .filter((f) => f.endsWith(".json"))
+            .sort();
+          for (const file of files) {
+            try {
+              const content = readFileSync(join(commentsDir, file), "utf8");
+              concatenated += `${file}:${content}\n`;
+            } catch (_) {}
+          }
+        } catch (_) {}
+      }
+    }
+  }
+  return shortHash(concatenated);
+}
+
 /**
  * Per-chapter render-deps hash. Inputs are the source hashes of every
  * chapter that contributes to the rendered HTML — the function is pure
@@ -139,6 +171,8 @@ export function computeRenderDepsHash(args: {
   inboundSourceHashes: string[];
   /** Sorted list of outbound chapter-link target source hashes. */
   outboundChapterLinkTargetHashes: string[];
+  /** Optional comments hash for the chapter. */
+  commentsHash?: string;
   /** Compiler version — bumped when render output changes for the same source. */
   compilerVersion: string;
 }): string {
@@ -148,6 +182,7 @@ export function computeRenderDepsHash(args: {
     n: args.neighborSourceHashes,
     i: [...args.inboundSourceHashes].sort(),
     c: [...args.outboundChapterLinkTargetHashes].sort(),
+    m: args.commentsHash || "",
     v: args.compilerVersion,
   });
   return shortHash(payload);
