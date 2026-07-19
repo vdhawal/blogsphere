@@ -3,4 +3,5 @@ export { zipDirectory } from "./zip.js";
 export { loadBlogSpace } from "./loader.js";
 export { collectAssetRefs, loadAssetManifest } from "./media.js";
 export { renderWorkspaceIndex } from "./render/pages.js";
+export { renderHeaders } from "./render/feeds.js";
 export type { CompileOptions, CompileResult } from "./types.js";

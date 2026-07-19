@@ -88,7 +88,7 @@ function renderCommentNode(node: CommentNode, depth = 0, websiteId?: string): st
   const nestingClasses = ["welcomments__comment"];
   if (depth > 0) nestingClasses.push(`welcomments__nesting-level-${depth}`);
   const replyLink = depth < 3 && websiteId
-    ? `<a class="welcomments__comment-reply-link comment__reply-btn" href="https://welcomments.io/api/websites/${escapeHtml(websiteId)}/comments/${escapeHtml(node.id)}/reply">Reply to ${escapeHtml(node.name)}</a>`
+    ? `<a class="welcomments__comment-reply-link comment__reply-btn" href="https://api.welcomments.io/api/websites/${escapeHtml(websiteId)}/comments/${escapeHtml(node.id)}/reply">Reply to ${escapeHtml(node.name)}</a>`
     : "";
   const paragraphs = node.message
     .split("\n")

@@ -66,7 +66,7 @@ export const seriesSchema = z.object({
   // Optional — without it, links are emitted relative.
   site: z
     .object({
-      baseUrl: z.string().url(),
+      baseUrl: z.string().url().optional(),
       basePath: z.string().startsWith("/").default("/"),
     })
     .optional(),

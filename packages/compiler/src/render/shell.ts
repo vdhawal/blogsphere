@@ -105,8 +105,64 @@ export function renderShell(input: ShellInput): string {
     ? `<script defer src="${escapeHtml(analytics.umamiScriptUrl)}" data-website-id="${escapeHtml(analytics.umamiWebsiteId)}"></script>`
     : "";
 
-  const commentsScript = series.comments?.provider === "welcomments"
-    ? `<script type="text/javascript" src="https://cdn.welcomments.io/welcomments.js" async></script>`
+  const commentsScript = series.comments?.provider === "welcomments" && series.comments.welcommentsWebsiteId
+    ? `<script type="text/javascript">
+  window.welcomments = {
+    apiUrl: "https://welcomments.io/api",
+    commentCountTitleFactory: function (commentCount) {
+      if (commentCount === 0) {
+        return "No comments yet. Be the first to share your thoughts!";
+      }
+      return "Comments (" + commentCount + ")";
+    },
+    placeholderCommentFactory: function (comment) {
+      function escapeHtml(str) {
+        return (str || "").replace(/[&<>"']/g, function(m) {
+          switch (m) {
+            case '&': return '&amp;';
+            case '<': return '&lt;';
+            case '>': return '&gt;';
+            case '"': return '&quot;';
+            case "'": return '&#039;';
+            default: return m;
+          }
+        });
+      }
+      var dateObj = new Date(comment.date);
+      var dateStr = dateObj.toLocaleDateString("en-US", {
+        year: "numeric",
+        month: "long",
+        day: "numeric"
+      });
+      var replyLink = "";
+      if (comment.nestingLevel < 3) {
+        replyLink = '<a class="welcomments__comment-reply-link comment__reply-btn" href="https://welcomments.io/api/websites/' + ${JSON.stringify(series.comments.welcommentsWebsiteId)} + '/comments/' + encodeURIComponent(comment.id) + '/reply">Reply to ' + escapeHtml(comment.author.name) + '</a>';
+      }
+      var paragraphs = comment.message
+        .split("\\n")
+        .map(function(p) { return p.trim(); })
+        .filter(function(p) { return p.length > 0; })
+        .map(function(p) { return "<p>" + escapeHtml(p) + "</p>"; })
+        .join("");
+        
+      var isoDate = "";
+      try {
+        isoDate = comment.date.toISOString();
+      } catch (_) {
+        isoDate = new Date().toISOString();
+      }
+      return '<article class="welcomments__comment" data-comment-id="' + escapeHtml(comment.id) + '" data-author-name="' + escapeHtml(comment.author.name) + '" data-nesting-level="0">' +
+        '  <div class="comment__meta">' +
+        '    <span class="comment__author">' + escapeHtml(comment.author.name) + '</span>' +
+        '    <time class="comment__date" datetime="' + escapeHtml(isoDate) + '">' + dateStr + '</time>' +
+        '    ' + replyLink +
+        '  </div>' +
+        '  <div class="comment__body">' + paragraphs + '</div>' +
+        '</article>';
+    }
+  };
+</script>
+<script type="text/javascript" src="https://cdn.welcomments.io/welcomments.js" async></script>`
     : "";
 
   return `<!doctype html>

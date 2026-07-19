@@ -177,6 +177,8 @@ export interface CompileOptions {
    * exports leave this unset and pick up the value from config.yaml.
    */
   chatProxyUrlOverride?: string;
+  /** Optional override for the series basePath used when compiling to a nested export folder. */
+  siteBasePathOverride?: string;
   /** If true, write only what's changed. Not implemented in v1. */
   incremental?: boolean;
   /** If true, regenerate placeholder fixture assets if missing. */

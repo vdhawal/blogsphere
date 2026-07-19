@@ -1,8 +1,9 @@
 import type { FastifyInstance, FastifyRequest } from "fastify";
 import type { MultipartFile } from "@fastify/multipart";
-import { compile, renderWorkspaceIndex, zipDirectory } from "@blogspace/compiler";
+import { compile, renderWorkspaceIndex, renderHeaders, zipDirectory } from "@blogspace/compiler";
 import type { Workspace } from "./fs-ops.js";
-import { chapterFrontmatterSchema, seriesSchema, exportSettingsSchema, type AssetEntry, type ImageAsset, type VideoAsset } from "@blogspace/schemas";
+import type { SpaceDetail } from "./types.js";
+import { chapterFrontmatterSchema, seriesSchema, exportSettingsSchema, type AssetEntry, type ImageAsset, type VideoAsset, type Series } from "@blogspace/schemas";
 import type { PreviewManager } from "./preview.js";
 import { AssetStore } from "./asset-store.js";
 import { AssetProcessingQueue } from "./asset-queue.js";
@@ -83,13 +84,14 @@ export function registerApi(
             queue: assetQueue,
             spaceId,
           });
-
+ 
           const result = await compile({
             spaceDir: workspace.spaceDir(spaceId),
             outDir: join(exportRoot, spaceId),
             format: "dir",
+            siteBasePathOverride: `/${spaceId}/`,
           });
-
+ 
           totalChapters += result.chaptersWritten;
           totalImages += result.imagesProcessed;
 
@@ -99,7 +101,13 @@ export function registerApi(
           if (result.warnings.length) {
             warnings.push(...result.warnings.map((w) => `${spaceId}: ${w}`));
           }
-
+ 
+          // Remove blog-specific root artifact duplicates from the combined export.
+          const perBlogRootFiles = ["_headers", "404.html", "favicon.svg", "robots.txt", "rss.xml", "sitemap.xml"];
+          for (const fileName of perBlogRootFiles) {
+            await rm(join(exportRoot, spaceId, fileName), { force: true, recursive: true });
+          }
+ 
           // Sync PDF context if it was rendered
           const pdfAbs = result.pdfPath;
           if (pdfAbs) {
@@ -113,20 +121,27 @@ export function registerApi(
           }
         }
 
-        // 3. Load all compiled Series metadata to generate root index.html
-        const seriesList: any[] = [];
+        // 3. Load all compiled space metadata to generate the shared root pages.
+        const spaceDetails: SpaceDetail[] = [];
         for (const spaceId of spaceIds) {
           try {
-            const series = await workspace.readSeries(spaceId);
-            seriesList.push(series);
+            const space = await workspace.readSpace(spaceId);
+            spaceDetails.push(space);
           } catch (err) {
-            req.log.warn(`Failed to read series.yaml for ${spaceId}: ${(err as Error).message}`);
+            req.log.warn(`Failed to read space metadata for ${spaceId}: ${(err as Error).message}`);
           }
         }
-
-        // 4. Generate root index.html
-        const indexHtml = renderWorkspaceIndex(seriesList);
+ 
+        // 4. Generate the shared root index.html and deployment manifests.
+        const indexHtml = renderWorkspaceIndex(spaceDetails.map((s) => s.series));
         await writeFile(join(exportRoot, "index.html"), indexHtml, "utf8");
+        await writeFile(join(exportRoot, "_headers"), renderHeaders(), "utf8");
+        await writeFile(join(exportRoot, "404.html"), renderExportNotFound(), "utf8");
+        await writeFile(join(exportRoot, "favicon.svg"), renderExportFaviconSvg(), "utf8");
+        await writeFile(join(exportRoot, "robots.txt"), renderExportRobots(), "utf8");
+        await writeFile(join(exportRoot, "sitemap.xml"), renderExportSitemap(spaceDetails), "utf8");
+        await writeFile(join(exportRoot, "rss.xml"), renderExportRss(spaceDetails), "utf8");
+        await writeFile(join(exportRoot, "llms.txt"), renderExportLlmsIndex(spaceDetails), "utf8");
 
         // 5. Create a root zip representing the whole export folder
         const zipPath = join(workspace.root, "export.zip");
@@ -759,4 +774,145 @@ function mimeForPath(p: string): string {
     case "m4v":              return "video/x-m4v";
     default:                 return "application/octet-stream";
   }
+}
+
+function escapeHtml(input: string): string {
+  return input.replace(/[&<>"]+/g, (ch) => {
+    switch (ch) {
+      case "&": return "&amp;";
+      case "<": return "&lt;";
+      case ">": return "&gt;";
+      case '"': return "&quot;";
+      default: return ch;
+    }
+  });
+}
+
+function renderExportRobots(): string {
+  const aiAgents = [
+    "GPTBot",
+    "OAI-SearchBot",
+    "ChatGPT-User",
+    "ClaudeBot",
+    "Claude-Web",
+    "Google-Extended",
+    "PerplexityBot",
+    "CCBot",
+    "Applebot-Extended",
+  ];
+  const aiBlocks = aiAgents.map((ua) => `User-agent: ${ua}\nAllow: /\n`).join("\n");
+  return `User-agent: *\nAllow: /\n\n${aiBlocks}# LLM-friendly content manifest\n# /llms.txt\n\nSitemap: /sitemap.xml\n`;
+}
+
+
+function renderExportNotFound(): string {
+  return `<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Page not found</title>
+  <style>
+    body { margin: 0; font-family: system-ui, sans-serif; background: #f4f4f4; color: #111; display: flex; align-items: center; justify-content: center; min-height: 100vh; }
+    .page { max-width: 32rem; padding: 2rem; background: white; border-radius: 18px; box-shadow: 0 16px 40px rgba(0,0,0,.08); }
+    a { color: #1b61ff; text-decoration: none; }
+  </style>
+</head>
+<body>
+  <div class="page">
+    <h1>404 — Page not found</h1>
+    <p>Sorry, the page you are looking for does not exist.</p>
+    <p><a href="/">Return to the blog sphere home page</a></p>
+  </div>
+</body>
+</html>`;
+}
+
+function renderExportFaviconSvg(): string {
+  return `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="Blog Sphere">
+  <style>
+    .bg { fill: #14120e; }
+    .fg { fill: #fbfaf7; }
+    @media (prefers-color-scheme: light) {
+      .bg { fill: #fbfaf7; }
+      .fg { fill: #14120e; }
+    }
+  </style>
+  <rect class="bg" width="64" height="64" rx="14"/>
+  <text class="fg" x="32" y="38" font-family="Georgia, 'Times New Roman', serif" font-size="34" font-weight="700" text-anchor="middle" dominant-baseline="middle">B</text>
+</svg>`;
+}
+
+function exportPageUrl(series: Series, spaceId: string, path: string): string {
+  const base = series.site?.baseUrl?.replace(/\/$/, "") ?? "";
+  const bp = `/${spaceId}`.replace(/\/$/, "");
+  return base ? `${base}${bp}${path}` : `${bp}${path}`;
+}
+
+function renderExportSitemap(spaces: SpaceDetail[]): string {
+  const entries: string[] = [];
+  for (const space of spaces) {
+    const rootUrl = exportPageUrl(space.series, space.id, "/");
+    const lastmod = space.series.updatedAt ?? space.series.publishedAt;
+    entries.push(` <url><loc>${escapeHtml(rootUrl)}</loc>${lastmod ? `<lastmod>${escapeHtml(lastmod)}</lastmod>` : ""}</url>`);
+    entries.push(` <url><loc>${escapeHtml(exportPageUrl(space.series, space.id, "/llms.txt"))}</loc></url>`);
+    entries.push(` <url><loc>${escapeHtml(exportPageUrl(space.series, space.id, "/llms-full.txt"))}</loc></url>`);
+    for (const chapter of space.chapters) {
+      const chapterUrl = exportPageUrl(space.series, space.id, `/chapters/${chapter.slug}.html`);
+      const chapterLastmod = chapter.publishedAt;
+      entries.push(` <url><loc>${escapeHtml(chapterUrl)}</loc>${chapterLastmod ? `<lastmod>${escapeHtml(chapterLastmod)}</lastmod>` : ""}</url>`);
+    }
+  }
+  const baseUrl = spaces.find((space) => space.series.site?.baseUrl)?.series.site?.baseUrl?.replace(/\/$/, "") ?? "";
+  const rootLlmsUrl = baseUrl ? `${baseUrl}/llms.txt` : "/llms.txt";
+  entries.push(` <url><loc>${escapeHtml(rootLlmsUrl)}</loc></url>`);
+  return `<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n${entries.join("\n")}\n</urlset>`;
+}
+
+function renderExportRss(spaces: SpaceDetail[]): string {
+  const items = spaces.flatMap((space) =>
+    space.chapters.map((chapter) => {
+      const url = exportPageUrl(space.series, space.id, `/chapters/${chapter.slug}.html`);
+      const guid = url;
+      const date = chapter.publishedAt ? new Date(chapter.publishedAt).toUTCString() : "";
+      const author = typeof space.series.author === "string" ? space.series.author : space.series.author.name;
+      return {
+        title: `${chapter.title} — ${space.series.title}`,
+        url,
+        guid,
+        author,
+        description: chapter.summary,
+        date,
+      };
+    }),
+  );
+  items.sort((a, b) => {
+    if (a.date === b.date) return 0;
+    if (!a.date) return 1;
+    if (!b.date) return -1;
+    return new Date(b.date).getTime() - new Date(a.date).getTime();
+  });
+  const rootUrl = spaces.find((space) => space.series.site?.baseUrl)?.series.site?.baseUrl?.replace(/\/$/, "") ?? "/";
+  const selfLink = rootUrl === "/" ? "/rss.xml" : `${rootUrl}/rss.xml`;
+  const channelItems = items
+    .map((item) => ` <item>
+<title>${escapeHtml(item.title)}</title>
+<link>${escapeHtml(item.url)}</link>
+<guid isPermaLink="false">${escapeHtml(item.guid)}</guid>
+<dc:creator>${escapeHtml(item.author)}</dc:creator>
+<description>${escapeHtml(item.description)}</description>
+${item.date ? `<pubDate>${escapeHtml(item.date)}</pubDate>` : ""}
+</item>`)
+    .join("\n");
+  return `<?xml version="1.0" encoding="UTF-8"?>\n<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:dc="http://purl.org/dc/elements/1.1/">\n<channel>\n<title>Blog Sphere</title>\n<link>${escapeHtml(rootUrl)}</link>\n<atom:link href="${escapeHtml(selfLink)}" rel="self" type="application/rss+xml"/>\n<description>A unified feed for the Blog Sphere.</description>\n${channelItems}\n</channel>\n</rss>`;
+}
+
+function renderExportLlmsIndex(spaces: SpaceDetail[]): string {
+  const sections = spaces.map((space) => {
+    const title = space.series.title;
+    const description = space.series.description || "";
+    const basePath = `/${space.id}`;
+    return `## ${escapeHtml(title)}\n${description ? `${escapeHtml(description)}\n` : ""}- llms: ${escapeHtml(`${basePath}/llms.txt`)}\n- llms-full: ${escapeHtml(`${basePath}/llms-full.txt`)}\n`;
+  });
+  return `# Blog Sphere LLM manifests\n\n${sections.join("\n")}`;
 }

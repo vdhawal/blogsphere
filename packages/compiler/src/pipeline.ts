@@ -72,7 +72,19 @@ const STATIC_DIR = join(dirname(fileURLToPath(import.meta.url)), "..", "static")
  */
 export async function compile(opts: CompileOptions): Promise<CompileResult> {
   const warnings: string[] = [];
-  const space = await loadBlogSpace(opts.spaceDir);
+  const loadedSpace = await loadBlogSpace(opts.spaceDir);
+  const space = opts.siteBasePathOverride
+    ? {
+        ...loadedSpace,
+        series: {
+          ...loadedSpace.series,
+          site: {
+            ...(loadedSpace.series.site ?? {}),
+            basePath: opts.siteBasePathOverride,
+          },
+        },
+      }
+    : loadedSpace;
 
   // Resolve the staging directory per format:
   //   - "dir":  staging IS the final output dir

@@ -79,18 +79,21 @@ async function run() {
   Cache-Control: public, max-age=0, must-revalidate
 
 # Immutable asset variants — cache for a year.
-/**/assets/*
+/**/assets/**
   Cache-Control: public, max-age=31536000, immutable
 
-# Feeds, manifests and AI files.
-/**/sitemap.xml
-  Cache-Control: public, max-age=3600
-/**/rss.xml
-  Cache-Control: public, max-age=3600
+# Viewer manifests and chat config in nested blog folders.
 /**/manifest.json
   Cache-Control: public, max-age=0, must-revalidate
-/**/llms.txt
+/**/chat-config.json
+  Cache-Control: public, max-age=0, must-revalidate
+
+# Feeds, manifests and AI files.
+/sitemap.xml
   Cache-Control: public, max-age=3600
+/rss.xml
+  Cache-Control: public, max-age=3600
+/**/llms.txt
 /**/llms-full.txt
   Cache-Control: public, max-age=3600
 `, "utf8");

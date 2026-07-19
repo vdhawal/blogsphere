@@ -65,3 +65,6 @@ Invoke-RestMethod -Method Post -Uri "http://127.0.0.1:4317/api/export" -Headers 
 
 * **Export Location**: `fixtures/export/`
 * **Static ZIP Archive**: `fixtures/export.zip`
+* **Root deploy files** (shared across blogs): `index.html`, `_headers`, `404.html`, `robots.txt`, `sitemap.xml`, `rss.xml`, `llms.txt`
+* **Per-blog files** live under each blog folder: `index.html`, `chapters/`, `assets/`, `manifest.json`, `chat-config.json`, `llms.txt`, `llms-full.txt`, `book.html`
+* **Production export note**: exclude `morocco-2026` from Cloudflare deploy exports; it is a fixture/test blog and should not be included in the production blog sphere upload.
