@@ -1,0 +1,28 @@
+{
+  "name": "@blogspace/media",
+  "version": "0.0.1",
+  "type": "module",
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js"
+    }
+  },
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "typecheck": "tsc -p tsconfig.json --noEmit"
+  },
+  "dependencies": {
+    "@blogspace/schemas": "*",
+    "blurhash": "^2.0.5",
+    "heic-convert": "^2.1.0",
+    "sharp": "^0.33.5"
+  },
+  "devDependencies": {
+    "@types/heic-convert": "^1.2.3",
+    "@types/node": "^22.5.4",
+    "typescript": "^5.5.4"
+  }
+}

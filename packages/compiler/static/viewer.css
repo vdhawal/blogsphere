@@ -1,0 +1,566 @@
+:root {
+  --measure: 68ch;
+  --gutter: clamp(1rem, 4vw, 2rem);
+  /* Light palette tuned so body text on --bg clears WCAG AA at 17px and
+     above; --muted clears AA for non-essential metadata only. */
+  --bg: #fbfaf7;
+  --fg: #1a1714;
+  --muted: #5a5048;
+  --rule: #e7e0d3;
+  --accent: #a23a17;
+  --accent-soft: #f5e3d7;
+  --focus: #1f6feb;
+  --font-serif: "Iowan Old Style", "Charter", "Source Serif Pro", Georgia, serif;
+  --font-sans: -apple-system, BlinkMacSystemFont, "Segoe UI", system-ui, sans-serif;
+  --font-mono: ui-monospace, "SF Mono", Menlo, Consolas, monospace;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg: #14120e;
+    --fg: #f3eee4;
+    --muted: #b3a999;
+    --rule: #2a2620;
+    --accent: #ec9874;
+    --accent-soft: #3b261c;
+    --focus: #7aa6ff;
+  }
+}
+
+/* High-contrast opt-in (Windows/macOS user preference). Crank the
+   foreground/background separation and saturate the accent for AAA-ish
+   contrast at body text sizes. */
+@media (prefers-contrast: more) {
+  :root {
+    --bg: #ffffff;
+    --fg: #000000;
+    --muted: #2a2622;
+    --rule: #000000;
+    --accent: #7a2a10;
+    --accent-soft: #ffe8d8;
+    --focus: #0040c0;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg: #000000;
+      --fg: #ffffff;
+      --muted: #e0d8c8;
+      --rule: #ffffff;
+      --accent: #ffb088;
+      --accent-soft: #2a1a10;
+      --focus: #9ec0ff;
+    }
+  }
+}
+
+* { box-sizing: border-box; }
+html { font-size: 17px; -webkit-text-size-adjust: 100%; }
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--fg);
+  font-family: var(--font-serif);
+  line-height: 1.65;
+  text-rendering: optimizeLegibility;
+}
+
+img, picture, video, svg { max-width: 100%; height: auto; display: block; }
+
+/* Skip-to-main link — visually hidden until focused so keyboard users can
+   bypass the site nav. WCAG 2.4.1 (Bypass Blocks). */
+.skip-link {
+  position: absolute;
+  left: 0;
+  top: 0;
+  transform: translateY(-150%);
+  background: var(--bg);
+  color: var(--accent);
+  border: 2px solid var(--accent);
+  padding: 0.5rem 1rem;
+  font-family: var(--font-sans);
+  text-decoration: none;
+  z-index: 100;
+  transition: transform 0.15s;
+}
+.skip-link:focus { transform: translateY(0); outline: none; }
+
+/* Focus-visible — single unified ring across interactive elements.
+   Uses --focus (high-contrast blue, palette-aware) so it's discoverable
+   on every background. WCAG 2.4.7 + 1.4.11. */
+a:focus-visible,
+button:focus-visible,
+[tabindex]:focus-visible {
+  outline: 2px solid var(--focus);
+  outline-offset: 2px;
+  border-radius: 2px;
+}
+
+/* Honor user motion preference. Carousel snap is the only auto-motion
+   here, but transitions on cards/links can also be jarring. WCAG 2.3.3. */
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+  .gallery--carousel { scroll-snap-type: none; }
+}
+
+/* Forced-colors (Windows High Contrast) — let the OS palette through and
+   keep structural cues visible. */
+@media (forced-colors: active) {
+  .chapter-card,
+  .chapter-link--card,
+  .quote-card--framed,
+  .chapter-nav__prev,
+  .chapter-nav__next,
+  .backlinks,
+  .related-series {
+    border: 1px solid CanvasText;
+  }
+  a:focus-visible,
+  button:focus-visible { outline-color: Highlight; }
+}
+
+/* ----- site header / footer ----- */
+.site-header {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 2rem;
+  padding: 1.25rem var(--gutter);
+  border-bottom: 1px solid var(--rule);
+  font-family: var(--font-sans);
+  font-size: 0.875rem;
+}
+.site-title {
+  font-weight: 600;
+  text-decoration: none;
+  color: var(--fg);
+  font-size: 1rem;
+}
+.chapter-toc {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+.chapter-toc a { color: var(--muted); text-decoration: none; }
+.chapter-toc a:hover { color: var(--fg); }
+.chapter-toc [aria-current="page"] a { color: var(--fg); font-weight: 600; }
+
+.site-footer {
+  padding: 3rem var(--gutter) 4rem;
+  border-top: 1px solid var(--rule);
+  margin-top: 4rem;
+  font-family: var(--font-sans);
+  font-size: 0.85rem;
+  color: var(--muted);
+}
+
+main { padding: 2rem var(--gutter); }
+
+/* ----- typography ----- */
+.chapter {
+  max-width: var(--measure);
+  margin: 0 auto;
+}
+.chapter__title {
+  font-size: clamp(2rem, 5vw, 2.75rem);
+  line-height: 1.15;
+  margin: 1rem 0 0.5rem;
+}
+.chapter__summary {
+  font-size: 1.125rem;
+  color: var(--muted);
+  font-style: italic;
+  margin: 0 0 1rem;
+}
+.chapter__meta {
+  font-family: var(--font-sans);
+  font-size: 0.85rem;
+  color: var(--muted);
+  border-bottom: 1px solid var(--rule);
+  padding-bottom: 1.5rem;
+  margin-bottom: 2rem;
+}
+.tag {
+  color: var(--muted);
+  text-decoration: none;
+  padding: 0.1rem 0.5rem;
+  border-radius: 999px;
+  background: var(--accent-soft);
+  font-size: 0.75rem;
+  font-family: var(--font-sans);
+}
+
+.chapter__body p { margin: 1.1em 0; }
+.chapter__body h2 { margin: 2.4rem 0 0.5rem; font-size: 1.5rem; }
+.chapter__body h3 { margin: 2rem 0 0.5rem; font-size: 1.2rem; }
+.chapter__body a { color: var(--accent); text-decoration-thickness: 1px; text-underline-offset: 2px; }
+.chapter__body blockquote {
+  margin: 1.5rem 0;
+  padding: 0.5rem 0 0.5rem 1.25rem;
+  border-left: 3px solid var(--accent);
+  color: var(--muted);
+  font-style: italic;
+}
+.chapter__body code {
+  font-family: var(--font-mono);
+  font-size: 0.9em;
+  background: var(--accent-soft);
+  padding: 0.1em 0.35em;
+  border-radius: 3px;
+}
+.chapter__body pre {
+  font-family: var(--font-mono);
+  background: var(--accent-soft);
+  padding: 1rem;
+  border-radius: 6px;
+  overflow-x: auto;
+}
+.chapter__body pre code { background: none; padding: 0; }
+
+/* ----- figure & gallery ----- */
+figure { margin: 2rem 0; }
+figure figcaption {
+  font-family: var(--font-sans);
+  font-size: 0.85rem;
+  color: var(--muted);
+  margin-top: 0.5rem;
+  text-align: center;
+}
+
+.gallery { display: grid; gap: var(--gallery-gap, 8px); margin: 2rem 0; }
+.gallery--single { grid-template-columns: 1fr; }
+.gallery--tile {
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 240px), 1fr));
+}
+.gallery--masonry { display: block; column-count: 1; column-gap: var(--gallery-gap, 8px); }
+@media (min-width: 700px) { .gallery--masonry { column-count: 2; } }
+@media (min-width: 1100px) { .gallery--masonry { column-count: 3; } }
+.gallery--masonry figure { break-inside: avoid; margin: 0 0 var(--gallery-gap, 8px); }
+.gallery--carousel {
+  display: flex;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  scrollbar-width: thin;
+  padding-bottom: 0.5rem;
+}
+.gallery--carousel .gallery__item {
+  flex: 0 0 80%;
+  scroll-snap-align: center;
+  margin: 0;
+}
+.gallery--fullbleed {
+  margin-left: calc(50% - 50vw);
+  margin-right: calc(50% - 50vw);
+  width: 100vw;
+  grid-template-columns: 1fr;
+}
+.gallery__item img { width: 100%; }
+
+/* ----- video ----- */
+.video video { width: 100%; border-radius: 4px; background: #000; }
+
+/* ----- map ----- */
+.map { position: relative; }
+.map img { width: 100%; border-radius: 4px; background: var(--accent-soft); }
+.map__activate {
+  position: absolute;
+  bottom: 0.5rem;
+  right: 0.5rem;
+  padding: 0.4rem 0.75rem;
+  background: rgba(0,0,0,0.7);
+  color: #fff;
+  border: 0;
+  border-radius: 4px;
+  font: inherit;
+  font-size: 0.85rem;
+  font-family: var(--font-sans);
+  cursor: pointer;
+}
+
+/* ----- quote-card ----- */
+.quote-card {
+  margin: 2rem 0;
+  padding: 1.25rem 1.5rem;
+  border-left: none;
+  font-style: normal;
+  color: var(--fg);
+}
+.quote-card--plain { border-left: 3px solid var(--accent); padding-left: 1.25rem; font-style: italic; }
+.quote-card--pulled {
+  font-size: 1.3rem;
+  line-height: 1.45;
+  text-align: center;
+  border-top: 1px solid var(--rule);
+  border-bottom: 1px solid var(--rule);
+  padding: 1.5rem 0;
+  margin: 2.5rem 0;
+  font-style: italic;
+}
+.quote-card--framed {
+  border: 1px solid var(--rule);
+  border-radius: 6px;
+  background: var(--accent-soft);
+}
+.quote-card__body p { margin: 0.25rem 0; }
+.quote-card__attr {
+  margin-top: 0.75rem;
+  font-family: var(--font-sans);
+  font-size: 0.85rem;
+  color: var(--muted);
+}
+.quote-card__author { font-weight: 600; color: var(--fg); }
+.quote-card__source { margin-left: 0.5rem; }
+
+/* ----- chapter-link card ----- */
+.chapter-link--card {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1rem;
+  margin: 2.5rem 0;
+  padding: 1.25rem;
+  border: 1px solid var(--rule);
+  border-radius: 8px;
+  text-decoration: none;
+  color: inherit;
+  transition: background 0.15s;
+}
+.chapter-link--card:hover { background: var(--accent-soft); }
+@media (min-width: 700px) {
+  .chapter-link--card { grid-template-columns: 240px 1fr; align-items: center; }
+}
+.chapter-link__cover img { border-radius: 4px; }
+.chapter-link__eyebrow {
+  font-family: var(--font-sans);
+  font-size: 0.8rem;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: var(--accent);
+}
+.chapter-link__title { margin: 0.25rem 0; font-size: 1.25rem; }
+.chapter-link__summary { color: var(--muted); margin: 0; }
+
+/* ----- wikilink ----- */
+.wikilink {
+  color: var(--accent);
+  text-decoration: none;
+  border-bottom: 1px dotted var(--accent);
+}
+.wikilink:hover { background: var(--accent-soft); }
+.wikilink--broken { color: var(--muted); border-bottom-style: dashed; cursor: not-allowed; }
+
+/* ----- chapter nav + backlinks ----- */
+.chapter-nav {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+  margin: 3rem 0 2rem;
+  padding-top: 2rem;
+  border-top: 1px solid var(--rule);
+}
+.chapter-nav__prev, .chapter-nav__next {
+  display: flex;
+  flex-direction: column;
+  padding: 0.75rem 1rem;
+  border: 1px solid var(--rule);
+  border-radius: 6px;
+  text-decoration: none;
+  color: inherit;
+}
+.chapter-nav__next { text-align: right; grid-column: 2; }
+.chapter-nav__label { font-family: var(--font-sans); font-size: 0.75rem; text-transform: uppercase; letter-spacing: 0.05em; color: var(--muted); }
+.chapter-nav__title { font-weight: 600; margin-top: 0.25rem; }
+
+.backlinks {
+  margin: 2rem 0;
+  padding: 1rem 1.25rem;
+  background: var(--accent-soft);
+  border-radius: 6px;
+  font-family: var(--font-sans);
+}
+.backlinks__heading { margin: 0 0 0.5rem; font-size: 0.85rem; text-transform: uppercase; letter-spacing: 0.05em; color: var(--muted); font-weight: 600; }
+.backlinks ul { margin: 0; padding-left: 1.25rem; }
+.backlinks a { color: var(--accent); text-decoration: none; }
+
+/* ----- series landing ----- */
+.series-intro { max-width: var(--measure); margin: 0 auto 3rem; text-align: center; }
+.series-intro .hero { margin: 0 0 2rem; }
+.series-intro h1 { font-size: clamp(2rem, 6vw, 3rem); }
+.series-description { font-size: 1.15rem; color: var(--muted); }
+.series-meta { font-family: var(--font-sans); font-size: 0.9rem; color: var(--muted); }
+/* Home-page chapter list. Wider than the reading measure since cards
+   need the breathing room (and 2-col grid lights up at 960px+). */
+.chapter-list {
+  list-style: none;
+  padding: 0;
+  max-width: 72rem;
+  margin: 0 auto;
+  display: grid;
+  gap: 1.25rem;
+  grid-template-columns: 1fr;
+}
+@media (min-width: 960px) {
+  .chapter-list { grid-template-columns: 1fr 1fr; }
+  .chapter-card--with-cover { grid-column: 1 / -1; }
+}
+.chapter-card { border: 1px solid var(--rule); border-radius: 8px; overflow: hidden; background: var(--bg); }
+.chapter-card a { display: grid; grid-template-columns: 1fr; text-decoration: none; color: inherit; }
+/* 2-col split (cover | body) only when the card has a cover. Without
+   this guard, no-cover cards reserved the cover column and squeezed the
+   title/summary into a sliver. */
+@media (min-width: 700px) {
+  .chapter-card--with-cover a { grid-template-columns: 280px 1fr; }
+}
+.chapter-card .thumb img { aspect-ratio: 16/10; object-fit: cover; width: 100%; }
+.chapter-card__body { padding: 1.25rem 1.5rem; }
+.chapter-card__title { margin: 0 0 0.5rem; }
+.chapter-card__summary { color: var(--muted); margin: 0 0 0.5rem; }
+.chapter-card time { font-family: var(--font-sans); font-size: 0.85rem; color: var(--muted); }
+.chapter-card a:hover .chapter-card__title { color: var(--accent); }
+
+.related-series { max-width: 56rem; margin: 3rem auto; padding: 1.25rem; border: 1px solid var(--rule); border-radius: 8px; }
+.related-series h2 { margin: 0 0 0.5rem; font-size: 1rem; font-family: var(--font-sans); text-transform: uppercase; letter-spacing: 0.05em; color: var(--muted); }
+
+/* ----- preview popover injected by viewer.js ----- */
+.preview-popover {
+  position: absolute;
+  z-index: 50;
+  max-width: 320px;
+  background: var(--bg);
+  border: 1px solid var(--rule);
+  border-radius: 8px;
+  padding: 0.75rem 1rem;
+  box-shadow: 0 8px 24px rgba(0,0,0,0.15);
+  font-family: var(--font-sans);
+  font-size: 0.85rem;
+}
+.preview-popover h3 { margin: 0 0 0.25rem; font-size: 0.95rem; font-family: var(--font-serif); }
+.preview-popover p { margin: 0; color: var(--muted); }
+
+/* ----- reader chat panel ----- */
+/* Floating bottom-right widget. Stays out of the reading flow but
+   announces itself. Collapsed by default — toggle expands into a 380px
+   conversation surface. Hidden via [hidden] until chat-config.json
+   resolves; viewer.js removes [hidden] only when chat is configured. */
+.reader-chat {
+  position: fixed;
+  right: 1rem;
+  bottom: 1rem;
+  z-index: 40;
+  width: min(380px, calc(100vw - 2rem));
+  background: var(--bg);
+  border: 1px solid var(--rule);
+  border-radius: 8px;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.18);
+  font-family: var(--font-sans);
+  font-size: 0.9rem;
+  display: flex;
+  flex-direction: column;
+  max-height: min(560px, 80vh);
+}
+.reader-chat[hidden] { display: none; }
+.reader-chat__toggle {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.5rem;
+  padding: 0.6rem 0.9rem;
+  background: var(--accent);
+  color: #fff;
+  border: 0;
+  border-radius: 8px 8px 0 0;
+  font: inherit;
+  font-weight: 600;
+  cursor: pointer;
+  text-align: left;
+}
+.reader-chat--collapsed .reader-chat__toggle { border-radius: 8px; }
+.reader-chat__caret { transition: transform 0.15s; }
+.reader-chat--open .reader-chat__caret { transform: rotate(180deg); }
+@media (prefers-reduced-motion: reduce) {
+  .reader-chat__caret { transition: none; }
+}
+.reader-chat__body {
+  display: flex;
+  flex-direction: column;
+  min-height: 0;
+  flex: 1;
+}
+.reader-chat__body[hidden] { display: none; }
+.reader-chat__log {
+  flex: 1;
+  overflow-y: auto;
+  padding: 0.75rem 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.6rem;
+  min-height: 8rem;
+  font-size: 0.88rem;
+  line-height: 1.5;
+}
+.reader-chat__msg { display: flex; flex-direction: column; gap: 0.15rem; }
+.reader-chat__msg-role {
+  font-size: 0.7rem;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: var(--muted);
+}
+.reader-chat__msg-content {
+  white-space: pre-wrap;
+  word-break: break-word;
+}
+.reader-chat__msg--user .reader-chat__msg-content { color: var(--fg); font-weight: 500; }
+.reader-chat__msg-content--streaming::after {
+  content: "▋";
+  margin-left: 2px;
+  animation: reader-chat-blink 1s steps(2, end) infinite;
+}
+@keyframes reader-chat-blink { 0%, 50% { opacity: 1; } 50.01%, 100% { opacity: 0; } }
+@media (prefers-reduced-motion: reduce) {
+  .reader-chat__msg-content--streaming::after { animation: none; }
+}
+.reader-chat__empty { color: var(--muted); font-size: 0.85rem; margin: 0; }
+.reader-chat__form {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  gap: 0.5rem;
+  padding: 0.5rem 0.75rem 0.6rem;
+  border-top: 1px solid var(--rule);
+}
+.reader-chat__form textarea {
+  resize: none;
+  font: inherit;
+  font-size: 0.88rem;
+  padding: 0.4rem 0.5rem;
+  border: 1px solid var(--rule);
+  border-radius: 4px;
+  background: var(--bg);
+  color: var(--fg);
+}
+.reader-chat__send {
+  padding: 0 0.9rem;
+  background: var(--accent);
+  color: #fff;
+  border: 0;
+  border-radius: 4px;
+  font: inherit;
+  font-weight: 600;
+  cursor: pointer;
+}
+.reader-chat__send:disabled { opacity: 0.5; cursor: not-allowed; }
+.reader-chat__hint {
+  font-size: 0.75rem;
+  color: var(--muted);
+  padding: 0 0.75rem 0.6rem;
+  min-height: 0;
+}
+.reader-chat__hint:empty { display: none; }
+@media (forced-colors: active) {
+  .reader-chat { border: 1px solid CanvasText; }
+}

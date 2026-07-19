@@ -1,0 +1,10 @@
+version: 2
+compilerVersion: 0.0.2
+lastBuildAt: '2026-07-19T05:05:49.323Z'
+seriesSourceHash: b780d26aea
+chapters:
+  obsession-2025:
+    sourceHash: 4aef7de5e8
+    renderDepsHash: 461a14bfcf
+    outputFilename: obsession-2025.html
+assets: {}

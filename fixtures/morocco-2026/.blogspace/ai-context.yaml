@@ -1,0 +1,8 @@
+version: 1
+entries:
+  - provider: openai
+    pdfHash: 8b85906dc92d14e3eef28cbf3a000ca1b5a399778fa850f6f980f6351328e026
+    fileId: file-6SPaiS2gvQeAJT5ZbcJqG6
+    fileSize: 238720
+    uploadedAt: '2026-06-07T07:54:46.631Z'
+    filename: morocco-2026-8b85906dc9.pdf

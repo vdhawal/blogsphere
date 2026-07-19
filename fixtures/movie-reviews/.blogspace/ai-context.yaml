@@ -1,0 +1,8 @@
+version: 1
+entries:
+  - provider: openai
+    pdfHash: a412fa23de2cb9ce34870e1e80748d23d90f8f1ae16b07bbbec3af47a8ca916c
+    fileId: file-UdfMGXfWz8ai4zq2R5AeUo
+    fileSize: 43440
+    uploadedAt: '2026-07-19T05:05:49.985Z'
+    filename: movie-reviews-a412fa23de.pdf

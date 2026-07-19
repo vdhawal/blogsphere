@@ -1,0 +1,50 @@
+{
+  "name": "@blogspace/compiler",
+  "version": "0.0.1",
+  "type": "module",
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "bin": {
+    "blogspace": "./dist/cli.js"
+  },
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js"
+    }
+  },
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "typecheck": "tsc -p tsconfig.json --noEmit",
+    "compile:fixture": "tsx src/cli.ts compile ../../fixtures/morocco-2026 --out ../../dist --format dir"
+  },
+  "dependencies": {
+    "@blogspace/media": "*",
+    "@blogspace/schemas": "*",
+    "archiver": "^7.0.1",
+    "blurhash": "^2.0.5",
+    "commander": "^12.1.0",
+    "gray-matter": "^4.0.3",
+    "js-yaml": "^4.1.0",
+    "mdast-util-directive": "^3.0.0",
+    "picocolors": "^1.0.1",
+    "playwright": "^1.50.1",
+    "remark-directive": "^3.0.0",
+    "remark-frontmatter": "^5.0.0",
+    "remark-gfm": "^4.0.0",
+    "remark-parse": "^11.0.0",
+    "remark-rehype": "^11.1.0",
+    "rehype-stringify": "^10.0.0",
+    "sharp": "^0.33.5",
+    "unified": "^11.0.5",
+    "unist-util-visit": "^5.0.0"
+  },
+  "devDependencies": {
+    "@types/archiver": "^6.0.2",
+    "@types/js-yaml": "^4.0.9",
+    "@types/mdast": "^4.0.4",
+    "@types/node": "^22.5.4",
+    "@types/hast": "^3.0.4",
+    "typescript": "^5.5.4"
+  }
+}

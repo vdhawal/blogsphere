@@ -1,0 +1,21 @@
+node_modules/
+dist/
+*.tsbuildinfo
+.DS_Store
+.env
+.env.local
+
+# compiler intermediates inside any blog space
+**/.blogspace/cache/
+
+# Exclude compiler outputs and exports
+export/
+*.zip
+*.pdf
+
+# Exclude local preview outputs
+**/preview/
+
+# Exclude raw video assets (due to size limits)
+**/*.mov
+**/*.mp4

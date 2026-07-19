@@ -1,0 +1,8 @@
+version: 1
+entries:
+  - provider: openai
+    pdfHash: 08b060cd2eca536e801a99a634273f1b5958bf51e03eaf8e232b2c51fbb220ba
+    fileId: file-JaagbPpJ83uQcXkTNkiXi2
+    fileSize: 44319
+    uploadedAt: '2026-07-19T05:05:48.167Z'
+    filename: book-reviews-08b060cd2e.pdf

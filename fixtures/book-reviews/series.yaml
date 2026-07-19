@@ -1,0 +1,13 @@
+id: book-reviews
+title: Book Reviews
+author: Vickramaditya Dhawal
+description: Reviews of my favorite books.
+theme: reviews
+cover: ./assets/cover.jpg
+chapters:
+  - the-lost-bookshop
+tags: []
+related: []
+language: en
+seo: {}
+ai: {}

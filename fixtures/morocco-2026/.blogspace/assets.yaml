@@ -1,0 +1,1047 @@
+version: 1
+updatedAt: '2026-06-07T07:54:41.515Z'
+assets:
+  - kind: image
+    sourcePath: assets/cover.jpg
+    width: 1600
+    height: 1000
+    sizeBytes: 0
+    blurhash: U2D*|L={WB={~AoLayoLWBfQofj[~9oLj[oL
+    alt: ''
+    uploadedAt: '2026-06-07T07:11:57.391Z'
+    processingStatus: ready
+    variants:
+      - width: 320
+        height: 200
+        format: avif
+        path: assets/.variants/cover.jpg/cover-320.avif
+        bytes: 493
+      - width: 320
+        height: 200
+        format: webp
+        path: assets/.variants/cover.jpg/cover-320.webp
+        bytes: 370
+      - width: 320
+        height: 200
+        format: jpeg
+        path: assets/.variants/cover.jpg/cover-320.jpg
+        bytes: 821
+      - width: 640
+        height: 400
+        format: avif
+        path: assets/.variants/cover.jpg/cover-640.avif
+        bytes: 730
+      - width: 640
+        height: 400
+        format: webp
+        path: assets/.variants/cover.jpg/cover-640.webp
+        bytes: 1022
+      - width: 640
+        height: 400
+        format: jpeg
+        path: assets/.variants/cover.jpg/cover-640.jpg
+        bytes: 1711
+      - width: 800
+        height: 500
+        format: avif
+        path: assets/.variants/cover.jpg/cover-800.avif
+        bytes: 798
+      - width: 800
+        height: 500
+        format: webp
+        path: assets/.variants/cover.jpg/cover-800.webp
+        bytes: 1402
+      - width: 800
+        height: 500
+        format: jpeg
+        path: assets/.variants/cover.jpg/cover-800.jpg
+        bytes: 2432
+      - width: 1024
+        height: 640
+        format: avif
+        path: assets/.variants/cover.jpg/cover-1024.avif
+        bytes: 976
+      - width: 1024
+        height: 640
+        format: webp
+        path: assets/.variants/cover.jpg/cover-1024.webp
+        bytes: 2058
+      - width: 1024
+        height: 640
+        format: jpeg
+        path: assets/.variants/cover.jpg/cover-1024.jpg
+        bytes: 3423
+      - width: 1440
+        height: 900
+        format: avif
+        path: assets/.variants/cover.jpg/cover-1440.avif
+        bytes: 1246
+      - width: 1440
+        height: 900
+        format: webp
+        path: assets/.variants/cover.jpg/cover-1440.webp
+        bytes: 3594
+      - width: 1440
+        height: 900
+        format: jpeg
+        path: assets/.variants/cover.jpg/cover-1440.jpg
+        bytes: 6067
+  - kind: image
+    sourcePath: assets/arrival/rooftop.jpg
+    width: 1600
+    height: 1000
+    sizeBytes: 0
+    blurhash: U7Kk}?=xWB=w}roLayoLWBfQofj@}roLj[oL
+    alt: ''
+    uploadedAt: '2026-06-07T07:11:57.929Z'
+    processingStatus: ready
+    variants:
+      - width: 320
+        height: 200
+        format: avif
+        path: assets/.variants/arrival/rooftop-320.avif
+        bytes: 716
+      - width: 320
+        height: 200
+        format: webp
+        path: assets/.variants/arrival/rooftop-320.webp
+        bytes: 700
+      - width: 320
+        height: 200
+        format: jpeg
+        path: assets/.variants/arrival/rooftop-320.jpg
+        bytes: 1211
+      - width: 640
+        height: 400
+        format: avif
+        path: assets/.variants/arrival/rooftop-640.avif
+        bytes: 1276
+      - width: 640
+        height: 400
+        format: webp
+        path: assets/.variants/arrival/rooftop-640.webp
+        bytes: 1848
+      - width: 640
+        height: 400
+        format: jpeg
+        path: assets/.variants/arrival/rooftop-640.jpg
+        bytes: 2875
+      - width: 800
+        height: 500
+        format: avif
+        path: assets/.variants/arrival/rooftop-800.avif
+        bytes: 1475
+      - width: 800
+        height: 500
+        format: webp
+        path: assets/.variants/arrival/rooftop-800.webp
+        bytes: 2484
+      - width: 800
+        height: 500
+        format: jpeg
+        path: assets/.variants/arrival/rooftop-800.jpg
+        bytes: 4095
+      - width: 1024
+        height: 640
+        format: avif
+        path: assets/.variants/arrival/rooftop-1024.avif
+        bytes: 2005
+      - width: 1024
+        height: 640
+        format: webp
+        path: assets/.variants/arrival/rooftop-1024.webp
+        bytes: 3444
+      - width: 1024
+        height: 640
+        format: jpeg
+        path: assets/.variants/arrival/rooftop-1024.jpg
+        bytes: 5507
+      - width: 1440
+        height: 900
+        format: avif
+        path: assets/.variants/arrival/rooftop-1440.avif
+        bytes: 2781
+      - width: 1440
+        height: 900
+        format: webp
+        path: assets/.variants/arrival/rooftop-1440.webp
+        bytes: 5662
+      - width: 1440
+        height: 900
+        format: jpeg
+        path: assets/.variants/arrival/rooftop-1440.jpg
+        bytes: 9383
+  - kind: image
+    sourcePath: assets/market/stalls.jpg
+    width: 1600
+    height: 1000
+    sizeBytes: 0
+    blurhash: U8MClJ=KWB=J}EoKayo1WBfQofj[}Eo1j[oK
+    alt: ''
+    uploadedAt: '2026-06-07T07:11:58.484Z'
+    processingStatus: ready
+    variants:
+      - width: 320
+        height: 200
+        format: avif
+        path: assets/.variants/market/stalls-320.avif
+        bytes: 706
+      - width: 320
+        height: 200
+        format: webp
+        path: assets/.variants/market/stalls-320.webp
+        bytes: 736
+      - width: 320
+        height: 200
+        format: jpeg
+        path: assets/.variants/market/stalls-320.jpg
+        bytes: 1278
+      - width: 640
+        height: 400
+        format: avif
+        path: assets/.variants/market/stalls-640.avif
+        bytes: 1294
+      - width: 640
+        height: 400
+        format: webp
+        path: assets/.variants/market/stalls-640.webp
+        bytes: 1996
+      - width: 640
+        height: 400
+        format: jpeg
+        path: assets/.variants/market/stalls-640.jpg
+        bytes: 2861
+      - width: 800
+        height: 500
+        format: avif
+        path: assets/.variants/market/stalls-800.avif
+        bytes: 1561
+      - width: 800
+        height: 500
+        format: webp
+        path: assets/.variants/market/stalls-800.webp
+        bytes: 2662
+      - width: 800
+        height: 500
+        format: jpeg
+        path: assets/.variants/market/stalls-800.jpg
+        bytes: 4072
+      - width: 1024
+        height: 640
+        format: avif
+        path: assets/.variants/market/stalls-1024.avif
+        bytes: 2086
+      - width: 1024
+        height: 640
+        format: webp
+        path: assets/.variants/market/stalls-1024.webp
+        bytes: 3604
+      - width: 1024
+        height: 640
+        format: jpeg
+        path: assets/.variants/market/stalls-1024.jpg
+        bytes: 5467
+      - width: 1440
+        height: 900
+        format: avif
+        path: assets/.variants/market/stalls-1440.avif
+        bytes: 3012
+      - width: 1440
+        height: 900
+        format: webp
+        path: assets/.variants/market/stalls-1440.webp
+        bytes: 5906
+      - width: 1440
+        height: 900
+        format: jpeg
+        path: assets/.variants/market/stalls-1440.jpg
+        bytes: 9616
+  - kind: image
+    sourcePath: assets/leaving/road.jpg
+    width: 1600
+    height: 1000
+    sizeBytes: 0
+    blurhash: U39RO,x_Rjx_%%j]ayj[Rjayt7j[%ij[ofj]
+    alt: ''
+    uploadedAt: '2026-06-07T07:11:59.034Z'
+    processingStatus: ready
+    variants:
+      - width: 320
+        height: 200
+        format: avif
+        path: assets/.variants/leaving/road-320.avif
+        bytes: 701
+      - width: 320
+        height: 200
+        format: webp
+        path: assets/.variants/leaving/road-320.webp
+        bytes: 616
+      - width: 320
+        height: 200
+        format: jpeg
+        path: assets/.variants/leaving/road-320.jpg
+        bytes: 1090
+      - width: 640
+        height: 400
+        format: avif
+        path: assets/.variants/leaving/road-640.avif
+        bytes: 1208
+      - width: 640
+        height: 400
+        format: webp
+        path: assets/.variants/leaving/road-640.webp
+        bytes: 1592
+      - width: 640
+        height: 400
+        format: jpeg
+        path: assets/.variants/leaving/road-640.jpg
+        bytes: 2528
+      - width: 800
+        height: 500
+        format: avif
+        path: assets/.variants/leaving/road-800.avif
+        bytes: 1433
+      - width: 800
+        height: 500
+        format: webp
+        path: assets/.variants/leaving/road-800.webp
+        bytes: 2210
+      - width: 800
+        height: 500
+        format: jpeg
+        path: assets/.variants/leaving/road-800.jpg
+        bytes: 3585
+      - width: 1024
+        height: 640
+        format: avif
+        path: assets/.variants/leaving/road-1024.avif
+        bytes: 1835
+      - width: 1024
+        height: 640
+        format: webp
+        path: assets/.variants/leaving/road-1024.webp
+        bytes: 3130
+      - width: 1024
+        height: 640
+        format: jpeg
+        path: assets/.variants/leaving/road-1024.jpg
+        bytes: 4980
+      - width: 1440
+        height: 900
+        format: avif
+        path: assets/.variants/leaving/road-1440.avif
+        bytes: 2389
+      - width: 1440
+        height: 900
+        format: webp
+        path: assets/.variants/leaving/road-1440.webp
+        bytes: 5202
+      - width: 1440
+        height: 900
+        format: jpeg
+        path: assets/.variants/leaving/road-1440.jpg
+        bytes: 8493
+  - kind: image
+    sourcePath: assets/arrival/alley.jpg
+    width: 1600
+    height: 1000
+    sizeBytes: 0
+    blurhash: U7Kk_+=xWB=w}roLayoLWBfQofj[}roKj[oL
+    alt: ''
+    uploadedAt: '2026-06-07T07:11:59.604Z'
+    processingStatus: ready
+    variants:
+      - width: 320
+        height: 200
+        format: avif
+        path: assets/.variants/arrival/alley-320.avif
+        bytes: 645
+      - width: 320
+        height: 200
+        format: webp
+        path: assets/.variants/arrival/alley-320.webp
+        bytes: 606
+      - width: 320
+        height: 200
+        format: jpeg
+        path: assets/.variants/arrival/alley-320.jpg
+        bytes: 1104
+      - width: 640
+        height: 400
+        format: avif
+        path: assets/.variants/arrival/alley-640.avif
+        bytes: 1095
+      - width: 640
+        height: 400
+        format: webp
+        path: assets/.variants/arrival/alley-640.webp
+        bytes: 1666
+      - width: 640
+        height: 400
+        format: jpeg
+        path: assets/.variants/arrival/alley-640.jpg
+        bytes: 2544
+      - width: 800
+        height: 500
+        format: avif
+        path: assets/.variants/arrival/alley-800.avif
+        bytes: 1325
+      - width: 800
+        height: 500
+        format: webp
+        path: assets/.variants/arrival/alley-800.webp
+        bytes: 2240
+      - width: 800
+        height: 500
+        format: jpeg
+        path: assets/.variants/arrival/alley-800.jpg
+        bytes: 3650
+      - width: 1024
+        height: 640
+        format: avif
+        path: assets/.variants/arrival/alley-1024.avif
+        bytes: 1653
+      - width: 1024
+        height: 640
+        format: webp
+        path: assets/.variants/arrival/alley-1024.webp
+        bytes: 3056
+      - width: 1024
+        height: 640
+        format: jpeg
+        path: assets/.variants/arrival/alley-1024.jpg
+        bytes: 4994
+      - width: 1440
+        height: 900
+        format: avif
+        path: assets/.variants/arrival/alley-1440.avif
+        bytes: 2365
+      - width: 1440
+        height: 900
+        format: webp
+        path: assets/.variants/arrival/alley-1440.webp
+        bytes: 5100
+      - width: 1440
+        height: 900
+        format: jpeg
+        path: assets/.variants/arrival/alley-1440.jpg
+        bytes: 8591
+  - kind: image
+    sourcePath: assets/arrival/courtyard.jpg
+    width: 1600
+    height: 1000
+    sizeBytes: 0
+    blurhash: U7Kk}?=xWB=w}roLayoLWBfQofj[}roKj[oL
+    alt: ''
+    uploadedAt: '2026-06-07T07:12:00.169Z'
+    processingStatus: ready
+    variants:
+      - width: 320
+        height: 200
+        format: avif
+        path: assets/.variants/arrival/courtyard-320.avif
+        bytes: 755
+      - width: 320
+        height: 200
+        format: webp
+        path: assets/.variants/arrival/courtyard-320.webp
+        bytes: 734
+      - width: 320
+        height: 200
+        format: jpeg
+        path: assets/.variants/arrival/courtyard-320.jpg
+        bytes: 1320
+      - width: 640
+        height: 400
+        format: avif
+        path: assets/.variants/arrival/courtyard-640.avif
+        bytes: 1400
+      - width: 640
+        height: 400
+        format: webp
+        path: assets/.variants/arrival/courtyard-640.webp
+        bytes: 2096
+      - width: 640
+        height: 400
+        format: jpeg
+        path: assets/.variants/arrival/courtyard-640.jpg
+        bytes: 3103
+      - width: 800
+        height: 500
+        format: avif
+        path: assets/.variants/arrival/courtyard-800.avif
+        bytes: 1679
+      - width: 800
+        height: 500
+        format: webp
+        path: assets/.variants/arrival/courtyard-800.webp
+        bytes: 2760
+      - width: 800
+        height: 500
+        format: jpeg
+        path: assets/.variants/arrival/courtyard-800.jpg
+        bytes: 4422
+      - width: 1024
+        height: 640
+        format: avif
+        path: assets/.variants/arrival/courtyard-1024.avif
+        bytes: 2280
+      - width: 1024
+        height: 640
+        format: webp
+        path: assets/.variants/arrival/courtyard-1024.webp
+        bytes: 3770
+      - width: 1024
+        height: 640
+        format: jpeg
+        path: assets/.variants/arrival/courtyard-1024.jpg
+        bytes: 5995
+      - width: 1440
+        height: 900
+        format: avif
+        path: assets/.variants/arrival/courtyard-1440.avif
+        bytes: 3143
+      - width: 1440
+        height: 900
+        format: webp
+        path: assets/.variants/arrival/courtyard-1440.webp
+        bytes: 6152
+      - width: 1440
+        height: 900
+        format: jpeg
+        path: assets/.variants/arrival/courtyard-1440.jpg
+        bytes: 10262
+  - kind: image
+    sourcePath: assets/arrival/tea.jpg
+    width: 1600
+    height: 1000
+    sizeBytes: 0
+    blurhash: U7Kk_+=xWB=w}roLayoLWBfQofj[}roLj[oL
+    alt: ''
+    uploadedAt: '2026-06-07T07:12:00.655Z'
+    processingStatus: ready
+    variants:
+      - width: 320
+        height: 200
+        format: avif
+        path: assets/.variants/arrival/tea-320.avif
+        bytes: 579
+      - width: 320
+        height: 200
+        format: webp
+        path: assets/.variants/arrival/tea-320.webp
+        bytes: 560
+      - width: 320
+        height: 200
+        format: jpeg
+        path: assets/.variants/arrival/tea-320.jpg
+        bytes: 1003
+      - width: 640
+        height: 400
+        format: avif
+        path: assets/.variants/arrival/tea-640.avif
+        bytes: 963
+      - width: 640
+        height: 400
+        format: webp
+        path: assets/.variants/arrival/tea-640.webp
+        bytes: 1478
+      - width: 640
+        height: 400
+        format: jpeg
+        path: assets/.variants/arrival/tea-640.jpg
+        bytes: 2283
+      - width: 800
+        height: 500
+        format: avif
+        path: assets/.variants/arrival/tea-800.avif
+        bytes: 1142
+      - width: 800
+        height: 500
+        format: webp
+        path: assets/.variants/arrival/tea-800.webp
+        bytes: 2020
+      - width: 800
+        height: 500
+        format: jpeg
+        path: assets/.variants/arrival/tea-800.jpg
+        bytes: 3257
+      - width: 1024
+        height: 640
+        format: avif
+        path: assets/.variants/arrival/tea-1024.avif
+        bytes: 1509
+      - width: 1024
+        height: 640
+        format: webp
+        path: assets/.variants/arrival/tea-1024.webp
+        bytes: 2776
+      - width: 1024
+        height: 640
+        format: jpeg
+        path: assets/.variants/arrival/tea-1024.jpg
+        bytes: 4581
+      - width: 1440
+        height: 900
+        format: avif
+        path: assets/.variants/arrival/tea-1440.avif
+        bytes: 2060
+      - width: 1440
+        height: 900
+        format: webp
+        path: assets/.variants/arrival/tea-1440.webp
+        bytes: 4672
+      - width: 1440
+        height: 900
+        format: jpeg
+        path: assets/.variants/arrival/tea-1440.jpg
+        bytes: 7914
+  - kind: image
+    sourcePath: assets/arrival/lemons.jpg
+    width: 1600
+    height: 1000
+    sizeBytes: 0
+    blurhash: U7Kk}?=xWB=w}roLayoKWBfQofj[}roKj[oL
+    alt: ''
+    uploadedAt: '2026-06-07T07:12:01.212Z'
+    processingStatus: ready
+    variants:
+      - width: 320
+        height: 200
+        format: avif
+        path: assets/.variants/arrival/lemons-320.avif
+        bytes: 696
+      - width: 320
+        height: 200
+        format: webp
+        path: assets/.variants/arrival/lemons-320.webp
+        bytes: 676
+      - width: 320
+        height: 200
+        format: jpeg
+        path: assets/.variants/arrival/lemons-320.jpg
+        bytes: 1205
+      - width: 640
+        height: 400
+        format: avif
+        path: assets/.variants/arrival/lemons-640.avif
+        bytes: 1210
+      - width: 640
+        height: 400
+        format: webp
+        path: assets/.variants/arrival/lemons-640.webp
+        bytes: 1802
+      - width: 640
+        height: 400
+        format: jpeg
+        path: assets/.variants/arrival/lemons-640.jpg
+        bytes: 2765
+      - width: 800
+        height: 500
+        format: avif
+        path: assets/.variants/arrival/lemons-800.avif
+        bytes: 1462
+      - width: 800
+        height: 500
+        format: webp
+        path: assets/.variants/arrival/lemons-800.webp
+        bytes: 2454
+      - width: 800
+        height: 500
+        format: jpeg
+        path: assets/.variants/arrival/lemons-800.jpg
+        bytes: 3917
+      - width: 1024
+        height: 640
+        format: avif
+        path: assets/.variants/arrival/lemons-1024.avif
+        bytes: 1929
+      - width: 1024
+        height: 640
+        format: webp
+        path: assets/.variants/arrival/lemons-1024.webp
+        bytes: 3342
+      - width: 1024
+        height: 640
+        format: jpeg
+        path: assets/.variants/arrival/lemons-1024.jpg
+        bytes: 5349
+      - width: 1440
+        height: 900
+        format: avif
+        path: assets/.variants/arrival/lemons-1440.avif
+        bytes: 2675
+      - width: 1440
+        height: 900
+        format: webp
+        path: assets/.variants/arrival/lemons-1440.webp
+        bytes: 5534
+      - width: 1440
+        height: 900
+        format: jpeg
+        path: assets/.variants/arrival/lemons-1440.jpg
+        bytes: 9309
+  - kind: image
+    sourcePath: assets/market/tea.jpg
+    width: 1600
+    height: 1000
+    sizeBytes: 0
+    blurhash: U8MClJ=KWB=J}EoKayo1WBfQoej[}Eo1j[oL
+    alt: ''
+    uploadedAt: '2026-06-07T07:12:01.713Z'
+    processingStatus: ready
+    variants:
+      - width: 320
+        height: 200
+        format: avif
+        path: assets/.variants/market/tea-320.avif
+        bytes: 640
+      - width: 320
+        height: 200
+        format: webp
+        path: assets/.variants/market/tea-320.webp
+        bytes: 624
+      - width: 320
+        height: 200
+        format: jpeg
+        path: assets/.variants/market/tea-320.jpg
+        bytes: 1157
+      - width: 640
+        height: 400
+        format: avif
+        path: assets/.variants/market/tea-640.avif
+        bytes: 1117
+      - width: 640
+        height: 400
+        format: webp
+        path: assets/.variants/market/tea-640.webp
+        bytes: 1734
+      - width: 640
+        height: 400
+        format: jpeg
+        path: assets/.variants/market/tea-640.jpg
+        bytes: 2617
+      - width: 800
+        height: 500
+        format: avif
+        path: assets/.variants/market/tea-800.avif
+        bytes: 1352
+      - width: 800
+        height: 500
+        format: webp
+        path: assets/.variants/market/tea-800.webp
+        bytes: 2336
+      - width: 800
+        height: 500
+        format: jpeg
+        path: assets/.variants/market/tea-800.jpg
+        bytes: 3635
+      - width: 1024
+        height: 640
+        format: avif
+        path: assets/.variants/market/tea-1024.avif
+        bytes: 1768
+      - width: 1024
+        height: 640
+        format: webp
+        path: assets/.variants/market/tea-1024.webp
+        bytes: 3150
+      - width: 1024
+        height: 640
+        format: jpeg
+        path: assets/.variants/market/tea-1024.jpg
+        bytes: 4890
+      - width: 1440
+        height: 900
+        format: avif
+        path: assets/.variants/market/tea-1440.avif
+        bytes: 2513
+      - width: 1440
+        height: 900
+        format: webp
+        path: assets/.variants/market/tea-1440.webp
+        bytes: 5330
+      - width: 1440
+        height: 900
+        format: jpeg
+        path: assets/.variants/market/tea-1440.jpg
+        bytes: 8560
+  - kind: image
+    sourcePath: assets/market/bread.jpg
+    width: 1600
+    height: 1000
+    sizeBytes: 0
+    blurhash: U8MClJ=KWB=J}EoKayo1WBfQofj[}Eo1j[oK
+    alt: ''
+    uploadedAt: '2026-06-07T07:12:02.254Z'
+    processingStatus: ready
+    variants:
+      - width: 320
+        height: 200
+        format: avif
+        path: assets/.variants/market/bread-320.avif
+        bytes: 718
+      - width: 320
+        height: 200
+        format: webp
+        path: assets/.variants/market/bread-320.webp
+        bytes: 748
+      - width: 320
+        height: 200
+        format: jpeg
+        path: assets/.variants/market/bread-320.jpg
+        bytes: 1310
+      - width: 640
+        height: 400
+        format: avif
+        path: assets/.variants/market/bread-640.avif
+        bytes: 1346
+      - width: 640
+        height: 400
+        format: webp
+        path: assets/.variants/market/bread-640.webp
+        bytes: 2024
+      - width: 640
+        height: 400
+        format: jpeg
+        path: assets/.variants/market/bread-640.jpg
+        bytes: 3014
+      - width: 800
+        height: 500
+        format: avif
+        path: assets/.variants/market/bread-800.avif
+        bytes: 1599
+      - width: 800
+        height: 500
+        format: webp
+        path: assets/.variants/market/bread-800.webp
+        bytes: 2718
+      - width: 800
+        height: 500
+        format: jpeg
+        path: assets/.variants/market/bread-800.jpg
+        bytes: 4173
+      - width: 1024
+        height: 640
+        format: avif
+        path: assets/.variants/market/bread-1024.avif
+        bytes: 2163
+      - width: 1024
+        height: 640
+        format: webp
+        path: assets/.variants/market/bread-1024.webp
+        bytes: 3668
+      - width: 1024
+        height: 640
+        format: jpeg
+        path: assets/.variants/market/bread-1024.jpg
+        bytes: 5643
+      - width: 1440
+        height: 900
+        format: avif
+        path: assets/.variants/market/bread-1440.avif
+        bytes: 3052
+      - width: 1440
+        height: 900
+        format: webp
+        path: assets/.variants/market/bread-1440.webp
+        bytes: 6000
+      - width: 1440
+        height: 900
+        format: jpeg
+        path: assets/.variants/market/bread-1440.jpg
+        bytes: 9683
+  - kind: image
+    sourcePath: assets/market/dates.jpg
+    width: 1600
+    height: 1000
+    sizeBytes: 0
+    blurhash: U8MClJ=KWB=J}EoKayo1WBfQofj[}Eo1j[oL
+    alt: ''
+    uploadedAt: '2026-06-07T07:12:02.793Z'
+    processingStatus: ready
+    variants:
+      - width: 320
+        height: 200
+        format: avif
+        path: assets/.variants/market/dates-320.avif
+        bytes: 714
+      - width: 320
+        height: 200
+        format: webp
+        path: assets/.variants/market/dates-320.webp
+        bytes: 738
+      - width: 320
+        height: 200
+        format: jpeg
+        path: assets/.variants/market/dates-320.jpg
+        bytes: 1279
+      - width: 640
+        height: 400
+        format: avif
+        path: assets/.variants/market/dates-640.avif
+        bytes: 1293
+      - width: 640
+        height: 400
+        format: webp
+        path: assets/.variants/market/dates-640.webp
+        bytes: 1990
+      - width: 640
+        height: 400
+        format: jpeg
+        path: assets/.variants/market/dates-640.jpg
+        bytes: 2890
+      - width: 800
+        height: 500
+        format: avif
+        path: assets/.variants/market/dates-800.avif
+        bytes: 1568
+      - width: 800
+        height: 500
+        format: webp
+        path: assets/.variants/market/dates-800.webp
+        bytes: 2720
+      - width: 800
+        height: 500
+        format: jpeg
+        path: assets/.variants/market/dates-800.jpg
+        bytes: 4082
+      - width: 1024
+        height: 640
+        format: avif
+        path: assets/.variants/market/dates-1024.avif
+        bytes: 2161
+      - width: 1024
+        height: 640
+        format: webp
+        path: assets/.variants/market/dates-1024.webp
+        bytes: 3648
+      - width: 1024
+        height: 640
+        format: jpeg
+        path: assets/.variants/market/dates-1024.jpg
+        bytes: 5551
+      - width: 1440
+        height: 900
+        format: avif
+        path: assets/.variants/market/dates-1440.avif
+        bytes: 3040
+      - width: 1440
+        height: 900
+        format: webp
+        path: assets/.variants/market/dates-1440.webp
+        bytes: 5956
+      - width: 1440
+        height: 900
+        format: jpeg
+        path: assets/.variants/market/dates-1440.jpg
+        bytes: 9651
+  - kind: image
+    sourcePath: assets/market/square.jpg
+    width: 1600
+    height: 1000
+    sizeBytes: 0
+    blurhash: U8MClJ=KWB=J}EoKayo1WBfQofj[}Eo1j[oL
+    alt: ''
+    uploadedAt: '2026-06-07T07:12:03.327Z'
+    processingStatus: ready
+    variants:
+      - width: 320
+        height: 200
+        format: avif
+        path: assets/.variants/market/square-320.avif
+        bytes: 748
+      - width: 320
+        height: 200
+        format: webp
+        path: assets/.variants/market/square-320.webp
+        bytes: 774
+      - width: 320
+        height: 200
+        format: jpeg
+        path: assets/.variants/market/square-320.jpg
+        bytes: 1315
+      - width: 640
+        height: 400
+        format: avif
+        path: assets/.variants/market/square-640.avif
+        bytes: 1402
+      - width: 640
+        height: 400
+        format: webp
+        path: assets/.variants/market/square-640.webp
+        bytes: 2104
+      - width: 640
+        height: 400
+        format: jpeg
+        path: assets/.variants/market/square-640.jpg
+        bytes: 3032
+      - width: 800
+        height: 500
+        format: avif
+        path: assets/.variants/market/square-800.avif
+        bytes: 1685
+      - width: 800
+        height: 500
+        format: webp
+        path: assets/.variants/market/square-800.webp
+        bytes: 2860
+      - width: 800
+        height: 500
+        format: jpeg
+        path: assets/.variants/market/square-800.jpg
+        bytes: 4263
+      - width: 1024
+        height: 640
+        format: avif
+        path: assets/.variants/market/square-1024.avif
+        bytes: 2310
+      - width: 1024
+        height: 640
+        format: webp
+        path: assets/.variants/market/square-1024.webp
+        bytes: 3862
+      - width: 1024
+        height: 640
+        format: jpeg
+        path: assets/.variants/market/square-1024.jpg
+        bytes: 5762
+      - width: 1440
+        height: 900
+        format: avif
+        path: assets/.variants/market/square-1440.avif
+        bytes: 3265
+      - width: 1440
+        height: 900
+        format: webp
+        path: assets/.variants/market/square-1440.webp
+        bytes: 6256
+      - width: 1440
+        height: 900
+        format: jpeg
+        path: assets/.variants/market/square-1440.jpg
+        bytes: 9921
+  - kind: video
+    sourcePath: assets/market/dates.mp4
+    width: 320
+    height: 180
+    sizeBytes: 2269
+    durationMs: 1000
+    caption: ''
+    uploadedAt: '2026-06-07T07:54:41.515Z'
+    processingStatus: ready
+    variants:
+      - width: 320
+        height: 180
+        codec: h264
+        mime: video/mp4
+        role: web
+        path: assets/.variants/market/dates-web.mp4
+        bytes: 2269
+      - width: 320
+        height: 180
+        codec: h264
+        mime: video/mp4
+        role: source
+        path: assets/market/dates.mp4
+        bytes: 2269

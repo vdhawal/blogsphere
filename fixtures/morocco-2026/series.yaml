@@ -1,0 +1,61 @@
+id: morocco-2026
+title: A Month in Morocco
+author:
+  name: Vickramaditya Dhawal
+  url: https://example.com
+  email: vdhawal@adobe.com
+description: >
+  Notes, photographs, and stray thoughts from four weeks moving slowly through Marrakech, the High
+  Atlas, and the edge of the Sahara.
+theme: travel
+cover: ./assets/cover.jpg
+chapters:
+  - 01-arrival
+  - 02-the-market
+  - 03-leaving
+tags:
+  - morocco
+  - travel
+  - slow-travel
+  - north-africa
+related:
+  - title: A Week in Lisbon
+    url: https://example.com/lisbon-2025
+    description: A shorter companion piece, written just before this trip.
+language: en
+license: CC-BY-NC-4.0
+publishedAt: '2026-04-12T00:00:00.000Z'
+updatedAt: '2026-05-10T00:00:00.000Z'
+seo:
+  title: A Month in Morocco — a slow-travel series
+  description: |
+    Photographs and essays from four weeks in Marrakech, the High Atlas, and the edge of the Sahara.
+  keywords:
+    - morocco
+    - marrakech
+    - slow travel
+    - atlas mountains
+    - sahara
+  ogImage: ./assets/cover.jpg
+  social:
+    cardType: summary_large_image
+ai:
+  summary: >
+    A three-chapter travel series documenting a month moving through Morocco in spring 2026,
+    beginning in Marrakech, walking the souk at dawn, and eventually heading south toward the Atlas
+    mountains.
+  topics:
+    - travel
+    - morocco
+    - photography
+    - food
+    - slow travel
+  entities:
+    - Marrakech
+    - Jemaa el-Fnaa
+    - Koutoubia Mosque
+    - High Atlas
+    - Sahara
+site:
+  baseUrl: https://blog.example.com
+  basePath: /morocco-2026/

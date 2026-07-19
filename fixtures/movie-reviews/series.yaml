@@ -1,0 +1,13 @@
+id: movie-reviews
+title: Movie Reviews
+author: Vickramaditya Dhawal
+description: Opinions and reviews of films and television.
+theme: reviews
+cover: ./assets/cover.jpg
+chapters:
+  - obsession-2025
+tags: []
+related: []
+language: en
+seo: {}
+ai: {}

@@ -1,0 +1,4935 @@
+version: 1
+updatedAt: '2026-07-19T05:05:33.555Z'
+assets:
+  - kind: video
+    sourcePath: assets/the-first-leg/IMG_6530.MOV
+    width: 1920
+    height: 1080
+    sizeBytes: 11523100
+    durationMs: 10502
+    posterPath: assets/.variants/the-first-leg/IMG_6530-poster.jpg
+    caption: ''
+    uploadedAt: '2026-05-11T14:57:11.885Z'
+    processingStatus: ready
+    variants:
+      - width: 1280
+        height: 720
+        codec: h264
+        mime: video/mp4
+        path: assets/.variants/the-first-leg/IMG_6530-1280.mp4
+        bytes: 10180139
+      - width: 1920
+        height: 1080
+        codec: source
+        mime: video/quicktime
+        path: assets/the-first-leg/IMG_6530.MOV
+        bytes: 11523100
+  - kind: image
+    sourcePath: assets/the-first-leg/IMG_6516-1.HEIC
+    width: 3024
+    height: 4032
+    sizeBytes: 1709042
+    blurhash: US9a:Wv_MKXOT#r:rYR%JDNZWBs8ajbbt5sS
+    alt: ''
+    uploadedAt: '2026-05-11T14:58:17.081Z'
+    processingStatus: ready
+    variants:
+      - width: 320
+        height: 427
+        format: avif
+        path: assets/.variants/the-first-leg/IMG_6516-1-320.avif
+        bytes: 32725
+      - width: 320
+        height: 427
+        format: webp
+        path: assets/.variants/the-first-leg/IMG_6516-1-320.webp
+        bytes: 35784
+      - width: 320
+        height: 427
+        format: jpeg
+        path: assets/.variants/the-first-leg/IMG_6516-1-320.jpg
+        bytes: 35964
+      - width: 640
+        height: 853
+        format: avif
+        path: assets/.variants/the-first-leg/IMG_6516-1-640.avif
+        bytes: 114068
+      - width: 640
+        height: 853
+        format: webp
+        path: assets/.variants/the-first-leg/IMG_6516-1-640.webp
+        bytes: 129474
+      - width: 640
+        height: 853
+        format: jpeg
+        path: assets/.variants/the-first-leg/IMG_6516-1-640.jpg
+        bytes: 131569
+      - width: 1024
+        height: 1365
+        format: avif
+        path: assets/.variants/the-first-leg/IMG_6516-1-1024.avif
+        bytes: 233863
+      - width: 1024
+        height: 1365
+        format: webp
+        path: assets/.variants/the-first-leg/IMG_6516-1-1024.webp
+        bytes: 286792
+      - width: 1024
+        height: 1365
+        format: jpeg
+        path: assets/.variants/the-first-leg/IMG_6516-1-1024.jpg
+        bytes: 306981
+      - width: 1440
+        height: 1920
+        format: avif
+        path: assets/.variants/the-first-leg/IMG_6516-1-1440.avif
+        bytes: 360861
+      - width: 1440
+        height: 1920
+        format: webp
+        path: assets/.variants/the-first-leg/IMG_6516-1-1440.webp
+        bytes: 471612
+      - width: 1440
+        height: 1920
+        format: jpeg
+        path: assets/.variants/the-first-leg/IMG_6516-1-1440.jpg
+        bytes: 541415
+      - width: 1920
+        height: 2560
+        format: avif
+        path: assets/.variants/the-first-leg/IMG_6516-1-1920.avif
+        bytes: 496072
+      - width: 1920
+        height: 2560
+        format: webp
+        path: assets/.variants/the-first-leg/IMG_6516-1-1920.webp
+        bytes: 679804
+      - width: 1920
+        height: 2560
+        format: jpeg
+        path: assets/.variants/the-first-leg/IMG_6516-1-1920.jpg
+        bytes: 850015
+  - kind: image
+    sourcePath: assets/the-first-leg/IMG_6434-1.HEIC
+    width: 4032
+    height: 3024
+    sizeBytes: 1697772
+    blurhash: UB9$^-W{aURZK9-XNGN2x8t9nnRpfvbDNEWA
+    alt: ''
+    uploadedAt: '2026-05-11T14:59:46.188Z'
+    processingStatus: ready
+    variants:
+      - width: 320
+        height: 240
+        format: avif
+        path: assets/.variants/the-first-leg/IMG_6434-1-320.avif
+        bytes: 12451
+      - width: 320
+        height: 240
+        format: webp
+        path: assets/.variants/the-first-leg/IMG_6434-1-320.webp
+        bytes: 14194
+      - width: 320
+        height: 240
+        format: jpeg
+        path: assets/.variants/the-first-leg/IMG_6434-1-320.jpg
+        bytes: 15818
+      - width: 640
+        height: 480
+        format: avif
+        path: assets/.variants/the-first-leg/IMG_6434-1-640.avif
+        bytes: 48658
+      - width: 640
+        height: 480
+        format: webp
+        path: assets/.variants/the-first-leg/IMG_6434-1-640.webp
+        bytes: 57074
+      - width: 640
+        height: 480
+        format: jpeg
+        path: assets/.variants/the-first-leg/IMG_6434-1-640.jpg
+        bytes: 60496
+      - width: 1024
+        height: 768
+        format: avif
+        path: assets/.variants/the-first-leg/IMG_6434-1-1024.avif
+        bytes: 123621
+      - width: 1024
+        height: 768
+        format: webp
+        path: assets/.variants/the-first-leg/IMG_6434-1-1024.webp
+        bytes: 143970
+      - width: 1024
+        height: 768
+        format: jpeg
+        path: assets/.variants/the-first-leg/IMG_6434-1-1024.jpg
+        bytes: 154505
+      - width: 1440
+        height: 1080
+        format: avif
+        path: assets/.variants/the-first-leg/IMG_6434-1-1440.avif
+        bytes: 215208
+      - width: 1440
+        height: 1080
+        format: webp
+        path: assets/.variants/the-first-leg/IMG_6434-1-1440.webp
+        bytes: 262360
+      - width: 1440
+        height: 1080
+        format: jpeg
+        path: assets/.variants/the-first-leg/IMG_6434-1-1440.jpg
+        bytes: 289973
+      - width: 1920
+        height: 1440
+        format: avif
+        path: assets/.variants/the-first-leg/IMG_6434-1-1920.avif
+        bytes: 319703
+      - width: 1920
+        height: 1440
+        format: webp
+        path: assets/.variants/the-first-leg/IMG_6434-1-1920.webp
+        bytes: 409164
+      - width: 1920
+        height: 1440
+        format: jpeg
+        path: assets/.variants/the-first-leg/IMG_6434-1-1920.jpg
+        bytes: 476261
+  - kind: image
+    sourcePath: assets/the-first-leg/PHOTO-2026-05-11-12-04-26-1.jpg
+    width: 960
+    height: 1280
+    sizeBytes: 0
+    blurhash: U6E3F.~UIR?E9E?HNExo00b^x^t1s7a%%OM_
+    alt: ''
+    uploadedAt: '2026-05-11T15:00:31.600Z'
+    processingStatus: ready
+    variants:
+      - width: 320
+        height: 427
+        format: avif
+        path: assets/.variants/the-first-leg/PHOTO-2026-05-11-12-04-26-1-320.avif
+        bytes: 28482
+      - width: 320
+        height: 427
+        format: webp
+        path: assets/.variants/the-first-leg/PHOTO-2026-05-11-12-04-26-1-320.webp
+        bytes: 31084
+      - width: 320
+        height: 427
+        format: jpeg
+        path: assets/.variants/the-first-leg/PHOTO-2026-05-11-12-04-26-1-320.jpg
+        bytes: 33260
+      - width: 640
+        height: 853
+        format: avif
+        path: assets/.variants/the-first-leg/PHOTO-2026-05-11-12-04-26-1-640.avif
+        bytes: 86936
+      - width: 640
+        height: 853
+        format: webp
+        path: assets/.variants/the-first-leg/PHOTO-2026-05-11-12-04-26-1-640.webp
+        bytes: 102678
+      - width: 640
+        height: 853
+        format: jpeg
+        path: assets/.variants/the-first-leg/PHOTO-2026-05-11-12-04-26-1-640.jpg
+        bytes: 114053
+  - kind: image
+    sourcePath: assets/bastar/IMG_6589.HEIC
+    width: 4284
+    height: 5712
+    sizeBytes: 3646281
+    blurhash: UEEyGB9F~U4.V@E2xuV@MxWYay%2%LM|oca~
+    alt: ''
+    uploadedAt: '2026-06-07T06:51:04.084Z'
+    processingStatus: ready
+    variants:
+      - width: 320
+        height: 427
+        format: avif
+        path: assets/.variants/bastar/IMG_6589-320.avif
+        bytes: 45411
+      - width: 320
+        height: 427
+        format: webp
+        path: assets/.variants/bastar/IMG_6589-320.webp
+        bytes: 49166
+      - width: 320
+        height: 427
+        format: jpeg
+        path: assets/.variants/bastar/IMG_6589-320.jpg
+        bytes: 44439
+      - width: 640
+        height: 853
+        format: avif
+        path: assets/.variants/bastar/IMG_6589-640.avif
+        bytes: 160805
+      - width: 640
+        height: 853
+        format: webp
+        path: assets/.variants/bastar/IMG_6589-640.webp
+        bytes: 175936
+      - width: 640
+        height: 853
+        format: jpeg
+        path: assets/.variants/bastar/IMG_6589-640.jpg
+        bytes: 164055
+      - width: 800
+        height: 1067
+        format: avif
+        path: assets/.variants/bastar/IMG_6589-800.avif
+        bytes: 236193
+      - width: 800
+        height: 1067
+        format: webp
+        path: assets/.variants/bastar/IMG_6589-800.webp
+        bytes: 262978
+      - width: 800
+        height: 1067
+        format: jpeg
+        path: assets/.variants/bastar/IMG_6589-800.jpg
+        bytes: 248260
+      - width: 1024
+        height: 1365
+        format: avif
+        path: assets/.variants/bastar/IMG_6589-1024.avif
+        bytes: 344289
+      - width: 1024
+        height: 1365
+        format: webp
+        path: assets/.variants/bastar/IMG_6589-1024.webp
+        bytes: 393152
+      - width: 1024
+        height: 1365
+        format: jpeg
+        path: assets/.variants/bastar/IMG_6589-1024.jpg
+        bytes: 382353
+      - width: 1440
+        height: 1920
+        format: avif
+        path: assets/.variants/bastar/IMG_6589-1440.avif
+        bytes: 567741
+      - width: 1440
+        height: 1920
+        format: webp
+        path: assets/.variants/bastar/IMG_6589-1440.webp
+        bytes: 681006
+      - width: 1440
+        height: 1920
+        format: jpeg
+        path: assets/.variants/bastar/IMG_6589-1440.jpg
+        bytes: 685763
+      - width: 1920
+        height: 2560
+        format: avif
+        path: assets/.variants/bastar/IMG_6589-1920.avif
+        bytes: 804031
+      - width: 1920
+        height: 2560
+        format: webp
+        path: assets/.variants/bastar/IMG_6589-1920.webp
+        bytes: 1039652
+      - width: 1920
+        height: 2560
+        format: jpeg
+        path: assets/.variants/bastar/IMG_6589-1920.jpg
+        bytes: 1087852
+  - kind: image
+    sourcePath: assets/bastar/IMG_6590.HEIC
+    width: 4284
+    height: 5712
+    sizeBytes: 3770698
+    blurhash: UDE.%[9F~U4:jED*xvWAMwWXWB%2%MM|oIWY
+    alt: ''
+    uploadedAt: '2026-06-07T06:51:28.105Z'
+    processingStatus: ready
+    variants:
+      - width: 320
+        height: 427
+        format: avif
+        path: assets/.variants/bastar/IMG_6590-320.avif
+        bytes: 45009
+      - width: 320
+        height: 427
+        format: webp
+        path: assets/.variants/bastar/IMG_6590-320.webp
+        bytes: 48156
+      - width: 320
+        height: 427
+        format: jpeg
+        path: assets/.variants/bastar/IMG_6590-320.jpg
+        bytes: 44269
+      - width: 640
+        height: 853
+        format: avif
+        path: assets/.variants/bastar/IMG_6590-640.avif
+        bytes: 164247
+      - width: 640
+        height: 853
+        format: webp
+        path: assets/.variants/bastar/IMG_6590-640.webp
+        bytes: 182642
+      - width: 640
+        height: 853
+        format: jpeg
+        path: assets/.variants/bastar/IMG_6590-640.jpg
+        bytes: 166011
+      - width: 800
+        height: 1067
+        format: avif
+        path: assets/.variants/bastar/IMG_6590-800.avif
+        bytes: 245070
+      - width: 800
+        height: 1067
+        format: webp
+        path: assets/.variants/bastar/IMG_6590-800.webp
+        bytes: 273654
+      - width: 800
+        height: 1067
+        format: jpeg
+        path: assets/.variants/bastar/IMG_6590-800.jpg
+        bytes: 254277
+      - width: 1024
+        height: 1365
+        format: avif
+        path: assets/.variants/bastar/IMG_6590-1024.avif
+        bytes: 361792
+      - width: 1024
+        height: 1365
+        format: webp
+        path: assets/.variants/bastar/IMG_6590-1024.webp
+        bytes: 419980
+      - width: 1024
+        height: 1365
+        format: jpeg
+        path: assets/.variants/bastar/IMG_6590-1024.jpg
+        bytes: 396438
+      - width: 1440
+        height: 1920
+        format: avif
+        path: assets/.variants/bastar/IMG_6590-1440.avif
+        bytes: 608688
+      - width: 1440
+        height: 1920
+        format: webp
+        path: assets/.variants/bastar/IMG_6590-1440.webp
+        bytes: 742226
+      - width: 1440
+        height: 1920
+        format: jpeg
+        path: assets/.variants/bastar/IMG_6590-1440.jpg
+        bytes: 721046
+      - width: 1920
+        height: 2560
+        format: avif
+        path: assets/.variants/bastar/IMG_6590-1920.avif
+        bytes: 870100
+      - width: 1920
+        height: 2560
+        format: webp
+        path: assets/.variants/bastar/IMG_6590-1920.webp
+        bytes: 1135462
+      - width: 1920
+        height: 2560
+        format: jpeg
+        path: assets/.variants/bastar/IMG_6590-1920.jpg
+        bytes: 1151329
+  - kind: image
+    sourcePath: assets/bastar/IMG_6591.HEIC
+    width: 3024
+    height: 4032
+    sizeBytes: 1592127
+    blurhash: U5DlyRs9~VIU-:~p9GRk00D*Iq%200Ro_2xt
+    alt: ''
+    uploadedAt: '2026-05-16T11:50:29.279Z'
+    processingStatus: ready
+    variants:
+      - width: 320
+        height: 427
+        format: avif
+        path: assets/.variants/bastar/IMG_6591-320.avif
+        bytes: 34582
+      - width: 320
+        height: 427
+        format: webp
+        path: assets/.variants/bastar/IMG_6591-320.webp
+        bytes: 37574
+      - width: 320
+        height: 427
+        format: jpeg
+        path: assets/.variants/bastar/IMG_6591-320.jpg
+        bytes: 36119
+      - width: 640
+        height: 853
+        format: avif
+        path: assets/.variants/bastar/IMG_6591-640.avif
+        bytes: 116132
+      - width: 640
+        height: 853
+        format: webp
+        path: assets/.variants/bastar/IMG_6591-640.webp
+        bytes: 131918
+      - width: 640
+        height: 853
+        format: jpeg
+        path: assets/.variants/bastar/IMG_6591-640.jpg
+        bytes: 129646
+      - width: 1024
+        height: 1365
+        format: avif
+        path: assets/.variants/bastar/IMG_6591-1024.avif
+        bytes: 228806
+      - width: 1024
+        height: 1365
+        format: webp
+        path: assets/.variants/bastar/IMG_6591-1024.webp
+        bytes: 287464
+      - width: 1024
+        height: 1365
+        format: jpeg
+        path: assets/.variants/bastar/IMG_6591-1024.jpg
+        bytes: 289135
+      - width: 1440
+        height: 1920
+        format: avif
+        path: assets/.variants/bastar/IMG_6591-1440.avif
+        bytes: 338252
+      - width: 1440
+        height: 1920
+        format: webp
+        path: assets/.variants/bastar/IMG_6591-1440.webp
+        bytes: 456758
+      - width: 1440
+        height: 1920
+        format: jpeg
+        path: assets/.variants/bastar/IMG_6591-1440.jpg
+        bytes: 492284
+      - width: 1920
+        height: 2560
+        format: avif
+        path: assets/.variants/bastar/IMG_6591-1920.avif
+        bytes: 452087
+      - width: 1920
+        height: 2560
+        format: webp
+        path: assets/.variants/bastar/IMG_6591-1920.webp
+        bytes: 658560
+      - width: 1920
+        height: 2560
+        format: jpeg
+        path: assets/.variants/bastar/IMG_6591-1920.jpg
+        bytes: 755561
+  - kind: video
+    sourcePath: assets/bastar/IMG_6599.mov
+    width: 1920
+    height: 1080
+    sizeBytes: 153341692
+    durationMs: 75510
+    posterPath: assets/.variants/bastar/IMG_6599-poster.jpg
+    caption: ''
+    uploadedAt: '2026-05-16T11:54:35.482Z'
+    processingStatus: ready
+    variants:
+      - width: 1280
+        height: 720
+        codec: h264
+        mime: video/mp4
+        path: assets/.variants/bastar/IMG_6599-1280.mp4
+        bytes: 93110978
+      - width: 1920
+        height: 1080
+        codec: source
+        mime: video/quicktime
+        path: assets/bastar/IMG_6599.mov
+        bytes: 153341692
+  - kind: video
+    sourcePath: assets/bastar/IMG_6606.MOV
+    width: 1920
+    height: 1080
+    sizeBytes: 52369454
+    durationMs: 28865
+    posterPath: assets/.variants/bastar/IMG_6606-poster.jpg
+    caption: ''
+    uploadedAt: '2026-05-16T11:56:45.030Z'
+    processingStatus: ready
+    variants:
+      - width: 1280
+        height: 720
+        codec: h264
+        mime: video/mp4
+        path: assets/.variants/bastar/IMG_6606-1280.mp4
+        bytes: 33564966
+      - width: 1920
+        height: 1080
+        codec: source
+        mime: video/quicktime
+        path: assets/bastar/IMG_6606.MOV
+        bytes: 52369454
+  - kind: image
+    sourcePath: assets/bastar/IMG_6564.jpg
+    width: 1980
+    height: 3520
+    sizeBytes: 0
+    blurhash: UCD,DU~q%yow%z%4-qM#x@xvo#R%.AtTx]oy
+    alt: ''
+    uploadedAt: '2026-05-16T12:02:05.145Z'
+    processingStatus: ready
+    variants:
+      - width: 320
+        height: 569
+        format: avif
+        path: assets/.variants/bastar/IMG_6564-320.avif
+        bytes: 63042
+      - width: 320
+        height: 569
+        format: webp
+        path: assets/.variants/bastar/IMG_6564-320.webp
+        bytes: 64984
+      - width: 320
+        height: 569
+        format: jpeg
+        path: assets/.variants/bastar/IMG_6564-320.jpg
+        bytes: 59154
+      - width: 640
+        height: 1138
+        format: avif
+        path: assets/.variants/bastar/IMG_6564-640.avif
+        bytes: 246550
+      - width: 640
+        height: 1138
+        format: webp
+        path: assets/.variants/bastar/IMG_6564-640.webp
+        bytes: 264298
+      - width: 640
+        height: 1138
+        format: jpeg
+        path: assets/.variants/bastar/IMG_6564-640.jpg
+        bytes: 240448
+      - width: 1024
+        height: 1820
+        format: avif
+        path: assets/.variants/bastar/IMG_6564-1024.avif
+        bytes: 575998
+      - width: 1024
+        height: 1820
+        format: webp
+        path: assets/.variants/bastar/IMG_6564-1024.webp
+        bytes: 642706
+      - width: 1024
+        height: 1820
+        format: jpeg
+        path: assets/.variants/bastar/IMG_6564-1024.jpg
+        bytes: 591840
+      - width: 1440
+        height: 2560
+        format: avif
+        path: assets/.variants/bastar/IMG_6564-1440.avif
+        bytes: 935272
+      - width: 1440
+        height: 2560
+        format: webp
+        path: assets/.variants/bastar/IMG_6564-1440.webp
+        bytes: 1109112
+      - width: 1440
+        height: 2560
+        format: jpeg
+        path: assets/.variants/bastar/IMG_6564-1440.jpg
+        bytes: 1054662
+      - width: 1920
+        height: 3413
+        format: avif
+        path: assets/.variants/bastar/IMG_6564-1920.avif
+        bytes: 1352829
+      - width: 1920
+        height: 3413
+        format: webp
+        path: assets/.variants/bastar/IMG_6564-1920.webp
+        bytes: 1667014
+      - width: 1920
+        height: 3413
+        format: jpeg
+        path: assets/.variants/bastar/IMG_6564-1920.jpg
+        bytes: 1659205
+  - kind: image
+    sourcePath: assets/bastar/088C3587-7782-4049-8A52-14B95DC4A1C3.jpeg
+    width: 960
+    height: 1280
+    sizeBytes: 0
+    blurhash: UGGS7K?w-;-=00E0%1t7-:IUMwRO_3ozn$V[
+    alt: ''
+    uploadedAt: '2026-05-16T12:05:09.462Z'
+    processingStatus: ready
+    variants:
+      - width: 320
+        height: 427
+        format: avif
+        path: assets/.variants/bastar/088C3587-7782-4049-8A52-14B95DC4A1C3-320.avif
+        bytes: 27554
+      - width: 320
+        height: 427
+        format: webp
+        path: assets/.variants/bastar/088C3587-7782-4049-8A52-14B95DC4A1C3-320.webp
+        bytes: 32656
+      - width: 320
+        height: 427
+        format: jpeg
+        path: assets/.variants/bastar/088C3587-7782-4049-8A52-14B95DC4A1C3-320.jpg
+        bytes: 32071
+      - width: 640
+        height: 853
+        format: avif
+        path: assets/.variants/bastar/088C3587-7782-4049-8A52-14B95DC4A1C3-640.avif
+        bytes: 104524
+      - width: 640
+        height: 853
+        format: webp
+        path: assets/.variants/bastar/088C3587-7782-4049-8A52-14B95DC4A1C3-640.webp
+        bytes: 124074
+      - width: 640
+        height: 853
+        format: jpeg
+        path: assets/.variants/bastar/088C3587-7782-4049-8A52-14B95DC4A1C3-640.jpg
+        bytes: 124107
+  - kind: image
+    sourcePath: assets/bastar/PHOTO-2026-04-07-18-52-21_2.jpg
+    width: 1280
+    height: 960
+    sizeBytes: 0
+    blurhash: UHF$6A?w0eMc.R%MiuIUyDxbniI:~W%MInZ~
+    alt: ''
+    uploadedAt: '2026-05-16T12:13:54.788Z'
+    processingStatus: ready
+    variants:
+      - width: 320
+        height: 240
+        format: avif
+        path: assets/.variants/bastar/PHOTO-2026-04-07-18-52-21_2-320.avif
+        bytes: 20627
+      - width: 320
+        height: 240
+        format: webp
+        path: assets/.variants/bastar/PHOTO-2026-04-07-18-52-21_2-320.webp
+        bytes: 21586
+      - width: 320
+        height: 240
+        format: jpeg
+        path: assets/.variants/bastar/PHOTO-2026-04-07-18-52-21_2-320.jpg
+        bytes: 21725
+      - width: 640
+        height: 480
+        format: avif
+        path: assets/.variants/bastar/PHOTO-2026-04-07-18-52-21_2-640.avif
+        bytes: 62374
+      - width: 640
+        height: 480
+        format: webp
+        path: assets/.variants/bastar/PHOTO-2026-04-07-18-52-21_2-640.webp
+        bytes: 70436
+      - width: 640
+        height: 480
+        format: jpeg
+        path: assets/.variants/bastar/PHOTO-2026-04-07-18-52-21_2-640.jpg
+        bytes: 74400
+      - width: 1024
+        height: 768
+        format: avif
+        path: assets/.variants/bastar/PHOTO-2026-04-07-18-52-21_2-1024.avif
+        bytes: 115182
+      - width: 1024
+        height: 768
+        format: webp
+        path: assets/.variants/bastar/PHOTO-2026-04-07-18-52-21_2-1024.webp
+        bytes: 143890
+      - width: 1024
+        height: 768
+        format: jpeg
+        path: assets/.variants/bastar/PHOTO-2026-04-07-18-52-21_2-1024.jpg
+        bytes: 163678
+  - kind: image
+    sourcePath: assets/the-first-leg/vizag-1.jpeg
+    width: 1512
+    height: 2016
+    sizeBytes: 0
+    blurhash: U7COg,^jwgn4Y5~BS~Vt%y?GniIopHO=Io9[
+    alt: ''
+    uploadedAt: '2026-06-07T06:50:04.024Z'
+    processingStatus: ready
+    variants:
+      - width: 320
+        height: 427
+        format: avif
+        path: assets/.variants/the-first-leg/vizag-1-320.avif
+        bytes: 21313
+      - width: 320
+        height: 427
+        format: webp
+        path: assets/.variants/the-first-leg/vizag-1-320.webp
+        bytes: 24296
+      - width: 320
+        height: 427
+        format: jpeg
+        path: assets/.variants/the-first-leg/vizag-1-320.jpg
+        bytes: 26636
+      - width: 640
+        height: 853
+        format: avif
+        path: assets/.variants/the-first-leg/vizag-1-640.avif
+        bytes: 80332
+      - width: 640
+        height: 853
+        format: webp
+        path: assets/.variants/the-first-leg/vizag-1-640.webp
+        bytes: 93614
+      - width: 640
+        height: 853
+        format: jpeg
+        path: assets/.variants/the-first-leg/vizag-1-640.jpg
+        bytes: 101340
+      - width: 800
+        height: 1067
+        format: avif
+        path: assets/.variants/the-first-leg/vizag-1-800.avif
+        bytes: 115501
+      - width: 800
+        height: 1067
+        format: webp
+        path: assets/.variants/the-first-leg/vizag-1-800.webp
+        bytes: 138534
+      - width: 800
+        height: 1067
+        format: jpeg
+        path: assets/.variants/the-first-leg/vizag-1-800.jpg
+        bytes: 153943
+      - width: 1024
+        height: 1365
+        format: avif
+        path: assets/.variants/the-first-leg/vizag-1-1024.avif
+        bytes: 167398
+      - width: 1024
+        height: 1365
+        format: webp
+        path: assets/.variants/the-first-leg/vizag-1-1024.webp
+        bytes: 205278
+      - width: 1024
+        height: 1365
+        format: jpeg
+        path: assets/.variants/the-first-leg/vizag-1-1024.jpg
+        bytes: 238831
+      - width: 1440
+        height: 1920
+        format: avif
+        path: assets/.variants/the-first-leg/vizag-1-1440.avif
+        bytes: 256320
+      - width: 1440
+        height: 1920
+        format: webp
+        path: assets/.variants/the-first-leg/vizag-1-1440.webp
+        bytes: 342818
+      - width: 1440
+        height: 1920
+        format: jpeg
+        path: assets/.variants/the-first-leg/vizag-1-1440.jpg
+        bytes: 423963
+  - kind: image
+    sourcePath: assets/the-first-leg/vizag-2.jpeg
+    width: 1512
+    height: 2016
+    sizeBytes: 0
+    blurhash: UBBMb=~8IsESElM{WVs:4?o$={jD9GEOIpt7
+    alt: ''
+    uploadedAt: '2026-06-07T06:50:09.051Z'
+    processingStatus: ready
+    variants:
+      - width: 320
+        height: 427
+        format: avif
+        path: assets/.variants/the-first-leg/vizag-2-320.avif
+        bytes: 22276
+      - width: 320
+        height: 427
+        format: webp
+        path: assets/.variants/the-first-leg/vizag-2-320.webp
+        bytes: 24956
+      - width: 320
+        height: 427
+        format: jpeg
+        path: assets/.variants/the-first-leg/vizag-2-320.jpg
+        bytes: 28493
+      - width: 640
+        height: 853
+        format: avif
+        path: assets/.variants/the-first-leg/vizag-2-640.avif
+        bytes: 69502
+      - width: 640
+        height: 853
+        format: webp
+        path: assets/.variants/the-first-leg/vizag-2-640.webp
+        bytes: 83122
+      - width: 640
+        height: 853
+        format: jpeg
+        path: assets/.variants/the-first-leg/vizag-2-640.jpg
+        bytes: 97470
+      - width: 800
+        height: 1067
+        format: avif
+        path: assets/.variants/the-first-leg/vizag-2-800.avif
+        bytes: 96240
+      - width: 800
+        height: 1067
+        format: webp
+        path: assets/.variants/the-first-leg/vizag-2-800.webp
+        bytes: 118910
+      - width: 800
+        height: 1067
+        format: jpeg
+        path: assets/.variants/the-first-leg/vizag-2-800.jpg
+        bytes: 143738
+      - width: 1024
+        height: 1365
+        format: avif
+        path: assets/.variants/the-first-leg/vizag-2-1024.avif
+        bytes: 136027
+      - width: 1024
+        height: 1365
+        format: webp
+        path: assets/.variants/the-first-leg/vizag-2-1024.webp
+        bytes: 172274
+      - width: 1024
+        height: 1365
+        format: jpeg
+        path: assets/.variants/the-first-leg/vizag-2-1024.jpg
+        bytes: 216897
+      - width: 1440
+        height: 1920
+        format: avif
+        path: assets/.variants/the-first-leg/vizag-2-1440.avif
+        bytes: 212346
+      - width: 1440
+        height: 1920
+        format: webp
+        path: assets/.variants/the-first-leg/vizag-2-1440.webp
+        bytes: 281618
+      - width: 1440
+        height: 1920
+        format: jpeg
+        path: assets/.variants/the-first-leg/vizag-2-1440.jpg
+        bytes: 376621
+  - kind: image
+    sourcePath: assets/the-first-leg/vizag-3.jpeg
+    width: 1512
+    height: 2016
+    sizeBytes: 0
+    blurhash: UdEVpU%2IVRk.Tt7adRk-=s:NHR+S2j@oMWB
+    alt: ''
+    uploadedAt: '2026-05-23T07:25:18.373Z'
+    processingStatus: ready
+    variants:
+      - width: 320
+        height: 427
+        format: avif
+        path: assets/.variants/the-first-leg/vizag-3-320.avif
+        bytes: 20450
+      - width: 320
+        height: 427
+        format: webp
+        path: assets/.variants/the-first-leg/vizag-3-320.webp
+        bytes: 22746
+      - width: 320
+        height: 427
+        format: jpeg
+        path: assets/.variants/the-first-leg/vizag-3-320.jpg
+        bytes: 26618
+      - width: 640
+        height: 853
+        format: avif
+        path: assets/.variants/the-first-leg/vizag-3-640.avif
+        bytes: 69352
+      - width: 640
+        height: 853
+        format: webp
+        path: assets/.variants/the-first-leg/vizag-3-640.webp
+        bytes: 79414
+      - width: 640
+        height: 853
+        format: jpeg
+        path: assets/.variants/the-first-leg/vizag-3-640.jpg
+        bytes: 91741
+      - width: 1024
+        height: 1365
+        format: avif
+        path: assets/.variants/the-first-leg/vizag-3-1024.avif
+        bytes: 159794
+      - width: 1024
+        height: 1365
+        format: webp
+        path: assets/.variants/the-first-leg/vizag-3-1024.webp
+        bytes: 185758
+      - width: 1024
+        height: 1365
+        format: jpeg
+        path: assets/.variants/the-first-leg/vizag-3-1024.jpg
+        bytes: 218069
+      - width: 1440
+        height: 1920
+        format: avif
+        path: assets/.variants/the-first-leg/vizag-3-1440.avif
+        bytes: 284456
+      - width: 1440
+        height: 1920
+        format: webp
+        path: assets/.variants/the-first-leg/vizag-3-1440.webp
+        bytes: 339436
+      - width: 1440
+        height: 1920
+        format: jpeg
+        path: assets/.variants/the-first-leg/vizag-3-1440.jpg
+        bytes: 402602
+  - kind: image
+    sourcePath: assets/the-first-leg/vizag-3-1.jpeg
+    width: 1512
+    height: 2016
+    sizeBytes: 0
+    blurhash: UdEVpU%2IVRk.Tt7adRk-=s:NHR+S2j@oMWB
+    alt: ''
+    uploadedAt: '2026-06-07T06:50:14.570Z'
+    processingStatus: ready
+    variants:
+      - width: 320
+        height: 427
+        format: avif
+        path: assets/.variants/the-first-leg/vizag-3-1-320.avif
+        bytes: 20450
+      - width: 320
+        height: 427
+        format: webp
+        path: assets/.variants/the-first-leg/vizag-3-1-320.webp
+        bytes: 22746
+      - width: 320
+        height: 427
+        format: jpeg
+        path: assets/.variants/the-first-leg/vizag-3-1-320.jpg
+        bytes: 26618
+      - width: 640
+        height: 853
+        format: avif
+        path: assets/.variants/the-first-leg/vizag-3-1-640.avif
+        bytes: 69352
+      - width: 640
+        height: 853
+        format: webp
+        path: assets/.variants/the-first-leg/vizag-3-1-640.webp
+        bytes: 79414
+      - width: 640
+        height: 853
+        format: jpeg
+        path: assets/.variants/the-first-leg/vizag-3-1-640.jpg
+        bytes: 91741
+      - width: 800
+        height: 1067
+        format: avif
+        path: assets/.variants/the-first-leg/vizag-3-1-800.avif
+        bytes: 102601
+      - width: 800
+        height: 1067
+        format: webp
+        path: assets/.variants/the-first-leg/vizag-3-1-800.webp
+        bytes: 120142
+      - width: 800
+        height: 1067
+        format: jpeg
+        path: assets/.variants/the-first-leg/vizag-3-1-800.jpg
+        bytes: 138140
+      - width: 1024
+        height: 1365
+        format: avif
+        path: assets/.variants/the-first-leg/vizag-3-1-1024.avif
+        bytes: 159794
+      - width: 1024
+        height: 1365
+        format: webp
+        path: assets/.variants/the-first-leg/vizag-3-1-1024.webp
+        bytes: 185758
+      - width: 1024
+        height: 1365
+        format: jpeg
+        path: assets/.variants/the-first-leg/vizag-3-1-1024.jpg
+        bytes: 218069
+      - width: 1440
+        height: 1920
+        format: avif
+        path: assets/.variants/the-first-leg/vizag-3-1-1440.avif
+        bytes: 284456
+      - width: 1440
+        height: 1920
+        format: webp
+        path: assets/.variants/the-first-leg/vizag-3-1-1440.webp
+        bytes: 339436
+      - width: 1440
+        height: 1920
+        format: jpeg
+        path: assets/.variants/the-first-leg/vizag-3-1-1440.jpg
+        bytes: 402602
+  - kind: image
+    sourcePath: assets/the-first-leg/borra-1.jpeg
+    width: 1512
+    height: 2016
+    sizeBytes: 0
+    blurhash: UcI#cD%3V@xtlBt8M{R*~qR+ocs:%hRjWVt7
+    alt: ''
+    uploadedAt: '2026-06-07T06:50:20.520Z'
+    processingStatus: ready
+    variants:
+      - width: 320
+        height: 427
+        format: avif
+        path: assets/.variants/the-first-leg/borra-1-320.avif
+        bytes: 29526
+      - width: 320
+        height: 427
+        format: webp
+        path: assets/.variants/the-first-leg/borra-1-320.webp
+        bytes: 33210
+      - width: 320
+        height: 427
+        format: jpeg
+        path: assets/.variants/the-first-leg/borra-1-320.jpg
+        bytes: 32961
+      - width: 640
+        height: 853
+        format: avif
+        path: assets/.variants/the-first-leg/borra-1-640.avif
+        bytes: 122611
+      - width: 640
+        height: 853
+        format: webp
+        path: assets/.variants/the-first-leg/borra-1-640.webp
+        bytes: 138406
+      - width: 640
+        height: 853
+        format: jpeg
+        path: assets/.variants/the-first-leg/borra-1-640.jpg
+        bytes: 129649
+      - width: 800
+        height: 1067
+        format: avif
+        path: assets/.variants/the-first-leg/borra-1-800.avif
+        bytes: 189192
+      - width: 800
+        height: 1067
+        format: webp
+        path: assets/.variants/the-first-leg/borra-1-800.webp
+        bytes: 216374
+      - width: 800
+        height: 1067
+        format: jpeg
+        path: assets/.variants/the-first-leg/borra-1-800.jpg
+        bytes: 202777
+      - width: 1024
+        height: 1365
+        format: avif
+        path: assets/.variants/the-first-leg/borra-1-1024.avif
+        bytes: 303214
+      - width: 1024
+        height: 1365
+        format: webp
+        path: assets/.variants/the-first-leg/borra-1-1024.webp
+        bytes: 347720
+      - width: 1024
+        height: 1365
+        format: jpeg
+        path: assets/.variants/the-first-leg/borra-1-1024.jpg
+        bytes: 329845
+      - width: 1440
+        height: 1920
+        format: avif
+        path: assets/.variants/the-first-leg/borra-1-1440.avif
+        bytes: 539029
+      - width: 1440
+        height: 1920
+        format: webp
+        path: assets/.variants/the-first-leg/borra-1-1440.webp
+        bytes: 647528
+      - width: 1440
+        height: 1920
+        format: jpeg
+        path: assets/.variants/the-first-leg/borra-1-1440.jpg
+        bytes: 628086
+  - kind: image
+    sourcePath: assets/the-first-leg/borra-2.jpeg
+    width: 1512
+    height: 2016
+    sizeBytes: 0
+    blurhash: UUB_v6av9sS0,5WSORbEnok6SdWBt6awRkoL
+    alt: ''
+    uploadedAt: '2026-06-07T06:50:25.428Z'
+    processingStatus: ready
+    variants:
+      - width: 320
+        height: 427
+        format: avif
+        path: assets/.variants/the-first-leg/borra-2-320.avif
+        bytes: 22587
+      - width: 320
+        height: 427
+        format: webp
+        path: assets/.variants/the-first-leg/borra-2-320.webp
+        bytes: 24384
+      - width: 320
+        height: 427
+        format: jpeg
+        path: assets/.variants/the-first-leg/borra-2-320.jpg
+        bytes: 28624
+      - width: 640
+        height: 853
+        format: avif
+        path: assets/.variants/the-first-leg/borra-2-640.avif
+        bytes: 66235
+      - width: 640
+        height: 853
+        format: webp
+        path: assets/.variants/the-first-leg/borra-2-640.webp
+        bytes: 77400
+      - width: 640
+        height: 853
+        format: jpeg
+        path: assets/.variants/the-first-leg/borra-2-640.jpg
+        bytes: 94348
+      - width: 800
+        height: 1067
+        format: avif
+        path: assets/.variants/the-first-leg/borra-2-800.avif
+        bytes: 90841
+      - width: 800
+        height: 1067
+        format: webp
+        path: assets/.variants/the-first-leg/borra-2-800.webp
+        bytes: 111410
+      - width: 800
+        height: 1067
+        format: jpeg
+        path: assets/.variants/the-first-leg/borra-2-800.jpg
+        bytes: 138827
+      - width: 1024
+        height: 1365
+        format: avif
+        path: assets/.variants/the-first-leg/borra-2-1024.avif
+        bytes: 128464
+      - width: 1024
+        height: 1365
+        format: webp
+        path: assets/.variants/the-first-leg/borra-2-1024.webp
+        bytes: 160176
+      - width: 1024
+        height: 1365
+        format: jpeg
+        path: assets/.variants/the-first-leg/borra-2-1024.jpg
+        bytes: 210939
+      - width: 1440
+        height: 1920
+        format: avif
+        path: assets/.variants/the-first-leg/borra-2-1440.avif
+        bytes: 200721
+      - width: 1440
+        height: 1920
+        format: webp
+        path: assets/.variants/the-first-leg/borra-2-1440.webp
+        bytes: 260952
+      - width: 1440
+        height: 1920
+        format: jpeg
+        path: assets/.variants/the-first-leg/borra-2-1440.jpg
+        bytes: 367569
+  - kind: video
+    sourcePath: assets/the-first-leg/IMG_6529.MOV
+    width: 1920
+    height: 1080
+    sizeBytes: 15789779
+    durationMs: 11635
+    posterPath: assets/.variants/the-first-leg/IMG_6529-poster.jpg
+    caption: ''
+    uploadedAt: '2026-05-23T07:26:47.860Z'
+    processingStatus: ready
+    variants:
+      - width: 1280
+        height: 720
+        codec: h264
+        mime: video/mp4
+        path: assets/.variants/the-first-leg/IMG_6529-1280.mp4
+        bytes: 10315518
+      - width: 1920
+        height: 1080
+        codec: source
+        mime: video/quicktime
+        path: assets/the-first-leg/IMG_6529.MOV
+        bytes: 15789779
+  - kind: image
+    sourcePath: assets/what-why-how/start.HEIC
+    width: 3024
+    height: 4032
+    sizeBytes: 803172
+    blurhash: U36%{Cs.00WUI@WBw^of00kB~WWXM_ofkXR*
+    alt: ''
+    uploadedAt: '2026-06-07T06:49:58.970Z'
+    processingStatus: ready
+    variants:
+      - width: 320
+        height: 427
+        format: avif
+        path: assets/.variants/what-why-how/start-320.avif
+        bytes: 8112
+      - width: 320
+        height: 427
+        format: webp
+        path: assets/.variants/what-why-how/start-320.webp
+        bytes: 9862
+      - width: 320
+        height: 427
+        format: jpeg
+        path: assets/.variants/what-why-how/start-320.jpg
+        bytes: 14086
+      - width: 640
+        height: 853
+        format: avif
+        path: assets/.variants/what-why-how/start-640.avif
+        bytes: 20466
+      - width: 640
+        height: 853
+        format: webp
+        path: assets/.variants/what-why-how/start-640.webp
+        bytes: 28302
+      - width: 640
+        height: 853
+        format: jpeg
+        path: assets/.variants/what-why-how/start-640.jpg
+        bytes: 41256
+      - width: 800
+        height: 1067
+        format: avif
+        path: assets/.variants/what-why-how/start-800.avif
+        bytes: 27507
+      - width: 800
+        height: 1067
+        format: webp
+        path: assets/.variants/what-why-how/start-800.webp
+        bytes: 38890
+      - width: 800
+        height: 1067
+        format: jpeg
+        path: assets/.variants/what-why-how/start-800.jpg
+        bytes: 58749
+      - width: 1024
+        height: 1365
+        format: avif
+        path: assets/.variants/what-why-how/start-1024.avif
+        bytes: 36769
+      - width: 1024
+        height: 1365
+        format: webp
+        path: assets/.variants/what-why-how/start-1024.webp
+        bytes: 55250
+      - width: 1024
+        height: 1365
+        format: jpeg
+        path: assets/.variants/what-why-how/start-1024.jpg
+        bytes: 86364
+      - width: 1440
+        height: 1920
+        format: avif
+        path: assets/.variants/what-why-how/start-1440.avif
+        bytes: 55039
+      - width: 1440
+        height: 1920
+        format: webp
+        path: assets/.variants/what-why-how/start-1440.webp
+        bytes: 90488
+      - width: 1440
+        height: 1920
+        format: jpeg
+        path: assets/.variants/what-why-how/start-1440.jpg
+        bytes: 154180
+      - width: 1920
+        height: 2560
+        format: avif
+        path: assets/.variants/what-why-how/start-1920.avif
+        bytes: 77120
+      - width: 1920
+        height: 2560
+        format: webp
+        path: assets/.variants/what-why-how/start-1920.webp
+        bytes: 140602
+      - width: 1920
+        height: 2560
+        format: jpeg
+        path: assets/.variants/what-why-how/start-1920.jpg
+        bytes: 258693
+  - kind: image
+    sourcePath: assets/bastar/Untitled_-_23_May_2026_at_12.38.49-6.jpeg
+    width: 1512
+    height: 2016
+    sizeBytes: 0
+    blurhash: U5G8_v00Tw~o~mrMR6xYVBt.fLW7J5Mz?bae
+    alt: ''
+    uploadedAt: '2026-06-07T06:50:32.455Z'
+    processingStatus: ready
+    variants:
+      - width: 320
+        height: 427
+        format: avif
+        path: assets/.variants/bastar/Untitled_-_23_May_2026_at_12.38.49-6-320.avif
+        bytes: 43002
+      - width: 320
+        height: 427
+        format: webp
+        path: assets/.variants/bastar/Untitled_-_23_May_2026_at_12.38.49-6-320.webp
+        bytes: 46360
+      - width: 320
+        height: 427
+        format: jpeg
+        path: assets/.variants/bastar/Untitled_-_23_May_2026_at_12.38.49-6-320.jpg
+        bytes: 42735
+      - width: 640
+        height: 853
+        format: avif
+        path: assets/.variants/bastar/Untitled_-_23_May_2026_at_12.38.49-6-640.avif
+        bytes: 172464
+      - width: 640
+        height: 853
+        format: webp
+        path: assets/.variants/bastar/Untitled_-_23_May_2026_at_12.38.49-6-640.webp
+        bytes: 186404
+      - width: 640
+        height: 853
+        format: jpeg
+        path: assets/.variants/bastar/Untitled_-_23_May_2026_at_12.38.49-6-640.jpg
+        bytes: 169903
+      - width: 800
+        height: 1067
+        format: avif
+        path: assets/.variants/bastar/Untitled_-_23_May_2026_at_12.38.49-6-800.avif
+        bytes: 265684
+      - width: 800
+        height: 1067
+        format: webp
+        path: assets/.variants/bastar/Untitled_-_23_May_2026_at_12.38.49-6-800.webp
+        bytes: 289922
+      - width: 800
+        height: 1067
+        format: jpeg
+        path: assets/.variants/bastar/Untitled_-_23_May_2026_at_12.38.49-6-800.jpg
+        bytes: 264868
+      - width: 1024
+        height: 1365
+        format: avif
+        path: assets/.variants/bastar/Untitled_-_23_May_2026_at_12.38.49-6-1024.avif
+        bytes: 412482
+      - width: 1024
+        height: 1365
+        format: webp
+        path: assets/.variants/bastar/Untitled_-_23_May_2026_at_12.38.49-6-1024.webp
+        bytes: 455504
+      - width: 1024
+        height: 1365
+        format: jpeg
+        path: assets/.variants/bastar/Untitled_-_23_May_2026_at_12.38.49-6-1024.jpg
+        bytes: 425345
+      - width: 1440
+        height: 1920
+        format: avif
+        path: assets/.variants/bastar/Untitled_-_23_May_2026_at_12.38.49-6-1440.avif
+        bytes: 700453
+      - width: 1440
+        height: 1920
+        format: webp
+        path: assets/.variants/bastar/Untitled_-_23_May_2026_at_12.38.49-6-1440.webp
+        bytes: 828322
+      - width: 1440
+        height: 1920
+        format: jpeg
+        path: assets/.variants/bastar/Untitled_-_23_May_2026_at_12.38.49-6-1440.jpg
+        bytes: 783911
+  - kind: image
+    sourcePath: assets/bastar/Untitled_-_23_May_2026_at_12.38.49-7.jpeg
+    width: 1512
+    height: 2016
+    sizeBytes: 0
+    blurhash: UDFiVo9Zau~px-IDM}oaNUNaajRhpJjYRjtR
+    alt: ''
+    uploadedAt: '2026-06-07T06:50:40.225Z'
+    processingStatus: ready
+    variants:
+      - width: 320
+        height: 427
+        format: avif
+        path: assets/.variants/bastar/Untitled_-_23_May_2026_at_12.38.49-7-320.avif
+        bytes: 50964
+      - width: 320
+        height: 427
+        format: webp
+        path: assets/.variants/bastar/Untitled_-_23_May_2026_at_12.38.49-7-320.webp
+        bytes: 51720
+      - width: 320
+        height: 427
+        format: jpeg
+        path: assets/.variants/bastar/Untitled_-_23_May_2026_at_12.38.49-7-320.jpg
+        bytes: 46756
+      - width: 640
+        height: 853
+        format: avif
+        path: assets/.variants/bastar/Untitled_-_23_May_2026_at_12.38.49-7-640.avif
+        bytes: 200130
+      - width: 640
+        height: 853
+        format: webp
+        path: assets/.variants/bastar/Untitled_-_23_May_2026_at_12.38.49-7-640.webp
+        bytes: 209182
+      - width: 640
+        height: 853
+        format: jpeg
+        path: assets/.variants/bastar/Untitled_-_23_May_2026_at_12.38.49-7-640.jpg
+        bytes: 189047
+      - width: 800
+        height: 1067
+        format: avif
+        path: assets/.variants/bastar/Untitled_-_23_May_2026_at_12.38.49-7-800.avif
+        bytes: 302848
+      - width: 800
+        height: 1067
+        format: webp
+        path: assets/.variants/bastar/Untitled_-_23_May_2026_at_12.38.49-7-800.webp
+        bytes: 325070
+      - width: 800
+        height: 1067
+        format: jpeg
+        path: assets/.variants/bastar/Untitled_-_23_May_2026_at_12.38.49-7-800.jpg
+        bytes: 293934
+      - width: 1024
+        height: 1365
+        format: avif
+        path: assets/.variants/bastar/Untitled_-_23_May_2026_at_12.38.49-7-1024.avif
+        bytes: 470365
+      - width: 1024
+        height: 1365
+        format: webp
+        path: assets/.variants/bastar/Untitled_-_23_May_2026_at_12.38.49-7-1024.webp
+        bytes: 517948
+      - width: 1024
+        height: 1365
+        format: jpeg
+        path: assets/.variants/bastar/Untitled_-_23_May_2026_at_12.38.49-7-1024.jpg
+        bytes: 468804
+      - width: 1440
+        height: 1920
+        format: avif
+        path: assets/.variants/bastar/Untitled_-_23_May_2026_at_12.38.49-7-1440.avif
+        bytes: 801945
+      - width: 1440
+        height: 1920
+        format: webp
+        path: assets/.variants/bastar/Untitled_-_23_May_2026_at_12.38.49-7-1440.webp
+        bytes: 918994
+      - width: 1440
+        height: 1920
+        format: jpeg
+        path: assets/.variants/bastar/Untitled_-_23_May_2026_at_12.38.49-7-1440.jpg
+        bytes: 860144
+  - kind: image
+    sourcePath: assets/bastar/DEEDBCE4-D7D6-4EB5-AF32-2720D8E011DC_1_105_c.jpeg
+    width: 1024
+    height: 768
+    sizeBytes: 0
+    blurhash: U597R_%N00D%00Ri~qxb0KWB_2t7_3j[9FkC
+    alt: ''
+    uploadedAt: '2026-05-23T18:27:01.879Z'
+    processingStatus: ready
+    variants:
+      - width: 320
+        height: 240
+        format: avif
+        path: assets/.variants/bastar/DEEDBCE4-D7D6-4EB5-AF32-2720D8E011DC_1_105_c-320.avif
+        bytes: 2690
+      - width: 320
+        height: 240
+        format: webp
+        path: assets/.variants/bastar/DEEDBCE4-D7D6-4EB5-AF32-2720D8E011DC_1_105_c-320.webp
+        bytes: 3256
+      - width: 320
+        height: 240
+        format: jpeg
+        path: assets/.variants/bastar/DEEDBCE4-D7D6-4EB5-AF32-2720D8E011DC_1_105_c-320.jpg
+        bytes: 5524
+      - width: 640
+        height: 480
+        format: avif
+        path: assets/.variants/bastar/DEEDBCE4-D7D6-4EB5-AF32-2720D8E011DC_1_105_c-640.avif
+        bytes: 6900
+      - width: 640
+        height: 480
+        format: webp
+        path: assets/.variants/bastar/DEEDBCE4-D7D6-4EB5-AF32-2720D8E011DC_1_105_c-640.webp
+        bytes: 9556
+      - width: 640
+        height: 480
+        format: jpeg
+        path: assets/.variants/bastar/DEEDBCE4-D7D6-4EB5-AF32-2720D8E011DC_1_105_c-640.jpg
+        bytes: 15630
+      - width: 1024
+        height: 768
+        format: avif
+        path: assets/.variants/bastar/DEEDBCE4-D7D6-4EB5-AF32-2720D8E011DC_1_105_c-1024.avif
+        bytes: 12906
+      - width: 1024
+        height: 768
+        format: webp
+        path: assets/.variants/bastar/DEEDBCE4-D7D6-4EB5-AF32-2720D8E011DC_1_105_c-1024.webp
+        bytes: 18924
+      - width: 1024
+        height: 768
+        format: jpeg
+        path: assets/.variants/bastar/DEEDBCE4-D7D6-4EB5-AF32-2720D8E011DC_1_105_c-1024.jpg
+        bytes: 31877
+  - kind: image
+    sourcePath: assets/bastar/Untitled_-_23_May_2026_at_12.38.49-10.jpeg
+    width: 1280
+    height: 960
+    sizeBytes: 0
+    blurhash: U69QXG%N00D*00Ri~Wxa0LR+~Uxa~Vj@4:bI
+    alt: ''
+    uploadedAt: '2026-06-07T06:51:32.786Z'
+    processingStatus: ready
+    variants:
+      - width: 320
+        height: 240
+        format: avif
+        path: assets/.variants/bastar/Untitled_-_23_May_2026_at_12.38.49-10-320.avif
+        bytes: 3005
+      - width: 320
+        height: 240
+        format: webp
+        path: assets/.variants/bastar/Untitled_-_23_May_2026_at_12.38.49-10-320.webp
+        bytes: 3538
+      - width: 320
+        height: 240
+        format: jpeg
+        path: assets/.variants/bastar/Untitled_-_23_May_2026_at_12.38.49-10-320.jpg
+        bytes: 5837
+      - width: 640
+        height: 480
+        format: avif
+        path: assets/.variants/bastar/Untitled_-_23_May_2026_at_12.38.49-10-640.avif
+        bytes: 6815
+      - width: 640
+        height: 480
+        format: webp
+        path: assets/.variants/bastar/Untitled_-_23_May_2026_at_12.38.49-10-640.webp
+        bytes: 9564
+      - width: 640
+        height: 480
+        format: jpeg
+        path: assets/.variants/bastar/Untitled_-_23_May_2026_at_12.38.49-10-640.jpg
+        bytes: 15974
+      - width: 800
+        height: 600
+        format: avif
+        path: assets/.variants/bastar/Untitled_-_23_May_2026_at_12.38.49-10-800.avif
+        bytes: 8803
+      - width: 800
+        height: 600
+        format: webp
+        path: assets/.variants/bastar/Untitled_-_23_May_2026_at_12.38.49-10-800.webp
+        bytes: 12820
+      - width: 800
+        height: 600
+        format: jpeg
+        path: assets/.variants/bastar/Untitled_-_23_May_2026_at_12.38.49-10-800.jpg
+        bytes: 22100
+      - width: 1024
+        height: 768
+        format: avif
+        path: assets/.variants/bastar/Untitled_-_23_May_2026_at_12.38.49-10-1024.avif
+        bytes: 11506
+      - width: 1024
+        height: 768
+        format: webp
+        path: assets/.variants/bastar/Untitled_-_23_May_2026_at_12.38.49-10-1024.webp
+        bytes: 17086
+      - width: 1024
+        height: 768
+        format: jpeg
+        path: assets/.variants/bastar/Untitled_-_23_May_2026_at_12.38.49-10-1024.jpg
+        bytes: 31249
+  - kind: video
+    sourcePath: assets/bastar/Untitled_-_23_May_2026_at_12.38.49-9.mp4
+    width: 720
+    height: 1280
+    sizeBytes: 21625957
+    durationMs: 28907
+    posterPath: assets/.variants/bastar/Untitled_-_23_May_2026_at_12.38.49-9-poster.jpg
+    caption: ''
+    uploadedAt: '2026-05-23T18:29:54.963Z'
+    processingStatus: ready
+    variants:
+      - width: 720
+        height: 1280
+        codec: source
+        mime: video/mp4
+        path: assets/bastar/Untitled_-_23_May_2026_at_12.38.49-9.mp4
+        bytes: 21625957
+  - kind: video
+    sourcePath: assets/bastar/Untitled_-_23_May_2026_at_12.38.49-8.mov
+    width: 360
+    height: 640
+    sizeBytes: 24915852
+    durationMs: 75247
+    posterPath: assets/.variants/bastar/Untitled_-_23_May_2026_at_12.38.49-8-poster.jpg
+    caption: ''
+    uploadedAt: '2026-05-23T18:31:49.592Z'
+    processingStatus: ready
+    variants:
+      - width: 360
+        height: 640
+        codec: source
+        mime: video/quicktime
+        path: assets/bastar/Untitled_-_23_May_2026_at_12.38.49-8.mov
+        bytes: 24915852
+  - kind: image
+    sourcePath: assets/bastar/B27F2B8E-BA3A-4061-B479-9144FEF21ED7_1_106_c.jpeg
+    width: 1280
+    height: 720
+    sizeBytes: 0
+    blurhash: USHeqR_4D%D%00t7t7Ri%MM{ayt7t7t8ofWA
+    alt: ''
+    uploadedAt: '2026-05-23T18:33:21.301Z'
+    processingStatus: ready
+    variants:
+      - width: 320
+        height: 180
+        format: avif
+        path: assets/.variants/bastar/B27F2B8E-BA3A-4061-B479-9144FEF21ED7_1_106_c-320.avif
+        bytes: 3817
+      - width: 320
+        height: 180
+        format: webp
+        path: assets/.variants/bastar/B27F2B8E-BA3A-4061-B479-9144FEF21ED7_1_106_c-320.webp
+        bytes: 5116
+      - width: 320
+        height: 180
+        format: jpeg
+        path: assets/.variants/bastar/B27F2B8E-BA3A-4061-B479-9144FEF21ED7_1_106_c-320.jpg
+        bytes: 7239
+      - width: 640
+        height: 360
+        format: avif
+        path: assets/.variants/bastar/B27F2B8E-BA3A-4061-B479-9144FEF21ED7_1_106_c-640.avif
+        bytes: 8980
+      - width: 640
+        height: 360
+        format: webp
+        path: assets/.variants/bastar/B27F2B8E-BA3A-4061-B479-9144FEF21ED7_1_106_c-640.webp
+        bytes: 13366
+      - width: 640
+        height: 360
+        format: jpeg
+        path: assets/.variants/bastar/B27F2B8E-BA3A-4061-B479-9144FEF21ED7_1_106_c-640.jpg
+        bytes: 20668
+      - width: 1024
+        height: 576
+        format: avif
+        path: assets/.variants/bastar/B27F2B8E-BA3A-4061-B479-9144FEF21ED7_1_106_c-1024.avif
+        bytes: 14760
+      - width: 1024
+        height: 576
+        format: webp
+        path: assets/.variants/bastar/B27F2B8E-BA3A-4061-B479-9144FEF21ED7_1_106_c-1024.webp
+        bytes: 22840
+      - width: 1024
+        height: 576
+        format: jpeg
+        path: assets/.variants/bastar/B27F2B8E-BA3A-4061-B479-9144FEF21ED7_1_106_c-1024.jpg
+        bytes: 40158
+  - kind: image
+    sourcePath: assets/bastar/Untitled_-_23_May_2026_at_12.38.49-11.jpeg
+    width: 1280
+    height: 960
+    sizeBytes: 0
+    blurhash: UHF=p,?^0eMc.R%MiuIUyExbniI:~W%MInZ~
+    alt: ''
+    uploadedAt: '2026-06-07T06:51:42.271Z'
+    processingStatus: ready
+    variants:
+      - width: 320
+        height: 240
+        format: avif
+        path: assets/.variants/bastar/Untitled_-_23_May_2026_at_12.38.49-11-320.avif
+        bytes: 19344
+      - width: 320
+        height: 240
+        format: webp
+        path: assets/.variants/bastar/Untitled_-_23_May_2026_at_12.38.49-11-320.webp
+        bytes: 21092
+      - width: 320
+        height: 240
+        format: jpeg
+        path: assets/.variants/bastar/Untitled_-_23_May_2026_at_12.38.49-11-320.jpg
+        bytes: 21326
+      - width: 640
+        height: 480
+        format: avif
+        path: assets/.variants/bastar/Untitled_-_23_May_2026_at_12.38.49-11-640.avif
+        bytes: 53638
+      - width: 640
+        height: 480
+        format: webp
+        path: assets/.variants/bastar/Untitled_-_23_May_2026_at_12.38.49-11-640.webp
+        bytes: 64212
+      - width: 640
+        height: 480
+        format: jpeg
+        path: assets/.variants/bastar/Untitled_-_23_May_2026_at_12.38.49-11-640.jpg
+        bytes: 70208
+      - width: 800
+        height: 600
+        format: avif
+        path: assets/.variants/bastar/Untitled_-_23_May_2026_at_12.38.49-11-800.avif
+        bytes: 70876
+      - width: 800
+        height: 600
+        format: webp
+        path: assets/.variants/bastar/Untitled_-_23_May_2026_at_12.38.49-11-800.webp
+        bytes: 85820
+      - width: 800
+        height: 600
+        format: jpeg
+        path: assets/.variants/bastar/Untitled_-_23_May_2026_at_12.38.49-11-800.jpg
+        bytes: 100702
+      - width: 1024
+        height: 768
+        format: avif
+        path: assets/.variants/bastar/Untitled_-_23_May_2026_at_12.38.49-11-1024.avif
+        bytes: 90129
+      - width: 1024
+        height: 768
+        format: webp
+        path: assets/.variants/bastar/Untitled_-_23_May_2026_at_12.38.49-11-1024.webp
+        bytes: 114684
+      - width: 1024
+        height: 768
+        format: jpeg
+        path: assets/.variants/bastar/Untitled_-_23_May_2026_at_12.38.49-11-1024.jpg
+        bytes: 146585
+  - kind: image
+    sourcePath: assets/bastar/Untitled_-_23_May_2026_at_12.38.49-12.jpeg
+    width: 960
+    height: 1280
+    sizeBytes: 0
+    blurhash: UkIEz?%MM{xu.9xuM|WX~Wxuoft6%NxtWWa}
+    alt: ''
+    uploadedAt: '2026-06-07T06:51:40.311Z'
+    processingStatus: ready
+    variants:
+      - width: 320
+        height: 427
+        format: avif
+        path: assets/.variants/bastar/Untitled_-_23_May_2026_at_12.38.49-12-320.avif
+        bytes: 16282
+      - width: 320
+        height: 427
+        format: webp
+        path: assets/.variants/bastar/Untitled_-_23_May_2026_at_12.38.49-12-320.webp
+        bytes: 20010
+      - width: 320
+        height: 427
+        format: jpeg
+        path: assets/.variants/bastar/Untitled_-_23_May_2026_at_12.38.49-12-320.jpg
+        bytes: 24024
+      - width: 640
+        height: 853
+        format: avif
+        path: assets/.variants/bastar/Untitled_-_23_May_2026_at_12.38.49-12-640.avif
+        bytes: 44062
+      - width: 640
+        height: 853
+        format: webp
+        path: assets/.variants/bastar/Untitled_-_23_May_2026_at_12.38.49-12-640.webp
+        bytes: 58208
+      - width: 640
+        height: 853
+        format: jpeg
+        path: assets/.variants/bastar/Untitled_-_23_May_2026_at_12.38.49-12-640.jpg
+        bytes: 76824
+      - width: 800
+        height: 1067
+        format: avif
+        path: assets/.variants/bastar/Untitled_-_23_May_2026_at_12.38.49-12-800.avif
+        bytes: 56365
+      - width: 800
+        height: 1067
+        format: webp
+        path: assets/.variants/bastar/Untitled_-_23_May_2026_at_12.38.49-12-800.webp
+        bytes: 76306
+      - width: 800
+        height: 1067
+        format: jpeg
+        path: assets/.variants/bastar/Untitled_-_23_May_2026_at_12.38.49-12-800.jpg
+        bytes: 107779
+  - kind: video
+    sourcePath: assets/bastar/bastar-10.mp4
+    width: 720
+    height: 1280
+    sizeBytes: 23072288
+    durationMs: 30293
+    posterPath: assets/.variants/bastar/bastar-10-poster.jpg
+    caption: ''
+    uploadedAt: '2026-05-24T09:18:15.399Z'
+    processingStatus: ready
+    variants:
+      - width: 720
+        height: 1280
+        codec: source
+        mime: video/mp4
+        path: assets/bastar/bastar-10.mp4
+        bytes: 23072288
+  - kind: image
+    sourcePath: assets/bastar/bastar-11.jpeg
+    width: 1512
+    height: 2016
+    sizeBytes: 0
+    blurhash: U3ECdv-h%N~U02IU01xu4:4:-pt7xCsl?aWB
+    alt: ''
+    uploadedAt: '2026-06-07T06:51:30.833Z'
+    processingStatus: ready
+    variants:
+      - width: 320
+        height: 427
+        format: avif
+        path: assets/.variants/bastar/bastar-11-320.avif
+        bytes: 9933
+      - width: 320
+        height: 427
+        format: webp
+        path: assets/.variants/bastar/bastar-11-320.webp
+        bytes: 13490
+      - width: 320
+        height: 427
+        format: jpeg
+        path: assets/.variants/bastar/bastar-11-320.jpg
+        bytes: 19820
+      - width: 640
+        height: 853
+        format: avif
+        path: assets/.variants/bastar/bastar-11-640.avif
+        bytes: 19681
+      - width: 640
+        height: 853
+        format: webp
+        path: assets/.variants/bastar/bastar-11-640.webp
+        bytes: 30312
+      - width: 640
+        height: 853
+        format: jpeg
+        path: assets/.variants/bastar/bastar-11-640.jpg
+        bytes: 50768
+      - width: 800
+        height: 1067
+        format: avif
+        path: assets/.variants/bastar/bastar-11-800.avif
+        bytes: 23165
+      - width: 800
+        height: 1067
+        format: webp
+        path: assets/.variants/bastar/bastar-11-800.webp
+        bytes: 39232
+      - width: 800
+        height: 1067
+        format: jpeg
+        path: assets/.variants/bastar/bastar-11-800.jpg
+        bytes: 68171
+      - width: 1024
+        height: 1365
+        format: avif
+        path: assets/.variants/bastar/bastar-11-1024.avif
+        bytes: 28811
+      - width: 1024
+        height: 1365
+        format: webp
+        path: assets/.variants/bastar/bastar-11-1024.webp
+        bytes: 51906
+      - width: 1024
+        height: 1365
+        format: jpeg
+        path: assets/.variants/bastar/bastar-11-1024.jpg
+        bytes: 95554
+      - width: 1440
+        height: 1920
+        format: avif
+        path: assets/.variants/bastar/bastar-11-1440.avif
+        bytes: 37132
+      - width: 1440
+        height: 1920
+        format: webp
+        path: assets/.variants/bastar/bastar-11-1440.webp
+        bytes: 73556
+      - width: 1440
+        height: 1920
+        format: jpeg
+        path: assets/.variants/bastar/bastar-11-1440.jpg
+        bytes: 150679
+  - kind: image
+    sourcePath: assets/bastar/bastar-12.jpeg
+    width: 1980
+    height: 3520
+    sizeBytes: 0
+    blurhash: U37n5js:9Z%1_3%1RioftSxas,WD_2t6f5t7
+    alt: ''
+    uploadedAt: '2026-06-07T06:51:38.865Z'
+    processingStatus: ready
+    variants:
+      - width: 320
+        height: 569
+        format: avif
+        path: assets/.variants/bastar/bastar-12-320.avif
+        bytes: 13379
+      - width: 320
+        height: 569
+        format: webp
+        path: assets/.variants/bastar/bastar-12-320.webp
+        bytes: 16986
+      - width: 320
+        height: 569
+        format: jpeg
+        path: assets/.variants/bastar/bastar-12-320.jpg
+        bytes: 23587
+      - width: 640
+        height: 1138
+        format: avif
+        path: assets/.variants/bastar/bastar-12-640.avif
+        bytes: 31558
+      - width: 640
+        height: 1138
+        format: webp
+        path: assets/.variants/bastar/bastar-12-640.webp
+        bytes: 42960
+      - width: 640
+        height: 1138
+        format: jpeg
+        path: assets/.variants/bastar/bastar-12-640.jpg
+        bytes: 69536
+      - width: 800
+        height: 1422
+        format: avif
+        path: assets/.variants/bastar/bastar-12-800.avif
+        bytes: 40302
+      - width: 800
+        height: 1422
+        format: webp
+        path: assets/.variants/bastar/bastar-12-800.webp
+        bytes: 56318
+      - width: 800
+        height: 1422
+        format: jpeg
+        path: assets/.variants/bastar/bastar-12-800.jpg
+        bytes: 95869
+      - width: 1024
+        height: 1820
+        format: avif
+        path: assets/.variants/bastar/bastar-12-1024.avif
+        bytes: 51782
+      - width: 1024
+        height: 1820
+        format: webp
+        path: assets/.variants/bastar/bastar-12-1024.webp
+        bytes: 76762
+      - width: 1024
+        height: 1820
+        format: jpeg
+        path: assets/.variants/bastar/bastar-12-1024.jpg
+        bytes: 135562
+      - width: 1440
+        height: 2560
+        format: avif
+        path: assets/.variants/bastar/bastar-12-1440.avif
+        bytes: 72117
+      - width: 1440
+        height: 2560
+        format: webp
+        path: assets/.variants/bastar/bastar-12-1440.webp
+        bytes: 115596
+      - width: 1440
+        height: 2560
+        format: jpeg
+        path: assets/.variants/bastar/bastar-12-1440.jpg
+        bytes: 214485
+      - width: 1920
+        height: 3413
+        format: avif
+        path: assets/.variants/bastar/bastar-12-1920.avif
+        bytes: 94150
+      - width: 1920
+        height: 3413
+        format: webp
+        path: assets/.variants/bastar/bastar-12-1920.webp
+        bytes: 166762
+      - width: 1920
+        height: 3413
+        format: jpeg
+        path: assets/.variants/bastar/bastar-12-1920.jpg
+        bytes: 314879
+  - kind: video
+    sourcePath: assets/enroute-to-kolkata/IMG_6671.MOV
+    width: 1920
+    height: 1080
+    sizeBytes: 12708200
+    durationMs: 11035
+    posterPath: assets/.variants/enroute-to-kolkata/IMG_6671-poster.jpg
+    caption: ''
+    uploadedAt: '2026-05-24T13:14:24.820Z'
+    processingStatus: ready
+    variants:
+      - width: 1280
+        height: 720
+        codec: h264
+        mime: video/mp4
+        path: assets/.variants/enroute-to-kolkata/IMG_6671-1280.mp4
+        bytes: 11562709
+      - width: 1920
+        height: 1080
+        codec: source
+        mime: video/quicktime
+        path: assets/enroute-to-kolkata/IMG_6671.MOV
+        bytes: 12708200
+  - kind: image
+    sourcePath: assets/enroute-to-kolkata/IMG_6696.HEIC
+    width: 4032
+    height: 3024
+    sizeBytes: 2403992
+    blurhash: UUI4-Ks:?Hxu.TofI;ozpdbbxabb~qs:xbxa
+    alt: ''
+    uploadedAt: '2026-06-07T06:51:53.320Z'
+    processingStatus: ready
+    variants:
+      - width: 320
+        height: 240
+        format: avif
+        path: assets/.variants/enroute-to-kolkata/IMG_6696-320.avif
+        bytes: 13258
+      - width: 320
+        height: 240
+        format: webp
+        path: assets/.variants/enroute-to-kolkata/IMG_6696-320.webp
+        bytes: 14576
+      - width: 320
+        height: 240
+        format: jpeg
+        path: assets/.variants/enroute-to-kolkata/IMG_6696-320.jpg
+        bytes: 16584
+      - width: 640
+        height: 480
+        format: avif
+        path: assets/.variants/enroute-to-kolkata/IMG_6696-640.avif
+        bytes: 39042
+      - width: 640
+        height: 480
+        format: webp
+        path: assets/.variants/enroute-to-kolkata/IMG_6696-640.webp
+        bytes: 46658
+      - width: 640
+        height: 480
+        format: jpeg
+        path: assets/.variants/enroute-to-kolkata/IMG_6696-640.jpg
+        bytes: 54988
+      - width: 800
+        height: 600
+        format: avif
+        path: assets/.variants/enroute-to-kolkata/IMG_6696-800.avif
+        bytes: 57471
+      - width: 800
+        height: 600
+        format: webp
+        path: assets/.variants/enroute-to-kolkata/IMG_6696-800.webp
+        bytes: 70464
+      - width: 800
+        height: 600
+        format: jpeg
+        path: assets/.variants/enroute-to-kolkata/IMG_6696-800.jpg
+        bytes: 82296
+      - width: 1024
+        height: 768
+        format: avif
+        path: assets/.variants/enroute-to-kolkata/IMG_6696-1024.avif
+        bytes: 86290
+      - width: 1024
+        height: 768
+        format: webp
+        path: assets/.variants/enroute-to-kolkata/IMG_6696-1024.webp
+        bytes: 109106
+      - width: 1024
+        height: 768
+        format: jpeg
+        path: assets/.variants/enroute-to-kolkata/IMG_6696-1024.jpg
+        bytes: 128357
+      - width: 1440
+        height: 1080
+        format: avif
+        path: assets/.variants/enroute-to-kolkata/IMG_6696-1440.avif
+        bytes: 148449
+      - width: 1440
+        height: 1080
+        format: webp
+        path: assets/.variants/enroute-to-kolkata/IMG_6696-1440.webp
+        bytes: 193848
+      - width: 1440
+        height: 1080
+        format: jpeg
+        path: assets/.variants/enroute-to-kolkata/IMG_6696-1440.jpg
+        bytes: 233566
+      - width: 1920
+        height: 1440
+        format: avif
+        path: assets/.variants/enroute-to-kolkata/IMG_6696-1920.avif
+        bytes: 231735
+      - width: 1920
+        height: 1440
+        format: webp
+        path: assets/.variants/enroute-to-kolkata/IMG_6696-1920.webp
+        bytes: 311960
+      - width: 1920
+        height: 1440
+        format: jpeg
+        path: assets/.variants/enroute-to-kolkata/IMG_6696-1920.jpg
+        bytes: 384322
+  - kind: video
+    sourcePath: assets/enroute-to-kolkata/IMG_6697.MOV
+    width: 1920
+    height: 1080
+    sizeBytes: 16134297
+    durationMs: 12568
+    posterPath: assets/.variants/enroute-to-kolkata/IMG_6697-poster.jpg
+    caption: ''
+    uploadedAt: '2026-05-24T13:14:37.691Z'
+    processingStatus: ready
+    variants:
+      - width: 1280
+        height: 720
+        codec: h264
+        mime: video/mp4
+        path: assets/.variants/enroute-to-kolkata/IMG_6697-1280.mp4
+        bytes: 7003261
+      - width: 1920
+        height: 1080
+        codec: source
+        mime: video/quicktime
+        path: assets/enroute-to-kolkata/IMG_6697.MOV
+        bytes: 16134297
+  - kind: image
+    sourcePath: assets/enroute-to-kolkata/IMG_6722.HEIC
+    width: 3024
+    height: 4032
+    sizeBytes: 949684
+    blurhash: UyIY2,RjxukC~qkCkBof%MtRWBj[t7j[WBfQ
+    alt: ''
+    uploadedAt: '2026-06-07T06:52:06.334Z'
+    processingStatus: ready
+    variants:
+      - width: 320
+        height: 427
+        format: avif
+        path: assets/.variants/enroute-to-kolkata/IMG_6722-320.avif
+        bytes: 20083
+      - width: 320
+        height: 427
+        format: webp
+        path: assets/.variants/enroute-to-kolkata/IMG_6722-320.webp
+        bytes: 22488
+      - width: 320
+        height: 427
+        format: jpeg
+        path: assets/.variants/enroute-to-kolkata/IMG_6722-320.jpg
+        bytes: 24704
+      - width: 640
+        height: 853
+        format: avif
+        path: assets/.variants/enroute-to-kolkata/IMG_6722-640.avif
+        bytes: 68877
+      - width: 640
+        height: 853
+        format: webp
+        path: assets/.variants/enroute-to-kolkata/IMG_6722-640.webp
+        bytes: 81268
+      - width: 640
+        height: 853
+        format: jpeg
+        path: assets/.variants/enroute-to-kolkata/IMG_6722-640.jpg
+        bytes: 89884
+      - width: 800
+        height: 1067
+        format: avif
+        path: assets/.variants/enroute-to-kolkata/IMG_6722-800.avif
+        bytes: 97914
+      - width: 800
+        height: 1067
+        format: webp
+        path: assets/.variants/enroute-to-kolkata/IMG_6722-800.webp
+        bytes: 118128
+      - width: 800
+        height: 1067
+        format: jpeg
+        path: assets/.variants/enroute-to-kolkata/IMG_6722-800.jpg
+        bytes: 133987
+      - width: 1024
+        height: 1365
+        format: avif
+        path: assets/.variants/enroute-to-kolkata/IMG_6722-1024.avif
+        bytes: 134053
+      - width: 1024
+        height: 1365
+        format: webp
+        path: assets/.variants/enroute-to-kolkata/IMG_6722-1024.webp
+        bytes: 169980
+      - width: 1024
+        height: 1365
+        format: jpeg
+        path: assets/.variants/enroute-to-kolkata/IMG_6722-1024.jpg
+        bytes: 201553
+      - width: 1440
+        height: 1920
+        format: avif
+        path: assets/.variants/enroute-to-kolkata/IMG_6722-1440.avif
+        bytes: 191327
+      - width: 1440
+        height: 1920
+        format: webp
+        path: assets/.variants/enroute-to-kolkata/IMG_6722-1440.webp
+        bytes: 258852
+      - width: 1440
+        height: 1920
+        format: jpeg
+        path: assets/.variants/enroute-to-kolkata/IMG_6722-1440.jpg
+        bytes: 339320
+      - width: 1920
+        height: 2560
+        format: avif
+        path: assets/.variants/enroute-to-kolkata/IMG_6722-1920.avif
+        bytes: 248083
+      - width: 1920
+        height: 2560
+        format: webp
+        path: assets/.variants/enroute-to-kolkata/IMG_6722-1920.webp
+        bytes: 346950
+      - width: 1920
+        height: 2560
+        format: jpeg
+        path: assets/.variants/enroute-to-kolkata/IMG_6722-1920.jpg
+        bytes: 509385
+  - kind: video
+    sourcePath: assets/bastar/VIDEO-2026-04-07-18-52-53.mp4
+    width: 1280
+    height: 720
+    sizeBytes: 13725950
+    durationMs: 38132
+    posterPath: assets/.variants/bastar/VIDEO-2026-04-07-18-52-53-poster.jpg
+    caption: ''
+    uploadedAt: '2026-05-30T13:19:31.295Z'
+    processingStatus: ready
+    variants:
+      - width: 1280
+        height: 720
+        codec: source
+        mime: video/mp4
+        path: assets/bastar/VIDEO-2026-04-07-18-52-53.mp4
+        bytes: 13725950
+  - kind: image
+    sourcePath: assets/kolkata-netarhat-betla/Untitled_-_30_May_2026_at_23.12.00-1.jpeg
+    width: 2142
+    height: 2856
+    sizeBytes: 0
+    blurhash: U*HwokW=R+n%~AWqS4o0$zjtofofoes.s:of
+    alt: ''
+    uploadedAt: '2026-06-07T06:52:15.102Z'
+    processingStatus: ready
+    variants:
+      - width: 320
+        height: 427
+        format: avif
+        path: assets/.variants/kolkata-netarhat-betla/Untitled_-_30_May_2026_at_23.12.00-1-320.avif
+        bytes: 24810
+      - width: 320
+        height: 427
+        format: webp
+        path: assets/.variants/kolkata-netarhat-betla/Untitled_-_30_May_2026_at_23.12.00-1-320.webp
+        bytes: 28802
+      - width: 320
+        height: 427
+        format: jpeg
+        path: assets/.variants/kolkata-netarhat-betla/Untitled_-_30_May_2026_at_23.12.00-1-320.jpg
+        bytes: 31018
+      - width: 640
+        height: 853
+        format: avif
+        path: assets/.variants/kolkata-netarhat-betla/Untitled_-_30_May_2026_at_23.12.00-1-640.avif
+        bytes: 82221
+      - width: 640
+        height: 853
+        format: webp
+        path: assets/.variants/kolkata-netarhat-betla/Untitled_-_30_May_2026_at_23.12.00-1-640.webp
+        bytes: 94782
+      - width: 640
+        height: 853
+        format: jpeg
+        path: assets/.variants/kolkata-netarhat-betla/Untitled_-_30_May_2026_at_23.12.00-1-640.jpg
+        bytes: 105772
+      - width: 800
+        height: 1067
+        format: avif
+        path: assets/.variants/kolkata-netarhat-betla/Untitled_-_30_May_2026_at_23.12.00-1-800.avif
+        bytes: 123790
+      - width: 800
+        height: 1067
+        format: webp
+        path: assets/.variants/kolkata-netarhat-betla/Untitled_-_30_May_2026_at_23.12.00-1-800.webp
+        bytes: 143282
+      - width: 800
+        height: 1067
+        format: jpeg
+        path: assets/.variants/kolkata-netarhat-betla/Untitled_-_30_May_2026_at_23.12.00-1-800.jpg
+        bytes: 159669
+      - width: 1024
+        height: 1365
+        format: avif
+        path: assets/.variants/kolkata-netarhat-betla/Untitled_-_30_May_2026_at_23.12.00-1-1024.avif
+        bytes: 185467
+      - width: 1024
+        height: 1365
+        format: webp
+        path: assets/.variants/kolkata-netarhat-betla/Untitled_-_30_May_2026_at_23.12.00-1-1024.webp
+        bytes: 218296
+      - width: 1024
+        height: 1365
+        format: jpeg
+        path: assets/.variants/kolkata-netarhat-betla/Untitled_-_30_May_2026_at_23.12.00-1-1024.jpg
+        bytes: 247185
+      - width: 1440
+        height: 1920
+        format: avif
+        path: assets/.variants/kolkata-netarhat-betla/Untitled_-_30_May_2026_at_23.12.00-1-1440.avif
+        bytes: 306800
+      - width: 1440
+        height: 1920
+        format: webp
+        path: assets/.variants/kolkata-netarhat-betla/Untitled_-_30_May_2026_at_23.12.00-1-1440.webp
+        bytes: 377194
+      - width: 1440
+        height: 1920
+        format: jpeg
+        path: assets/.variants/kolkata-netarhat-betla/Untitled_-_30_May_2026_at_23.12.00-1-1440.jpg
+        bytes: 441554
+      - width: 1920
+        height: 2560
+        format: avif
+        path: assets/.variants/kolkata-netarhat-betla/Untitled_-_30_May_2026_at_23.12.00-1-1920.avif
+        bytes: 445313
+      - width: 1920
+        height: 2560
+        format: webp
+        path: assets/.variants/kolkata-netarhat-betla/Untitled_-_30_May_2026_at_23.12.00-1-1920.webp
+        bytes: 567754
+      - width: 1920
+        height: 2560
+        format: jpeg
+        path: assets/.variants/kolkata-netarhat-betla/Untitled_-_30_May_2026_at_23.12.00-1-1920.jpg
+        bytes: 703598
+  - kind: image
+    sourcePath: assets/kolkata-netarhat-betla/Untitled_-_30_May_2026_at_23.12.00-2.jpeg
+    width: 2142
+    height: 2856
+    sizeBytes: 0
+    blurhash: UXF5me%0S5bb~pxZoLkC-pt7j@s:9^W=s.so
+    alt: ''
+    uploadedAt: '2026-06-07T06:52:21.432Z'
+    processingStatus: ready
+    variants:
+      - width: 320
+        height: 427
+        format: avif
+        path: assets/.variants/kolkata-netarhat-betla/Untitled_-_30_May_2026_at_23.12.00-2-320.avif
+        bytes: 9749
+      - width: 320
+        height: 427
+        format: webp
+        path: assets/.variants/kolkata-netarhat-betla/Untitled_-_30_May_2026_at_23.12.00-2-320.webp
+        bytes: 13330
+      - width: 320
+        height: 427
+        format: jpeg
+        path: assets/.variants/kolkata-netarhat-betla/Untitled_-_30_May_2026_at_23.12.00-2-320.jpg
+        bytes: 18801
+      - width: 640
+        height: 853
+        format: avif
+        path: assets/.variants/kolkata-netarhat-betla/Untitled_-_30_May_2026_at_23.12.00-2-640.avif
+        bytes: 28549
+      - width: 640
+        height: 853
+        format: webp
+        path: assets/.variants/kolkata-netarhat-betla/Untitled_-_30_May_2026_at_23.12.00-2-640.webp
+        bytes: 40154
+      - width: 640
+        height: 853
+        format: jpeg
+        path: assets/.variants/kolkata-netarhat-betla/Untitled_-_30_May_2026_at_23.12.00-2-640.jpg
+        bytes: 58942
+      - width: 800
+        height: 1067
+        format: avif
+        path: assets/.variants/kolkata-netarhat-betla/Untitled_-_30_May_2026_at_23.12.00-2-800.avif
+        bytes: 42383
+      - width: 800
+        height: 1067
+        format: webp
+        path: assets/.variants/kolkata-netarhat-betla/Untitled_-_30_May_2026_at_23.12.00-2-800.webp
+        bytes: 59160
+      - width: 800
+        height: 1067
+        format: jpeg
+        path: assets/.variants/kolkata-netarhat-betla/Untitled_-_30_May_2026_at_23.12.00-2-800.jpg
+        bytes: 86330
+      - width: 1024
+        height: 1365
+        format: avif
+        path: assets/.variants/kolkata-netarhat-betla/Untitled_-_30_May_2026_at_23.12.00-2-1024.avif
+        bytes: 62667
+      - width: 1024
+        height: 1365
+        format: webp
+        path: assets/.variants/kolkata-netarhat-betla/Untitled_-_30_May_2026_at_23.12.00-2-1024.webp
+        bytes: 86504
+      - width: 1024
+        height: 1365
+        format: jpeg
+        path: assets/.variants/kolkata-netarhat-betla/Untitled_-_30_May_2026_at_23.12.00-2-1024.jpg
+        bytes: 130579
+      - width: 1440
+        height: 1920
+        format: avif
+        path: assets/.variants/kolkata-netarhat-betla/Untitled_-_30_May_2026_at_23.12.00-2-1440.avif
+        bytes: 101556
+      - width: 1440
+        height: 1920
+        format: webp
+        path: assets/.variants/kolkata-netarhat-betla/Untitled_-_30_May_2026_at_23.12.00-2-1440.webp
+        bytes: 145016
+      - width: 1440
+        height: 1920
+        format: jpeg
+        path: assets/.variants/kolkata-netarhat-betla/Untitled_-_30_May_2026_at_23.12.00-2-1440.jpg
+        bytes: 226655
+      - width: 1920
+        height: 2560
+        format: avif
+        path: assets/.variants/kolkata-netarhat-betla/Untitled_-_30_May_2026_at_23.12.00-2-1920.avif
+        bytes: 147141
+      - width: 1920
+        height: 2560
+        format: webp
+        path: assets/.variants/kolkata-netarhat-betla/Untitled_-_30_May_2026_at_23.12.00-2-1920.webp
+        bytes: 218722
+      - width: 1920
+        height: 2560
+        format: jpeg
+        path: assets/.variants/kolkata-netarhat-betla/Untitled_-_30_May_2026_at_23.12.00-2-1920.jpg
+        bytes: 357159
+  - kind: image
+    sourcePath: assets/kolkata-netarhat-betla/Untitled_-_30_May_2026_at_23.12.00-3.jpeg
+    width: 2142
+    height: 2856
+    sizeBytes: 0
+    blurhash: UFF#]j_0NL?aYRIoRiS6?voIxZxa?aozW?j]
+    alt: ''
+    uploadedAt: '2026-06-07T06:52:34.728Z'
+    processingStatus: ready
+    variants:
+      - width: 320
+        height: 427
+        format: avif
+        path: assets/.variants/kolkata-netarhat-betla/Untitled_-_30_May_2026_at_23.12.00-3-320.avif
+        bytes: 40785
+      - width: 320
+        height: 427
+        format: webp
+        path: assets/.variants/kolkata-netarhat-betla/Untitled_-_30_May_2026_at_23.12.00-3-320.webp
+        bytes: 43888
+      - width: 320
+        height: 427
+        format: jpeg
+        path: assets/.variants/kolkata-netarhat-betla/Untitled_-_30_May_2026_at_23.12.00-3-320.jpg
+        bytes: 42485
+      - width: 640
+        height: 853
+        format: avif
+        path: assets/.variants/kolkata-netarhat-betla/Untitled_-_30_May_2026_at_23.12.00-3-640.avif
+        bytes: 164285
+      - width: 640
+        height: 853
+        format: webp
+        path: assets/.variants/kolkata-netarhat-betla/Untitled_-_30_May_2026_at_23.12.00-3-640.webp
+        bytes: 174000
+      - width: 640
+        height: 853
+        format: jpeg
+        path: assets/.variants/kolkata-netarhat-betla/Untitled_-_30_May_2026_at_23.12.00-3-640.jpg
+        bytes: 165356
+      - width: 800
+        height: 1067
+        format: avif
+        path: assets/.variants/kolkata-netarhat-betla/Untitled_-_30_May_2026_at_23.12.00-3-800.avif
+        bytes: 259870
+      - width: 800
+        height: 1067
+        format: webp
+        path: assets/.variants/kolkata-netarhat-betla/Untitled_-_30_May_2026_at_23.12.00-3-800.webp
+        bytes: 274912
+      - width: 800
+        height: 1067
+        format: jpeg
+        path: assets/.variants/kolkata-netarhat-betla/Untitled_-_30_May_2026_at_23.12.00-3-800.jpg
+        bytes: 262611
+      - width: 1024
+        height: 1365
+        format: avif
+        path: assets/.variants/kolkata-netarhat-betla/Untitled_-_30_May_2026_at_23.12.00-3-1024.avif
+        bytes: 422219
+      - width: 1024
+        height: 1365
+        format: webp
+        path: assets/.variants/kolkata-netarhat-betla/Untitled_-_30_May_2026_at_23.12.00-3-1024.webp
+        bytes: 448860
+      - width: 1024
+        height: 1365
+        format: jpeg
+        path: assets/.variants/kolkata-netarhat-betla/Untitled_-_30_May_2026_at_23.12.00-3-1024.jpg
+        bytes: 430276
+      - width: 1440
+        height: 1920
+        format: avif
+        path: assets/.variants/kolkata-netarhat-betla/Untitled_-_30_May_2026_at_23.12.00-3-1440.avif
+        bytes: 783191
+      - width: 1440
+        height: 1920
+        format: webp
+        path: assets/.variants/kolkata-netarhat-betla/Untitled_-_30_May_2026_at_23.12.00-3-1440.webp
+        bytes: 852812
+      - width: 1440
+        height: 1920
+        format: jpeg
+        path: assets/.variants/kolkata-netarhat-betla/Untitled_-_30_May_2026_at_23.12.00-3-1440.jpg
+        bytes: 827401
+      - width: 1920
+        height: 2560
+        format: avif
+        path: assets/.variants/kolkata-netarhat-betla/Untitled_-_30_May_2026_at_23.12.00-3-1920.avif
+        bytes: 1227711
+      - width: 1920
+        height: 2560
+        format: webp
+        path: assets/.variants/kolkata-netarhat-betla/Untitled_-_30_May_2026_at_23.12.00-3-1920.webp
+        bytes: 1423300
+      - width: 1920
+        height: 2560
+        format: jpeg
+        path: assets/.variants/kolkata-netarhat-betla/Untitled_-_30_May_2026_at_23.12.00-3-1920.jpg
+        bytes: 1387502
+  - kind: image
+    sourcePath: assets/kolkata-netarhat-betla/Untitled_-_30_May_2026_at_23.12.00-4.jpeg
+    width: 1512
+    height: 2016
+    sizeBytes: 0
+    blurhash: UnJQZfofI;t6~VbIWCoeg2WXaej@OYWCo0j[
+    alt: ''
+    uploadedAt: '2026-06-07T06:52:38.735Z'
+    processingStatus: ready
+    variants:
+      - width: 320
+        height: 427
+        format: avif
+        path: assets/.variants/kolkata-netarhat-betla/Untitled_-_30_May_2026_at_23.12.00-4-320.avif
+        bytes: 8201
+      - width: 320
+        height: 427
+        format: webp
+        path: assets/.variants/kolkata-netarhat-betla/Untitled_-_30_May_2026_at_23.12.00-4-320.webp
+        bytes: 10722
+      - width: 320
+        height: 427
+        format: jpeg
+        path: assets/.variants/kolkata-netarhat-betla/Untitled_-_30_May_2026_at_23.12.00-4-320.jpg
+        bytes: 14935
+      - width: 640
+        height: 853
+        format: avif
+        path: assets/.variants/kolkata-netarhat-betla/Untitled_-_30_May_2026_at_23.12.00-4-640.avif
+        bytes: 26053
+      - width: 640
+        height: 853
+        format: webp
+        path: assets/.variants/kolkata-netarhat-betla/Untitled_-_30_May_2026_at_23.12.00-4-640.webp
+        bytes: 34274
+      - width: 640
+        height: 853
+        format: jpeg
+        path: assets/.variants/kolkata-netarhat-betla/Untitled_-_30_May_2026_at_23.12.00-4-640.jpg
+        bytes: 47802
+      - width: 800
+        height: 1067
+        format: avif
+        path: assets/.variants/kolkata-netarhat-betla/Untitled_-_30_May_2026_at_23.12.00-4-800.avif
+        bytes: 36273
+      - width: 800
+        height: 1067
+        format: webp
+        path: assets/.variants/kolkata-netarhat-betla/Untitled_-_30_May_2026_at_23.12.00-4-800.webp
+        bytes: 48376
+      - width: 800
+        height: 1067
+        format: jpeg
+        path: assets/.variants/kolkata-netarhat-betla/Untitled_-_30_May_2026_at_23.12.00-4-800.jpg
+        bytes: 68652
+      - width: 1024
+        height: 1365
+        format: avif
+        path: assets/.variants/kolkata-netarhat-betla/Untitled_-_30_May_2026_at_23.12.00-4-1024.avif
+        bytes: 50636
+      - width: 1024
+        height: 1365
+        format: webp
+        path: assets/.variants/kolkata-netarhat-betla/Untitled_-_30_May_2026_at_23.12.00-4-1024.webp
+        bytes: 69388
+      - width: 1024
+        height: 1365
+        format: jpeg
+        path: assets/.variants/kolkata-netarhat-betla/Untitled_-_30_May_2026_at_23.12.00-4-1024.jpg
+        bytes: 101916
+      - width: 1440
+        height: 1920
+        format: avif
+        path: assets/.variants/kolkata-netarhat-betla/Untitled_-_30_May_2026_at_23.12.00-4-1440.avif
+        bytes: 75157
+      - width: 1440
+        height: 1920
+        format: webp
+        path: assets/.variants/kolkata-netarhat-betla/Untitled_-_30_May_2026_at_23.12.00-4-1440.webp
+        bytes: 107078
+      - width: 1440
+        height: 1920
+        format: jpeg
+        path: assets/.variants/kolkata-netarhat-betla/Untitled_-_30_May_2026_at_23.12.00-4-1440.jpg
+        bytes: 168248
+  - kind: image
+    sourcePath: assets/kolkata-netarhat-betla/Untitled_-_30_May_2026_at_23.12.00-5.jpeg
+    width: 2016
+    height: 1512
+    sizeBytes: 0
+    blurhash: UqJkJ:RPRkof~pWBWCkCNyjYoLazXTofoKjt
+    alt: ''
+    uploadedAt: '2026-06-07T06:52:42.091Z'
+    processingStatus: ready
+    variants:
+      - width: 320
+        height: 240
+        format: avif
+        path: assets/.variants/kolkata-netarhat-betla/Untitled_-_30_May_2026_at_23.12.00-5-320.avif
+        bytes: 4203
+      - width: 320
+        height: 240
+        format: webp
+        path: assets/.variants/kolkata-netarhat-betla/Untitled_-_30_May_2026_at_23.12.00-5-320.webp
+        bytes: 4912
+      - width: 320
+        height: 240
+        format: jpeg
+        path: assets/.variants/kolkata-netarhat-betla/Untitled_-_30_May_2026_at_23.12.00-5-320.jpg
+        bytes: 7027
+      - width: 640
+        height: 480
+        format: avif
+        path: assets/.variants/kolkata-netarhat-betla/Untitled_-_30_May_2026_at_23.12.00-5-640.avif
+        bytes: 12316
+      - width: 640
+        height: 480
+        format: webp
+        path: assets/.variants/kolkata-netarhat-betla/Untitled_-_30_May_2026_at_23.12.00-5-640.webp
+        bytes: 15598
+      - width: 640
+        height: 480
+        format: jpeg
+        path: assets/.variants/kolkata-netarhat-betla/Untitled_-_30_May_2026_at_23.12.00-5-640.jpg
+        bytes: 22101
+      - width: 800
+        height: 600
+        format: avif
+        path: assets/.variants/kolkata-netarhat-betla/Untitled_-_30_May_2026_at_23.12.00-5-800.avif
+        bytes: 18196
+      - width: 800
+        height: 600
+        format: webp
+        path: assets/.variants/kolkata-netarhat-betla/Untitled_-_30_May_2026_at_23.12.00-5-800.webp
+        bytes: 23430
+      - width: 800
+        height: 600
+        format: jpeg
+        path: assets/.variants/kolkata-netarhat-betla/Untitled_-_30_May_2026_at_23.12.00-5-800.jpg
+        bytes: 32749
+      - width: 1024
+        height: 768
+        format: avif
+        path: assets/.variants/kolkata-netarhat-betla/Untitled_-_30_May_2026_at_23.12.00-5-1024.avif
+        bytes: 26121
+      - width: 1024
+        height: 768
+        format: webp
+        path: assets/.variants/kolkata-netarhat-betla/Untitled_-_30_May_2026_at_23.12.00-5-1024.webp
+        bytes: 33720
+      - width: 1024
+        height: 768
+        format: jpeg
+        path: assets/.variants/kolkata-netarhat-betla/Untitled_-_30_May_2026_at_23.12.00-5-1024.jpg
+        bytes: 48665
+      - width: 1440
+        height: 1080
+        format: avif
+        path: assets/.variants/kolkata-netarhat-betla/Untitled_-_30_May_2026_at_23.12.00-5-1440.avif
+        bytes: 40387
+      - width: 1440
+        height: 1080
+        format: webp
+        path: assets/.variants/kolkata-netarhat-betla/Untitled_-_30_May_2026_at_23.12.00-5-1440.webp
+        bytes: 55458
+      - width: 1440
+        height: 1080
+        format: jpeg
+        path: assets/.variants/kolkata-netarhat-betla/Untitled_-_30_May_2026_at_23.12.00-5-1440.jpg
+        bytes: 84030
+      - width: 1920
+        height: 1440
+        format: avif
+        path: assets/.variants/kolkata-netarhat-betla/Untitled_-_30_May_2026_at_23.12.00-5-1920.avif
+        bytes: 55464
+      - width: 1920
+        height: 1440
+        format: webp
+        path: assets/.variants/kolkata-netarhat-betla/Untitled_-_30_May_2026_at_23.12.00-5-1920.webp
+        bytes: 81102
+      - width: 1920
+        height: 1440
+        format: jpeg
+        path: assets/.variants/kolkata-netarhat-betla/Untitled_-_30_May_2026_at_23.12.00-5-1920.jpg
+        bytes: 131829
+  - kind: video
+    sourcePath: assets/kolkata-netarhat-betla/IMG_6805.MOV
+    width: 1920
+    height: 1080
+    sizeBytes: 20773096
+    durationMs: 17837
+    posterPath: assets/.variants/kolkata-netarhat-betla/IMG_6805-poster.jpg
+    caption: ''
+    uploadedAt: '2026-05-30T18:07:51.858Z'
+    processingStatus: ready
+    variants:
+      - width: 1280
+        height: 720
+        codec: h264
+        mime: video/mp4
+        path: assets/.variants/kolkata-netarhat-betla/IMG_6805-1280.mp4
+        bytes: 29561361
+      - width: 1920
+        height: 1080
+        codec: source
+        mime: video/quicktime
+        path: assets/kolkata-netarhat-betla/IMG_6805.MOV
+        bytes: 20773096
+  - kind: image
+    sourcePath: assets/kolkata-netarhat-betla/Untitled_-_30_May_2026_at_23.12.00-2-1.jpeg
+    width: 1512
+    height: 2016
+    sizeBytes: 0
+    blurhash: UaJj#b-nRjxa~p%1R+f,%MoexYt69bkCjXWB
+    alt: ''
+    uploadedAt: '2026-05-31T03:08:33.299Z'
+    processingStatus: ready
+    variants:
+      - width: 320
+        height: 427
+        format: avif
+        path: assets/.variants/kolkata-netarhat-betla/Untitled_-_30_May_2026_at_23.12.00-2-1-320.avif
+        bytes: 22700
+      - width: 320
+        height: 427
+        format: webp
+        path: assets/.variants/kolkata-netarhat-betla/Untitled_-_30_May_2026_at_23.12.00-2-1-320.webp
+        bytes: 25954
+      - width: 320
+        height: 427
+        format: jpeg
+        path: assets/.variants/kolkata-netarhat-betla/Untitled_-_30_May_2026_at_23.12.00-2-1-320.jpg
+        bytes: 29031
+      - width: 640
+        height: 853
+        format: avif
+        path: assets/.variants/kolkata-netarhat-betla/Untitled_-_30_May_2026_at_23.12.00-2-1-640.avif
+        bytes: 59768
+      - width: 640
+        height: 853
+        format: webp
+        path: assets/.variants/kolkata-netarhat-betla/Untitled_-_30_May_2026_at_23.12.00-2-1-640.webp
+        bytes: 75272
+      - width: 640
+        height: 853
+        format: jpeg
+        path: assets/.variants/kolkata-netarhat-betla/Untitled_-_30_May_2026_at_23.12.00-2-1-640.jpg
+        bytes: 91048
+      - width: 1024
+        height: 1365
+        format: avif
+        path: assets/.variants/kolkata-netarhat-betla/Untitled_-_30_May_2026_at_23.12.00-2-1-1024.avif
+        bytes: 91769
+      - width: 1024
+        height: 1365
+        format: webp
+        path: assets/.variants/kolkata-netarhat-betla/Untitled_-_30_May_2026_at_23.12.00-2-1-1024.webp
+        bytes: 123500
+      - width: 1024
+        height: 1365
+        format: jpeg
+        path: assets/.variants/kolkata-netarhat-betla/Untitled_-_30_May_2026_at_23.12.00-2-1-1024.jpg
+        bytes: 178013
+      - width: 1440
+        height: 1920
+        format: avif
+        path: assets/.variants/kolkata-netarhat-betla/Untitled_-_30_May_2026_at_23.12.00-2-1-1440.avif
+        bytes: 120163
+      - width: 1440
+        height: 1920
+        format: webp
+        path: assets/.variants/kolkata-netarhat-betla/Untitled_-_30_May_2026_at_23.12.00-2-1-1440.webp
+        bytes: 178690
+      - width: 1440
+        height: 1920
+        format: jpeg
+        path: assets/.variants/kolkata-netarhat-betla/Untitled_-_30_May_2026_at_23.12.00-2-1-1440.jpg
+        bytes: 280456
+  - kind: image
+    sourcePath: assets/kolkata-netarhat-betla/Untitled_-_30_May_2026_at_23.12.00-2-2.jpeg
+    width: 1512
+    height: 2016
+    sizeBytes: 0
+    blurhash: UaJj#b-nRjxa~p%1R+f,%MoexYt69bkCjXWB
+    alt: ''
+    uploadedAt: '2026-05-31T03:09:36.995Z'
+    processingStatus: ready
+    variants:
+      - width: 320
+        height: 427
+        format: avif
+        path: assets/.variants/kolkata-netarhat-betla/Untitled_-_30_May_2026_at_23.12.00-2-2-320.avif
+        bytes: 22700
+      - width: 320
+        height: 427
+        format: webp
+        path: assets/.variants/kolkata-netarhat-betla/Untitled_-_30_May_2026_at_23.12.00-2-2-320.webp
+        bytes: 25954
+      - width: 320
+        height: 427
+        format: jpeg
+        path: assets/.variants/kolkata-netarhat-betla/Untitled_-_30_May_2026_at_23.12.00-2-2-320.jpg
+        bytes: 29031
+      - width: 640
+        height: 853
+        format: avif
+        path: assets/.variants/kolkata-netarhat-betla/Untitled_-_30_May_2026_at_23.12.00-2-2-640.avif
+        bytes: 59768
+      - width: 640
+        height: 853
+        format: webp
+        path: assets/.variants/kolkata-netarhat-betla/Untitled_-_30_May_2026_at_23.12.00-2-2-640.webp
+        bytes: 75272
+      - width: 640
+        height: 853
+        format: jpeg
+        path: assets/.variants/kolkata-netarhat-betla/Untitled_-_30_May_2026_at_23.12.00-2-2-640.jpg
+        bytes: 91048
+      - width: 1024
+        height: 1365
+        format: avif
+        path: assets/.variants/kolkata-netarhat-betla/Untitled_-_30_May_2026_at_23.12.00-2-2-1024.avif
+        bytes: 91769
+      - width: 1024
+        height: 1365
+        format: webp
+        path: assets/.variants/kolkata-netarhat-betla/Untitled_-_30_May_2026_at_23.12.00-2-2-1024.webp
+        bytes: 123500
+      - width: 1024
+        height: 1365
+        format: jpeg
+        path: assets/.variants/kolkata-netarhat-betla/Untitled_-_30_May_2026_at_23.12.00-2-2-1024.jpg
+        bytes: 178013
+      - width: 1440
+        height: 1920
+        format: avif
+        path: assets/.variants/kolkata-netarhat-betla/Untitled_-_30_May_2026_at_23.12.00-2-2-1440.avif
+        bytes: 120163
+      - width: 1440
+        height: 1920
+        format: webp
+        path: assets/.variants/kolkata-netarhat-betla/Untitled_-_30_May_2026_at_23.12.00-2-2-1440.webp
+        bytes: 178690
+      - width: 1440
+        height: 1920
+        format: jpeg
+        path: assets/.variants/kolkata-netarhat-betla/Untitled_-_30_May_2026_at_23.12.00-2-2-1440.jpg
+        bytes: 280456
+  - kind: image
+    sourcePath: assets/kolkata-netarhat-betla/Untitled_-_30_May_2026_at_23.12.00-2__3_.jpeg
+    width: 1512
+    height: 2016
+    sizeBytes: 0
+    blurhash: UaK0+*%LRjxa_N-TNbkD%3X8xXt658ofaeWC
+    alt: ''
+    uploadedAt: '2026-05-31T03:13:28.141Z'
+    processingStatus: ready
+    variants:
+      - width: 320
+        height: 427
+        format: avif
+        path: assets/.variants/kolkata-netarhat-betla/Untitled_-_30_May_2026_at_23.12.00-2__3_-320.avif
+        bytes: 22714
+      - width: 320
+        height: 427
+        format: webp
+        path: assets/.variants/kolkata-netarhat-betla/Untitled_-_30_May_2026_at_23.12.00-2__3_-320.webp
+        bytes: 25824
+      - width: 320
+        height: 427
+        format: jpeg
+        path: assets/.variants/kolkata-netarhat-betla/Untitled_-_30_May_2026_at_23.12.00-2__3_-320.jpg
+        bytes: 29378
+      - width: 640
+        height: 853
+        format: avif
+        path: assets/.variants/kolkata-netarhat-betla/Untitled_-_30_May_2026_at_23.12.00-2__3_-640.avif
+        bytes: 57683
+      - width: 640
+        height: 853
+        format: webp
+        path: assets/.variants/kolkata-netarhat-betla/Untitled_-_30_May_2026_at_23.12.00-2__3_-640.webp
+        bytes: 71080
+      - width: 640
+        height: 853
+        format: jpeg
+        path: assets/.variants/kolkata-netarhat-betla/Untitled_-_30_May_2026_at_23.12.00-2__3_-640.jpg
+        bytes: 89512
+      - width: 1024
+        height: 1365
+        format: avif
+        path: assets/.variants/kolkata-netarhat-betla/Untitled_-_30_May_2026_at_23.12.00-2__3_-1024.avif
+        bytes: 87793
+      - width: 1024
+        height: 1365
+        format: webp
+        path: assets/.variants/kolkata-netarhat-betla/Untitled_-_30_May_2026_at_23.12.00-2__3_-1024.webp
+        bytes: 121998
+      - width: 1024
+        height: 1365
+        format: jpeg
+        path: assets/.variants/kolkata-netarhat-betla/Untitled_-_30_May_2026_at_23.12.00-2__3_-1024.jpg
+        bytes: 173518
+      - width: 1440
+        height: 1920
+        format: avif
+        path: assets/.variants/kolkata-netarhat-betla/Untitled_-_30_May_2026_at_23.12.00-2__3_-1440.avif
+        bytes: 115648
+      - width: 1440
+        height: 1920
+        format: webp
+        path: assets/.variants/kolkata-netarhat-betla/Untitled_-_30_May_2026_at_23.12.00-2__3_-1440.webp
+        bytes: 177380
+      - width: 1440
+        height: 1920
+        format: jpeg
+        path: assets/.variants/kolkata-netarhat-betla/Untitled_-_30_May_2026_at_23.12.00-2__3_-1440.jpg
+        bytes: 273138
+  - kind: image
+    sourcePath: assets/kolkata-netarhat-betla/Untitled_-_30_May_2026_at_23.12.00-2__3_-1.jpeg
+    width: 1512
+    height: 2016
+    sizeBytes: 0
+    blurhash: UaK0+*%LRjxa_N-TNbkD%3X8xXt658ofaeWC
+    alt: ''
+    uploadedAt: '2026-06-07T06:52:45.992Z'
+    processingStatus: ready
+    variants:
+      - width: 320
+        height: 427
+        format: avif
+        path: >-
+          assets/.variants/kolkata-netarhat-betla/Untitled_-_30_May_2026_at_23.12.00-2__3_-1-320.avif
+        bytes: 22714
+      - width: 320
+        height: 427
+        format: webp
+        path: >-
+          assets/.variants/kolkata-netarhat-betla/Untitled_-_30_May_2026_at_23.12.00-2__3_-1-320.webp
+        bytes: 25824
+      - width: 320
+        height: 427
+        format: jpeg
+        path: assets/.variants/kolkata-netarhat-betla/Untitled_-_30_May_2026_at_23.12.00-2__3_-1-320.jpg
+        bytes: 29378
+      - width: 640
+        height: 853
+        format: avif
+        path: >-
+          assets/.variants/kolkata-netarhat-betla/Untitled_-_30_May_2026_at_23.12.00-2__3_-1-640.avif
+        bytes: 57683
+      - width: 640
+        height: 853
+        format: webp
+        path: >-
+          assets/.variants/kolkata-netarhat-betla/Untitled_-_30_May_2026_at_23.12.00-2__3_-1-640.webp
+        bytes: 71080
+      - width: 640
+        height: 853
+        format: jpeg
+        path: assets/.variants/kolkata-netarhat-betla/Untitled_-_30_May_2026_at_23.12.00-2__3_-1-640.jpg
+        bytes: 89512
+      - width: 800
+        height: 1067
+        format: avif
+        path: >-
+          assets/.variants/kolkata-netarhat-betla/Untitled_-_30_May_2026_at_23.12.00-2__3_-1-800.avif
+        bytes: 70902
+      - width: 800
+        height: 1067
+        format: webp
+        path: >-
+          assets/.variants/kolkata-netarhat-betla/Untitled_-_30_May_2026_at_23.12.00-2__3_-1-800.webp
+        bytes: 92280
+      - width: 800
+        height: 1067
+        format: jpeg
+        path: assets/.variants/kolkata-netarhat-betla/Untitled_-_30_May_2026_at_23.12.00-2__3_-1-800.jpg
+        bytes: 123996
+      - width: 1024
+        height: 1365
+        format: avif
+        path: >-
+          assets/.variants/kolkata-netarhat-betla/Untitled_-_30_May_2026_at_23.12.00-2__3_-1-1024.avif
+        bytes: 87793
+      - width: 1024
+        height: 1365
+        format: webp
+        path: >-
+          assets/.variants/kolkata-netarhat-betla/Untitled_-_30_May_2026_at_23.12.00-2__3_-1-1024.webp
+        bytes: 121998
+      - width: 1024
+        height: 1365
+        format: jpeg
+        path: >-
+          assets/.variants/kolkata-netarhat-betla/Untitled_-_30_May_2026_at_23.12.00-2__3_-1-1024.jpg
+        bytes: 173518
+      - width: 1440
+        height: 1920
+        format: avif
+        path: >-
+          assets/.variants/kolkata-netarhat-betla/Untitled_-_30_May_2026_at_23.12.00-2__3_-1-1440.avif
+        bytes: 115648
+      - width: 1440
+        height: 1920
+        format: webp
+        path: >-
+          assets/.variants/kolkata-netarhat-betla/Untitled_-_30_May_2026_at_23.12.00-2__3_-1-1440.webp
+        bytes: 177380
+      - width: 1440
+        height: 1920
+        format: jpeg
+        path: >-
+          assets/.variants/kolkata-netarhat-betla/Untitled_-_30_May_2026_at_23.12.00-2__3_-1-1440.jpg
+        bytes: 273138
+  - kind: video
+    sourcePath: assets/kolkata-netarhat-betla/IMG_6821.MOV
+    width: 1920
+    height: 1080
+    sizeBytes: 10658480
+    durationMs: 7068
+    posterPath: assets/.variants/kolkata-netarhat-betla/IMG_6821-poster.jpg
+    caption: ''
+    uploadedAt: '2026-05-31T03:58:47.543Z'
+    processingStatus: ready
+    variants:
+      - width: 1280
+        height: 720
+        codec: h264
+        mime: video/mp4
+        path: assets/.variants/kolkata-netarhat-betla/IMG_6821-1280.mp4
+        bytes: 8548016
+      - width: 1920
+        height: 1080
+        codec: source
+        mime: video/quicktime
+        path: assets/kolkata-netarhat-betla/IMG_6821.MOV
+        bytes: 10658480
+  - kind: video
+    sourcePath: assets/kolkata-netarhat-betla/gaur.mov
+    width: 1920
+    height: 1080
+    sizeBytes: 23060423
+    durationMs: 14318
+    posterPath: assets/.variants/kolkata-netarhat-betla/gaur-poster.jpg
+    caption: ''
+    uploadedAt: '2026-05-31T04:00:38.190Z'
+    processingStatus: ready
+    variants:
+      - width: 1280
+        height: 720
+        codec: h264
+        mime: video/mp4
+        path: assets/.variants/kolkata-netarhat-betla/gaur-1280.mp4
+        bytes: 16027855
+      - width: 1920
+        height: 1080
+        codec: source
+        mime: video/quicktime
+        path: assets/kolkata-netarhat-betla/gaur.mov
+        bytes: 23060423
+  - kind: video
+    sourcePath: assets/kolkata-netarhat-betla/Untitled_-_30_May_2026_at_23.12.00-3.mp4
+    width: 1920
+    height: 1080
+    sizeBytes: 22545895
+    durationMs: 16704
+    posterPath: assets/.variants/kolkata-netarhat-betla/Untitled_-_30_May_2026_at_23.12.00-3-poster.jpg
+    caption: ''
+    uploadedAt: '2026-05-31T04:09:58.144Z'
+    processingStatus: ready
+    variants:
+      - width: 1280
+        height: 720
+        codec: h264
+        mime: video/mp4
+        path: assets/.variants/kolkata-netarhat-betla/Untitled_-_30_May_2026_at_23.12.00-3-1280.mp4
+        bytes: 18770475
+      - width: 1920
+        height: 1080
+        codec: source
+        mime: video/mp4
+        path: assets/kolkata-netarhat-betla/Untitled_-_30_May_2026_at_23.12.00-3.mp4
+        bytes: 22545895
+  - kind: video
+    sourcePath: assets/kolkata-netarhat-betla/IMG_6805-1.MOV
+    width: 1920
+    height: 1080
+    sizeBytes: 20773096
+    durationMs: 17837
+    posterPath: assets/.variants/kolkata-netarhat-betla/IMG_6805-1-poster.jpg
+    caption: ''
+    uploadedAt: '2026-05-31T04:18:03.204Z'
+    processingStatus: ready
+    variants:
+      - width: 1920
+        height: 1080
+        codec: source
+        mime: video/quicktime
+        path: assets/kolkata-netarhat-betla/IMG_6805-1.MOV
+        bytes: 20773096
+  - kind: video
+    sourcePath: assets/kolkata-netarhat-betla/IMG_6805-2.MOV
+    width: 1920
+    height: 1080
+    sizeBytes: 20773096
+    durationMs: 17837
+    posterPath: assets/.variants/kolkata-netarhat-betla/IMG_6805-2-poster.jpg
+    caption: ''
+    uploadedAt: '2026-05-31T04:21:19.995Z'
+    processingStatus: ready
+    variants:
+      - width: 1280
+        height: 720
+        codec: h264
+        mime: video/mp4
+        path: assets/.variants/kolkata-netarhat-betla/IMG_6805-2-1280.mp4
+        bytes: 29561361
+      - width: 1920
+        height: 1080
+        codec: source
+        mime: video/quicktime
+        path: assets/kolkata-netarhat-betla/IMG_6805-2.MOV
+        bytes: 20773096
+  - kind: image
+    sourcePath: assets/madhya-pradesh/Untitled_-_31_May_2026_at_18.52.58.jpeg
+    width: 960
+    height: 1280
+    sizeBytes: 0
+    blurhash: UnCjx4axaeofpfa#j@j]Rkj]j]j]aJjYayay
+    alt: ''
+    uploadedAt: '2026-06-07T06:52:47.653Z'
+    processingStatus: ready
+    variants:
+      - width: 320
+        height: 427
+        format: avif
+        path: assets/.variants/madhya-pradesh/Untitled_-_31_May_2026_at_18.52.58-320.avif
+        bytes: 18240
+      - width: 320
+        height: 427
+        format: webp
+        path: assets/.variants/madhya-pradesh/Untitled_-_31_May_2026_at_18.52.58-320.webp
+        bytes: 21918
+      - width: 320
+        height: 427
+        format: jpeg
+        path: assets/.variants/madhya-pradesh/Untitled_-_31_May_2026_at_18.52.58-320.jpg
+        bytes: 24382
+      - width: 640
+        height: 853
+        format: avif
+        path: assets/.variants/madhya-pradesh/Untitled_-_31_May_2026_at_18.52.58-640.avif
+        bytes: 56724
+      - width: 640
+        height: 853
+        format: webp
+        path: assets/.variants/madhya-pradesh/Untitled_-_31_May_2026_at_18.52.58-640.webp
+        bytes: 70946
+      - width: 640
+        height: 853
+        format: jpeg
+        path: assets/.variants/madhya-pradesh/Untitled_-_31_May_2026_at_18.52.58-640.jpg
+        bytes: 82308
+      - width: 800
+        height: 1067
+        format: avif
+        path: assets/.variants/madhya-pradesh/Untitled_-_31_May_2026_at_18.52.58-800.avif
+        bytes: 72277
+      - width: 800
+        height: 1067
+        format: webp
+        path: assets/.variants/madhya-pradesh/Untitled_-_31_May_2026_at_18.52.58-800.webp
+        bytes: 93768
+      - width: 800
+        height: 1067
+        format: jpeg
+        path: assets/.variants/madhya-pradesh/Untitled_-_31_May_2026_at_18.52.58-800.jpg
+        bytes: 116613
+  - kind: image
+    sourcePath: assets/madhya-pradesh/C26743D8-3B8F-4CFB-B57A-30196AC5A3FA_1_105_c.jpeg
+    width: 1024
+    height: 768
+    sizeBytes: 0
+    blurhash: UVIE,+~pWVt6SvbbWXWV4nD%oJt6Rlazt6t6
+    alt: ''
+    uploadedAt: '2026-06-07T06:52:49.961Z'
+    processingStatus: ready
+    variants:
+      - width: 320
+        height: 240
+        format: avif
+        path: assets/.variants/madhya-pradesh/C26743D8-3B8F-4CFB-B57A-30196AC5A3FA_1_105_c-320.avif
+        bytes: 24129
+      - width: 320
+        height: 240
+        format: webp
+        path: assets/.variants/madhya-pradesh/C26743D8-3B8F-4CFB-B57A-30196AC5A3FA_1_105_c-320.webp
+        bytes: 25074
+      - width: 320
+        height: 240
+        format: jpeg
+        path: assets/.variants/madhya-pradesh/C26743D8-3B8F-4CFB-B57A-30196AC5A3FA_1_105_c-320.jpg
+        bytes: 23152
+      - width: 640
+        height: 480
+        format: avif
+        path: assets/.variants/madhya-pradesh/C26743D8-3B8F-4CFB-B57A-30196AC5A3FA_1_105_c-640.avif
+        bytes: 96496
+      - width: 640
+        height: 480
+        format: webp
+        path: assets/.variants/madhya-pradesh/C26743D8-3B8F-4CFB-B57A-30196AC5A3FA_1_105_c-640.webp
+        bytes: 106628
+      - width: 640
+        height: 480
+        format: jpeg
+        path: assets/.variants/madhya-pradesh/C26743D8-3B8F-4CFB-B57A-30196AC5A3FA_1_105_c-640.jpg
+        bytes: 97163
+      - width: 800
+        height: 600
+        format: avif
+        path: assets/.variants/madhya-pradesh/C26743D8-3B8F-4CFB-B57A-30196AC5A3FA_1_105_c-800.avif
+        bytes: 142095
+      - width: 800
+        height: 600
+        format: webp
+        path: assets/.variants/madhya-pradesh/C26743D8-3B8F-4CFB-B57A-30196AC5A3FA_1_105_c-800.webp
+        bytes: 160234
+      - width: 800
+        height: 600
+        format: jpeg
+        path: assets/.variants/madhya-pradesh/C26743D8-3B8F-4CFB-B57A-30196AC5A3FA_1_105_c-800.jpg
+        bytes: 148506
+      - width: 1024
+        height: 768
+        format: avif
+        path: assets/.variants/madhya-pradesh/C26743D8-3B8F-4CFB-B57A-30196AC5A3FA_1_105_c-1024.avif
+        bytes: 217028
+      - width: 1024
+        height: 768
+        format: webp
+        path: assets/.variants/madhya-pradesh/C26743D8-3B8F-4CFB-B57A-30196AC5A3FA_1_105_c-1024.webp
+        bytes: 249788
+      - width: 1024
+        height: 768
+        format: jpeg
+        path: assets/.variants/madhya-pradesh/C26743D8-3B8F-4CFB-B57A-30196AC5A3FA_1_105_c-1024.jpg
+        bytes: 234291
+  - kind: image
+    sourcePath: assets/madhya-pradesh/E5B2EF3E-A6B8-4818-AA1D-63775E3E82AA_1_105_c.jpeg
+    width: 1024
+    height: 768
+    sizeBytes: 0
+    blurhash: UYI#rb~pE1odt2WBNHfk00D%xuj[E4SOxZae
+    alt: ''
+    uploadedAt: '2026-06-07T06:52:52.026Z'
+    processingStatus: ready
+    variants:
+      - width: 320
+        height: 240
+        format: avif
+        path: assets/.variants/madhya-pradesh/E5B2EF3E-A6B8-4818-AA1D-63775E3E82AA_1_105_c-320.avif
+        bytes: 21133
+      - width: 320
+        height: 240
+        format: webp
+        path: assets/.variants/madhya-pradesh/E5B2EF3E-A6B8-4818-AA1D-63775E3E82AA_1_105_c-320.webp
+        bytes: 22656
+      - width: 320
+        height: 240
+        format: jpeg
+        path: assets/.variants/madhya-pradesh/E5B2EF3E-A6B8-4818-AA1D-63775E3E82AA_1_105_c-320.jpg
+        bytes: 21460
+      - width: 640
+        height: 480
+        format: avif
+        path: assets/.variants/madhya-pradesh/E5B2EF3E-A6B8-4818-AA1D-63775E3E82AA_1_105_c-640.avif
+        bytes: 81393
+      - width: 640
+        height: 480
+        format: webp
+        path: assets/.variants/madhya-pradesh/E5B2EF3E-A6B8-4818-AA1D-63775E3E82AA_1_105_c-640.webp
+        bytes: 90666
+      - width: 640
+        height: 480
+        format: jpeg
+        path: assets/.variants/madhya-pradesh/E5B2EF3E-A6B8-4818-AA1D-63775E3E82AA_1_105_c-640.jpg
+        bytes: 86923
+      - width: 800
+        height: 600
+        format: avif
+        path: assets/.variants/madhya-pradesh/E5B2EF3E-A6B8-4818-AA1D-63775E3E82AA_1_105_c-800.avif
+        bytes: 116614
+      - width: 800
+        height: 600
+        format: webp
+        path: assets/.variants/madhya-pradesh/E5B2EF3E-A6B8-4818-AA1D-63775E3E82AA_1_105_c-800.webp
+        bytes: 134422
+      - width: 800
+        height: 600
+        format: jpeg
+        path: assets/.variants/madhya-pradesh/E5B2EF3E-A6B8-4818-AA1D-63775E3E82AA_1_105_c-800.jpg
+        bytes: 130671
+      - width: 1024
+        height: 768
+        format: avif
+        path: assets/.variants/madhya-pradesh/E5B2EF3E-A6B8-4818-AA1D-63775E3E82AA_1_105_c-1024.avif
+        bytes: 168970
+      - width: 1024
+        height: 768
+        format: webp
+        path: assets/.variants/madhya-pradesh/E5B2EF3E-A6B8-4818-AA1D-63775E3E82AA_1_105_c-1024.webp
+        bytes: 199538
+      - width: 1024
+        height: 768
+        format: jpeg
+        path: assets/.variants/madhya-pradesh/E5B2EF3E-A6B8-4818-AA1D-63775E3E82AA_1_105_c-1024.jpg
+        bytes: 200128
+  - kind: video
+    sourcePath: assets/madhya-pradesh/Untitled_-_31_May_2026_at_18.52.58-2.mp4
+    width: 1080
+    height: 1920
+    sizeBytes: 24224581
+    durationMs: 18923
+    posterPath: assets/.variants/madhya-pradesh/Untitled_-_31_May_2026_at_18.52.58-2-poster.jpg
+    caption: ''
+    uploadedAt: '2026-05-31T14:03:38.229Z'
+    processingStatus: ready
+    variants:
+      - width: 1080
+        height: 1920
+        codec: source
+        mime: video/mp4
+        path: assets/madhya-pradesh/Untitled_-_31_May_2026_at_18.52.58-2.mp4
+        bytes: 24224581
+  - kind: image
+    sourcePath: assets/madhya-pradesh/deity_lit_up.jpeg
+    width: 2142
+    height: 2856
+    sizeBytes: 0
+    blurhash: U6DR{3NG02-U00$%}?R*}+n+s;Nt?IW.I.sW
+    alt: ''
+    uploadedAt: '2026-06-07T06:52:57.778Z'
+    processingStatus: ready
+    variants:
+      - width: 320
+        height: 427
+        format: avif
+        path: assets/.variants/madhya-pradesh/deity_lit_up-320.avif
+        bytes: 19706
+      - width: 320
+        height: 427
+        format: webp
+        path: assets/.variants/madhya-pradesh/deity_lit_up-320.webp
+        bytes: 25060
+      - width: 320
+        height: 427
+        format: jpeg
+        path: assets/.variants/madhya-pradesh/deity_lit_up-320.jpg
+        bytes: 29936
+      - width: 640
+        height: 853
+        format: avif
+        path: assets/.variants/madhya-pradesh/deity_lit_up-640.avif
+        bytes: 47639
+      - width: 640
+        height: 853
+        format: webp
+        path: assets/.variants/madhya-pradesh/deity_lit_up-640.webp
+        bytes: 62796
+      - width: 640
+        height: 853
+        format: jpeg
+        path: assets/.variants/madhya-pradesh/deity_lit_up-640.jpg
+        bytes: 90299
+      - width: 800
+        height: 1067
+        format: avif
+        path: assets/.variants/madhya-pradesh/deity_lit_up-800.avif
+        bytes: 59698
+      - width: 800
+        height: 1067
+        format: webp
+        path: assets/.variants/madhya-pradesh/deity_lit_up-800.webp
+        bytes: 83402
+      - width: 800
+        height: 1067
+        format: jpeg
+        path: assets/.variants/madhya-pradesh/deity_lit_up-800.jpg
+        bytes: 125277
+      - width: 1024
+        height: 1365
+        format: avif
+        path: assets/.variants/madhya-pradesh/deity_lit_up-1024.avif
+        bytes: 75018
+      - width: 1024
+        height: 1365
+        format: webp
+        path: assets/.variants/madhya-pradesh/deity_lit_up-1024.webp
+        bytes: 108040
+      - width: 1024
+        height: 1365
+        format: jpeg
+        path: assets/.variants/madhya-pradesh/deity_lit_up-1024.jpg
+        bytes: 175122
+      - width: 1440
+        height: 1920
+        format: avif
+        path: assets/.variants/madhya-pradesh/deity_lit_up-1440.avif
+        bytes: 101404
+      - width: 1440
+        height: 1920
+        format: webp
+        path: assets/.variants/madhya-pradesh/deity_lit_up-1440.webp
+        bytes: 157582
+      - width: 1440
+        height: 1920
+        format: jpeg
+        path: assets/.variants/madhya-pradesh/deity_lit_up-1440.jpg
+        bytes: 277228
+      - width: 1920
+        height: 2560
+        format: avif
+        path: assets/.variants/madhya-pradesh/deity_lit_up-1920.avif
+        bytes: 131659
+      - width: 1920
+        height: 2560
+        format: webp
+        path: assets/.variants/madhya-pradesh/deity_lit_up-1920.webp
+        bytes: 215970
+      - width: 1920
+        height: 2560
+        format: jpeg
+        path: assets/.variants/madhya-pradesh/deity_lit_up-1920.jpg
+        bytes: 406784
+  - kind: image
+    sourcePath: assets/madhya-pradesh/jagdamba.jpeg
+    width: 1512
+    height: 2016
+    sizeBytes: 0
+    blurhash: 'U5AmkxIW00?Z00jufmWBE0xt~pE29OWB%Es:'
+    alt: ''
+    uploadedAt: '2026-06-07T06:53:00.822Z'
+    processingStatus: ready
+    variants:
+      - width: 320
+        height: 427
+        format: avif
+        path: assets/.variants/madhya-pradesh/jagdamba-320.avif
+        bytes: 13963
+      - width: 320
+        height: 427
+        format: webp
+        path: assets/.variants/madhya-pradesh/jagdamba-320.webp
+        bytes: 16402
+      - width: 320
+        height: 427
+        format: jpeg
+        path: assets/.variants/madhya-pradesh/jagdamba-320.jpg
+        bytes: 19531
+      - width: 640
+        height: 853
+        format: avif
+        path: assets/.variants/madhya-pradesh/jagdamba-640.avif
+        bytes: 35068
+      - width: 640
+        height: 853
+        format: webp
+        path: assets/.variants/madhya-pradesh/jagdamba-640.webp
+        bytes: 44414
+      - width: 640
+        height: 853
+        format: jpeg
+        path: assets/.variants/madhya-pradesh/jagdamba-640.jpg
+        bytes: 59790
+      - width: 800
+        height: 1067
+        format: avif
+        path: assets/.variants/madhya-pradesh/jagdamba-800.avif
+        bytes: 43844
+      - width: 800
+        height: 1067
+        format: webp
+        path: assets/.variants/madhya-pradesh/jagdamba-800.webp
+        bytes: 56832
+      - width: 800
+        height: 1067
+        format: jpeg
+        path: assets/.variants/madhya-pradesh/jagdamba-800.jpg
+        bytes: 83801
+      - width: 1024
+        height: 1365
+        format: avif
+        path: assets/.variants/madhya-pradesh/jagdamba-1024.avif
+        bytes: 53864
+      - width: 1024
+        height: 1365
+        format: webp
+        path: assets/.variants/madhya-pradesh/jagdamba-1024.webp
+        bytes: 72280
+      - width: 1024
+        height: 1365
+        format: jpeg
+        path: assets/.variants/madhya-pradesh/jagdamba-1024.jpg
+        bytes: 117106
+      - width: 1440
+        height: 1920
+        format: avif
+        path: assets/.variants/madhya-pradesh/jagdamba-1440.avif
+        bytes: 70667
+      - width: 1440
+        height: 1920
+        format: webp
+        path: assets/.variants/madhya-pradesh/jagdamba-1440.webp
+        bytes: 108738
+      - width: 1440
+        height: 1920
+        format: jpeg
+        path: assets/.variants/madhya-pradesh/jagdamba-1440.jpg
+        bytes: 182838
+  - kind: image
+    sourcePath: assets/madhya-pradesh/kandariya_mahadev.jpeg
+    width: 1512
+    height: 2016
+    sizeBytes: 0
+    blurhash: UhGbuHkDt-tSK-a#o$bcx^jYRPWWM}oJVrjY
+    alt: ''
+    uploadedAt: '2026-06-07T06:53:05.438Z'
+    processingStatus: ready
+    variants:
+      - width: 320
+        height: 427
+        format: avif
+        path: assets/.variants/madhya-pradesh/kandariya_mahadev-320.avif
+        bytes: 25094
+      - width: 320
+        height: 427
+        format: webp
+        path: assets/.variants/madhya-pradesh/kandariya_mahadev-320.webp
+        bytes: 28106
+      - width: 320
+        height: 427
+        format: jpeg
+        path: assets/.variants/madhya-pradesh/kandariya_mahadev-320.jpg
+        bytes: 31486
+      - width: 640
+        height: 853
+        format: avif
+        path: assets/.variants/madhya-pradesh/kandariya_mahadev-640.avif
+        bytes: 63244
+      - width: 640
+        height: 853
+        format: webp
+        path: assets/.variants/madhya-pradesh/kandariya_mahadev-640.webp
+        bytes: 80902
+      - width: 640
+        height: 853
+        format: jpeg
+        path: assets/.variants/madhya-pradesh/kandariya_mahadev-640.jpg
+        bytes: 97240
+      - width: 800
+        height: 1067
+        format: avif
+        path: assets/.variants/madhya-pradesh/kandariya_mahadev-800.avif
+        bytes: 78265
+      - width: 800
+        height: 1067
+        format: webp
+        path: assets/.variants/madhya-pradesh/kandariya_mahadev-800.webp
+        bytes: 103508
+      - width: 800
+        height: 1067
+        format: jpeg
+        path: assets/.variants/madhya-pradesh/kandariya_mahadev-800.jpg
+        bytes: 133821
+      - width: 1024
+        height: 1365
+        format: avif
+        path: assets/.variants/madhya-pradesh/kandariya_mahadev-1024.avif
+        bytes: 96135
+      - width: 1024
+        height: 1365
+        format: webp
+        path: assets/.variants/madhya-pradesh/kandariya_mahadev-1024.webp
+        bytes: 132770
+      - width: 1024
+        height: 1365
+        format: jpeg
+        path: assets/.variants/madhya-pradesh/kandariya_mahadev-1024.jpg
+        bytes: 187268
+      - width: 1440
+        height: 1920
+        format: avif
+        path: assets/.variants/madhya-pradesh/kandariya_mahadev-1440.avif
+        bytes: 129228
+      - width: 1440
+        height: 1920
+        format: webp
+        path: assets/.variants/madhya-pradesh/kandariya_mahadev-1440.webp
+        bytes: 197316
+      - width: 1440
+        height: 1920
+        format: jpeg
+        path: assets/.variants/madhya-pradesh/kandariya_mahadev-1440.jpg
+        bytes: 296748
+  - kind: image
+    sourcePath: assets/madhya-pradesh/km.jpeg
+    width: 2856
+    height: 2142
+    sizeBytes: 0
+    blurhash: UwI5;{s*x]x]%%xss;t8x]tRRjWWRnWYRPRj
+    alt: ''
+    uploadedAt: '2026-06-07T06:53:10.675Z'
+    processingStatus: ready
+    variants:
+      - width: 320
+        height: 240
+        format: avif
+        path: assets/.variants/madhya-pradesh/km-320.avif
+        bytes: 13946
+      - width: 320
+        height: 240
+        format: webp
+        path: assets/.variants/madhya-pradesh/km-320.webp
+        bytes: 15136
+      - width: 320
+        height: 240
+        format: jpeg
+        path: assets/.variants/madhya-pradesh/km-320.jpg
+        bytes: 16679
+      - width: 640
+        height: 480
+        format: avif
+        path: assets/.variants/madhya-pradesh/km-640.avif
+        bytes: 42537
+      - width: 640
+        height: 480
+        format: webp
+        path: assets/.variants/madhya-pradesh/km-640.webp
+        bytes: 49868
+      - width: 640
+        height: 480
+        format: jpeg
+        path: assets/.variants/madhya-pradesh/km-640.jpg
+        bytes: 56551
+      - width: 800
+        height: 600
+        format: avif
+        path: assets/.variants/madhya-pradesh/km-800.avif
+        bytes: 57424
+      - width: 800
+        height: 600
+        format: webp
+        path: assets/.variants/madhya-pradesh/km-800.webp
+        bytes: 69602
+      - width: 800
+        height: 600
+        format: jpeg
+        path: assets/.variants/madhya-pradesh/km-800.jpg
+        bytes: 81973
+      - width: 1024
+        height: 768
+        format: avif
+        path: assets/.variants/madhya-pradesh/km-1024.avif
+        bytes: 79150
+      - width: 1024
+        height: 768
+        format: webp
+        path: assets/.variants/madhya-pradesh/km-1024.webp
+        bytes: 98028
+      - width: 1024
+        height: 768
+        format: jpeg
+        path: assets/.variants/madhya-pradesh/km-1024.jpg
+        bytes: 122845
+      - width: 1440
+        height: 1080
+        format: avif
+        path: assets/.variants/madhya-pradesh/km-1440.avif
+        bytes: 107888
+      - width: 1440
+        height: 1080
+        format: webp
+        path: assets/.variants/madhya-pradesh/km-1440.webp
+        bytes: 147838
+      - width: 1440
+        height: 1080
+        format: jpeg
+        path: assets/.variants/madhya-pradesh/km-1440.jpg
+        bytes: 200976
+      - width: 1920
+        height: 1440
+        format: avif
+        path: assets/.variants/madhya-pradesh/km-1920.avif
+        bytes: 139105
+      - width: 1920
+        height: 1440
+        format: webp
+        path: assets/.variants/madhya-pradesh/km-1920.webp
+        bytes: 205734
+      - width: 1920
+        height: 1440
+        format: jpeg
+        path: assets/.variants/madhya-pradesh/km-1920.jpg
+        bytes: 299077
+  - kind: image
+    sourcePath: assets/madhya-pradesh/lakshmana.jpeg
+    width: 2142
+    height: 2856
+    sizeBytes: 0
+    blurhash: UkH-.FXSX.kDyZxabxbIObaei_WBRnR*aJoI
+    alt: ''
+    uploadedAt: '2026-06-07T06:53:18.713Z'
+    processingStatus: ready
+    variants:
+      - width: 320
+        height: 427
+        format: avif
+        path: assets/.variants/madhya-pradesh/lakshmana-320.avif
+        bytes: 26738
+      - width: 320
+        height: 427
+        format: webp
+        path: assets/.variants/madhya-pradesh/lakshmana-320.webp
+        bytes: 30164
+      - width: 320
+        height: 427
+        format: jpeg
+        path: assets/.variants/madhya-pradesh/lakshmana-320.jpg
+        bytes: 33088
+      - width: 640
+        height: 853
+        format: avif
+        path: assets/.variants/madhya-pradesh/lakshmana-640.avif
+        bytes: 74760
+      - width: 640
+        height: 853
+        format: webp
+        path: assets/.variants/madhya-pradesh/lakshmana-640.webp
+        bytes: 89662
+      - width: 640
+        height: 853
+        format: jpeg
+        path: assets/.variants/madhya-pradesh/lakshmana-640.jpg
+        bytes: 106622
+      - width: 800
+        height: 1067
+        format: avif
+        path: assets/.variants/madhya-pradesh/lakshmana-800.avif
+        bytes: 96152
+      - width: 800
+        height: 1067
+        format: webp
+        path: assets/.variants/madhya-pradesh/lakshmana-800.webp
+        bytes: 120722
+      - width: 800
+        height: 1067
+        format: jpeg
+        path: assets/.variants/madhya-pradesh/lakshmana-800.jpg
+        bytes: 150879
+      - width: 1024
+        height: 1365
+        format: avif
+        path: assets/.variants/madhya-pradesh/lakshmana-1024.avif
+        bytes: 119881
+      - width: 1024
+        height: 1365
+        format: webp
+        path: assets/.variants/madhya-pradesh/lakshmana-1024.webp
+        bytes: 157260
+      - width: 1024
+        height: 1365
+        format: jpeg
+        path: assets/.variants/madhya-pradesh/lakshmana-1024.jpg
+        bytes: 212670
+      - width: 1440
+        height: 1920
+        format: avif
+        path: assets/.variants/madhya-pradesh/lakshmana-1440.avif
+        bytes: 160030
+      - width: 1440
+        height: 1920
+        format: webp
+        path: assets/.variants/madhya-pradesh/lakshmana-1440.webp
+        bytes: 234376
+      - width: 1440
+        height: 1920
+        format: jpeg
+        path: assets/.variants/madhya-pradesh/lakshmana-1440.jpg
+        bytes: 338215
+      - width: 1920
+        height: 2560
+        format: avif
+        path: assets/.variants/madhya-pradesh/lakshmana-1920.avif
+        bytes: 207964
+      - width: 1920
+        height: 2560
+        format: webp
+        path: assets/.variants/madhya-pradesh/lakshmana-1920.webp
+        bytes: 319708
+      - width: 1920
+        height: 2560
+        format: jpeg
+        path: assets/.variants/madhya-pradesh/lakshmana-1920.jpg
+        bytes: 499055
+  - kind: image
+    sourcePath: assets/madhya-pradesh/670EDE15-053A-4BE3-B905-D502801DC785_1_105_c.jpeg
+    width: 1480
+    height: 532
+    sizeBytes: 0
+    blurhash: U+Ir1;RjxGof?woJRkj[?cayafj[%gogoLof
+    alt: ''
+    uploadedAt: '2026-06-07T06:53:20.832Z'
+    processingStatus: ready
+    variants:
+      - width: 320
+        height: 115
+        format: avif
+        path: assets/.variants/madhya-pradesh/670EDE15-053A-4BE3-B905-D502801DC785_1_105_c-320.avif
+        bytes: 7841
+      - width: 320
+        height: 115
+        format: webp
+        path: assets/.variants/madhya-pradesh/670EDE15-053A-4BE3-B905-D502801DC785_1_105_c-320.webp
+        bytes: 8144
+      - width: 320
+        height: 115
+        format: jpeg
+        path: assets/.variants/madhya-pradesh/670EDE15-053A-4BE3-B905-D502801DC785_1_105_c-320.jpg
+        bytes: 9070
+      - width: 640
+        height: 230
+        format: avif
+        path: assets/.variants/madhya-pradesh/670EDE15-053A-4BE3-B905-D502801DC785_1_105_c-640.avif
+        bytes: 28521
+      - width: 640
+        height: 230
+        format: webp
+        path: assets/.variants/madhya-pradesh/670EDE15-053A-4BE3-B905-D502801DC785_1_105_c-640.webp
+        bytes: 30108
+      - width: 640
+        height: 230
+        format: jpeg
+        path: assets/.variants/madhya-pradesh/670EDE15-053A-4BE3-B905-D502801DC785_1_105_c-640.jpg
+        bytes: 31591
+      - width: 800
+        height: 288
+        format: avif
+        path: assets/.variants/madhya-pradesh/670EDE15-053A-4BE3-B905-D502801DC785_1_105_c-800.avif
+        bytes: 43240
+      - width: 800
+        height: 288
+        format: webp
+        path: assets/.variants/madhya-pradesh/670EDE15-053A-4BE3-B905-D502801DC785_1_105_c-800.webp
+        bytes: 45410
+      - width: 800
+        height: 288
+        format: jpeg
+        path: assets/.variants/madhya-pradesh/670EDE15-053A-4BE3-B905-D502801DC785_1_105_c-800.jpg
+        bytes: 47664
+      - width: 1024
+        height: 368
+        format: avif
+        path: assets/.variants/madhya-pradesh/670EDE15-053A-4BE3-B905-D502801DC785_1_105_c-1024.avif
+        bytes: 66886
+      - width: 1024
+        height: 368
+        format: webp
+        path: assets/.variants/madhya-pradesh/670EDE15-053A-4BE3-B905-D502801DC785_1_105_c-1024.webp
+        bytes: 72120
+      - width: 1024
+        height: 368
+        format: jpeg
+        path: assets/.variants/madhya-pradesh/670EDE15-053A-4BE3-B905-D502801DC785_1_105_c-1024.jpg
+        bytes: 75686
+      - width: 1440
+        height: 518
+        format: avif
+        path: assets/.variants/madhya-pradesh/670EDE15-053A-4BE3-B905-D502801DC785_1_105_c-1440.avif
+        bytes: 114899
+      - width: 1440
+        height: 518
+        format: webp
+        path: assets/.variants/madhya-pradesh/670EDE15-053A-4BE3-B905-D502801DC785_1_105_c-1440.webp
+        bytes: 132150
+      - width: 1440
+        height: 518
+        format: jpeg
+        path: assets/.variants/madhya-pradesh/670EDE15-053A-4BE3-B905-D502801DC785_1_105_c-1440.jpg
+        bytes: 140358
+  - kind: image
+    sourcePath: assets/madhya-pradesh/Untitled_-_31_May_2026_at_18.52.58-2.jpeg
+    width: 2856
+    height: 2142
+    sizeBytes: 0
+    blurhash: UoI5Pcbcs.Rj*0xuWXn~?vbIofR%tmWVWVf6
+    alt: ''
+    uploadedAt: '2026-06-07T06:53:25.968Z'
+    processingStatus: ready
+    variants:
+      - width: 320
+        height: 240
+        format: avif
+        path: assets/.variants/madhya-pradesh/Untitled_-_31_May_2026_at_18.52.58-2-320.avif
+        bytes: 21674
+      - width: 320
+        height: 240
+        format: webp
+        path: assets/.variants/madhya-pradesh/Untitled_-_31_May_2026_at_18.52.58-2-320.webp
+        bytes: 22690
+      - width: 320
+        height: 240
+        format: jpeg
+        path: assets/.variants/madhya-pradesh/Untitled_-_31_May_2026_at_18.52.58-2-320.jpg
+        bytes: 22897
+      - width: 640
+        height: 480
+        format: avif
+        path: assets/.variants/madhya-pradesh/Untitled_-_31_May_2026_at_18.52.58-2-640.avif
+        bytes: 67600
+      - width: 640
+        height: 480
+        format: webp
+        path: assets/.variants/madhya-pradesh/Untitled_-_31_May_2026_at_18.52.58-2-640.webp
+        bytes: 76270
+      - width: 640
+        height: 480
+        format: jpeg
+        path: assets/.variants/madhya-pradesh/Untitled_-_31_May_2026_at_18.52.58-2-640.jpg
+        bytes: 79697
+      - width: 800
+        height: 600
+        format: avif
+        path: assets/.variants/madhya-pradesh/Untitled_-_31_May_2026_at_18.52.58-2-800.avif
+        bytes: 90687
+      - width: 800
+        height: 600
+        format: webp
+        path: assets/.variants/madhya-pradesh/Untitled_-_31_May_2026_at_18.52.58-2-800.webp
+        bytes: 107054
+      - width: 800
+        height: 600
+        format: jpeg
+        path: assets/.variants/madhya-pradesh/Untitled_-_31_May_2026_at_18.52.58-2-800.jpg
+        bytes: 115184
+      - width: 1024
+        height: 768
+        format: avif
+        path: assets/.variants/madhya-pradesh/Untitled_-_31_May_2026_at_18.52.58-2-1024.avif
+        bytes: 122205
+      - width: 1024
+        height: 768
+        format: webp
+        path: assets/.variants/madhya-pradesh/Untitled_-_31_May_2026_at_18.52.58-2-1024.webp
+        bytes: 150840
+      - width: 1024
+        height: 768
+        format: jpeg
+        path: assets/.variants/madhya-pradesh/Untitled_-_31_May_2026_at_18.52.58-2-1024.jpg
+        bytes: 171988
+      - width: 1440
+        height: 1080
+        format: avif
+        path: assets/.variants/madhya-pradesh/Untitled_-_31_May_2026_at_18.52.58-2-1440.avif
+        bytes: 162828
+      - width: 1440
+        height: 1080
+        format: webp
+        path: assets/.variants/madhya-pradesh/Untitled_-_31_May_2026_at_18.52.58-2-1440.webp
+        bytes: 220680
+      - width: 1440
+        height: 1080
+        format: jpeg
+        path: assets/.variants/madhya-pradesh/Untitled_-_31_May_2026_at_18.52.58-2-1440.jpg
+        bytes: 276111
+      - width: 1920
+        height: 1440
+        format: avif
+        path: assets/.variants/madhya-pradesh/Untitled_-_31_May_2026_at_18.52.58-2-1920.avif
+        bytes: 210011
+      - width: 1920
+        height: 1440
+        format: webp
+        path: assets/.variants/madhya-pradesh/Untitled_-_31_May_2026_at_18.52.58-2-1920.webp
+        bytes: 309908
+      - width: 1920
+        height: 1440
+        format: jpeg
+        path: assets/.variants/madhya-pradesh/Untitled_-_31_May_2026_at_18.52.58-2-1920.jpg
+        bytes: 407282
+  - kind: image
+    sourcePath: assets/madhya-pradesh/Untitled_-_31_May_2026_at_18.52.58-3.jpeg
+    width: 2856
+    height: 2142
+    sizeBytes: 0
+    blurhash: UhLzX3%LRk%2Y7bIoJbI.SRkjYa}~qj[aybH
+    alt: ''
+    uploadedAt: '2026-06-07T06:53:31.418Z'
+    processingStatus: ready
+    variants:
+      - width: 320
+        height: 240
+        format: avif
+        path: assets/.variants/madhya-pradesh/Untitled_-_31_May_2026_at_18.52.58-3-320.avif
+        bytes: 16386
+      - width: 320
+        height: 240
+        format: webp
+        path: assets/.variants/madhya-pradesh/Untitled_-_31_May_2026_at_18.52.58-3-320.webp
+        bytes: 18210
+      - width: 320
+        height: 240
+        format: jpeg
+        path: assets/.variants/madhya-pradesh/Untitled_-_31_May_2026_at_18.52.58-3-320.jpg
+        bytes: 18626
+      - width: 640
+        height: 480
+        format: avif
+        path: assets/.variants/madhya-pradesh/Untitled_-_31_May_2026_at_18.52.58-3-640.avif
+        bytes: 54436
+      - width: 640
+        height: 480
+        format: webp
+        path: assets/.variants/madhya-pradesh/Untitled_-_31_May_2026_at_18.52.58-3-640.webp
+        bytes: 63774
+      - width: 640
+        height: 480
+        format: jpeg
+        path: assets/.variants/madhya-pradesh/Untitled_-_31_May_2026_at_18.52.58-3-640.jpg
+        bytes: 66448
+      - width: 800
+        height: 600
+        format: avif
+        path: assets/.variants/madhya-pradesh/Untitled_-_31_May_2026_at_18.52.58-3-800.avif
+        bytes: 74403
+      - width: 800
+        height: 600
+        format: webp
+        path: assets/.variants/madhya-pradesh/Untitled_-_31_May_2026_at_18.52.58-3-800.webp
+        bytes: 89780
+      - width: 800
+        height: 600
+        format: jpeg
+        path: assets/.variants/madhya-pradesh/Untitled_-_31_May_2026_at_18.52.58-3-800.jpg
+        bytes: 97105
+      - width: 1024
+        height: 768
+        format: avif
+        path: assets/.variants/madhya-pradesh/Untitled_-_31_May_2026_at_18.52.58-3-1024.avif
+        bytes: 102837
+      - width: 1024
+        height: 768
+        format: webp
+        path: assets/.variants/madhya-pradesh/Untitled_-_31_May_2026_at_18.52.58-3-1024.webp
+        bytes: 127896
+      - width: 1024
+        height: 768
+        format: jpeg
+        path: assets/.variants/madhya-pradesh/Untitled_-_31_May_2026_at_18.52.58-3-1024.jpg
+        bytes: 147771
+      - width: 1440
+        height: 1080
+        format: avif
+        path: assets/.variants/madhya-pradesh/Untitled_-_31_May_2026_at_18.52.58-3-1440.avif
+        bytes: 139322
+      - width: 1440
+        height: 1080
+        format: webp
+        path: assets/.variants/madhya-pradesh/Untitled_-_31_May_2026_at_18.52.58-3-1440.webp
+        bytes: 189426
+      - width: 1440
+        height: 1080
+        format: jpeg
+        path: assets/.variants/madhya-pradesh/Untitled_-_31_May_2026_at_18.52.58-3-1440.jpg
+        bytes: 240972
+      - width: 1920
+        height: 1440
+        format: avif
+        path: assets/.variants/madhya-pradesh/Untitled_-_31_May_2026_at_18.52.58-3-1920.avif
+        bytes: 177787
+      - width: 1920
+        height: 1440
+        format: webp
+        path: assets/.variants/madhya-pradesh/Untitled_-_31_May_2026_at_18.52.58-3-1920.webp
+        bytes: 272340
+      - width: 1920
+        height: 1440
+        format: jpeg
+        path: assets/.variants/madhya-pradesh/Untitled_-_31_May_2026_at_18.52.58-3-1920.jpg
+        bytes: 358265
+  - kind: image
+    sourcePath: assets/madhya-pradesh/D3012360-99C3-485D-9E97-A0C656836DC1_1_105_c.jpeg
+    width: 1024
+    height: 768
+    sizeBytes: 0
+    blurhash: UqHoB:W9V?j?.TRPV@j?.8V@WAa|o#axj?oM
+    alt: ''
+    uploadedAt: '2026-06-07T06:53:34.235Z'
+    processingStatus: ready
+    variants:
+      - width: 320
+        height: 240
+        format: avif
+        path: assets/.variants/madhya-pradesh/D3012360-99C3-485D-9E97-A0C656836DC1_1_105_c-320.avif
+        bytes: 21295
+      - width: 320
+        height: 240
+        format: webp
+        path: assets/.variants/madhya-pradesh/D3012360-99C3-485D-9E97-A0C656836DC1_1_105_c-320.webp
+        bytes: 21702
+      - width: 320
+        height: 240
+        format: jpeg
+        path: assets/.variants/madhya-pradesh/D3012360-99C3-485D-9E97-A0C656836DC1_1_105_c-320.jpg
+        bytes: 21631
+      - width: 640
+        height: 480
+        format: avif
+        path: assets/.variants/madhya-pradesh/D3012360-99C3-485D-9E97-A0C656836DC1_1_105_c-640.avif
+        bytes: 74522
+      - width: 640
+        height: 480
+        format: webp
+        path: assets/.variants/madhya-pradesh/D3012360-99C3-485D-9E97-A0C656836DC1_1_105_c-640.webp
+        bytes: 80958
+      - width: 640
+        height: 480
+        format: jpeg
+        path: assets/.variants/madhya-pradesh/D3012360-99C3-485D-9E97-A0C656836DC1_1_105_c-640.jpg
+        bytes: 80570
+      - width: 800
+        height: 600
+        format: avif
+        path: assets/.variants/madhya-pradesh/D3012360-99C3-485D-9E97-A0C656836DC1_1_105_c-800.avif
+        bytes: 108553
+      - width: 800
+        height: 600
+        format: webp
+        path: assets/.variants/madhya-pradesh/D3012360-99C3-485D-9E97-A0C656836DC1_1_105_c-800.webp
+        bytes: 118360
+      - width: 800
+        height: 600
+        format: jpeg
+        path: assets/.variants/madhya-pradesh/D3012360-99C3-485D-9E97-A0C656836DC1_1_105_c-800.jpg
+        bytes: 120061
+      - width: 1024
+        height: 768
+        format: avif
+        path: assets/.variants/madhya-pradesh/D3012360-99C3-485D-9E97-A0C656836DC1_1_105_c-1024.avif
+        bytes: 158259
+      - width: 1024
+        height: 768
+        format: webp
+        path: assets/.variants/madhya-pradesh/D3012360-99C3-485D-9E97-A0C656836DC1_1_105_c-1024.webp
+        bytes: 175604
+      - width: 1024
+        height: 768
+        format: jpeg
+        path: assets/.variants/madhya-pradesh/D3012360-99C3-485D-9E97-A0C656836DC1_1_105_c-1024.jpg
+        bytes: 183991
+  - kind: image
+    sourcePath: assets/madhya-pradesh/07AF3E74-A6C2-4E5C-A61A-1B2F563452D6_1_105_c.jpeg
+    width: 1024
+    height: 768
+    sizeBytes: 0
+    blurhash: UPGlCbt2~D-:Ivng%MR*}@RjNGoJRoxYxuW;
+    alt: ''
+    uploadedAt: '2026-05-31T15:56:20.901Z'
+    processingStatus: ready
+    variants:
+      - width: 320
+        height: 240
+        format: avif
+        path: assets/.variants/madhya-pradesh/07AF3E74-A6C2-4E5C-A61A-1B2F563452D6_1_105_c-320.avif
+        bytes: 15226
+      - width: 320
+        height: 240
+        format: webp
+        path: assets/.variants/madhya-pradesh/07AF3E74-A6C2-4E5C-A61A-1B2F563452D6_1_105_c-320.webp
+        bytes: 17794
+      - width: 320
+        height: 240
+        format: jpeg
+        path: assets/.variants/madhya-pradesh/07AF3E74-A6C2-4E5C-A61A-1B2F563452D6_1_105_c-320.jpg
+        bytes: 19091
+      - width: 640
+        height: 480
+        format: avif
+        path: assets/.variants/madhya-pradesh/07AF3E74-A6C2-4E5C-A61A-1B2F563452D6_1_105_c-640.avif
+        bytes: 54416
+      - width: 640
+        height: 480
+        format: webp
+        path: assets/.variants/madhya-pradesh/07AF3E74-A6C2-4E5C-A61A-1B2F563452D6_1_105_c-640.webp
+        bytes: 64258
+      - width: 640
+        height: 480
+        format: jpeg
+        path: assets/.variants/madhya-pradesh/07AF3E74-A6C2-4E5C-A61A-1B2F563452D6_1_105_c-640.jpg
+        bytes: 69178
+      - width: 1024
+        height: 768
+        format: avif
+        path: assets/.variants/madhya-pradesh/07AF3E74-A6C2-4E5C-A61A-1B2F563452D6_1_105_c-1024.avif
+        bytes: 115670
+      - width: 1024
+        height: 768
+        format: webp
+        path: assets/.variants/madhya-pradesh/07AF3E74-A6C2-4E5C-A61A-1B2F563452D6_1_105_c-1024.webp
+        bytes: 141578
+      - width: 1024
+        height: 768
+        format: jpeg
+        path: assets/.variants/madhya-pradesh/07AF3E74-A6C2-4E5C-A61A-1B2F563452D6_1_105_c-1024.jpg
+        bytes: 156642
+  - kind: image
+    sourcePath: assets/madhya-pradesh/Untitled_-_31_May_2026_at_18.52.58-4.jpeg
+    width: 2856
+    height: 2142
+    sizeBytes: 0
+    blurhash: USEyb+s+~W%L%Ne-xuj?$%WAW.WUs;s,ozba
+    alt: ''
+    uploadedAt: '2026-06-07T06:53:38.726Z'
+    processingStatus: ready
+    variants:
+      - width: 320
+        height: 240
+        format: avif
+        path: assets/.variants/madhya-pradesh/Untitled_-_31_May_2026_at_18.52.58-4-320.avif
+        bytes: 14791
+      - width: 320
+        height: 240
+        format: webp
+        path: assets/.variants/madhya-pradesh/Untitled_-_31_May_2026_at_18.52.58-4-320.webp
+        bytes: 17192
+      - width: 320
+        height: 240
+        format: jpeg
+        path: assets/.variants/madhya-pradesh/Untitled_-_31_May_2026_at_18.52.58-4-320.jpg
+        bytes: 19089
+      - width: 640
+        height: 480
+        format: avif
+        path: assets/.variants/madhya-pradesh/Untitled_-_31_May_2026_at_18.52.58-4-640.avif
+        bytes: 45468
+      - width: 640
+        height: 480
+        format: webp
+        path: assets/.variants/madhya-pradesh/Untitled_-_31_May_2026_at_18.52.58-4-640.webp
+        bytes: 54776
+      - width: 640
+        height: 480
+        format: jpeg
+        path: assets/.variants/madhya-pradesh/Untitled_-_31_May_2026_at_18.52.58-4-640.jpg
+        bytes: 63346
+      - width: 800
+        height: 600
+        format: avif
+        path: assets/.variants/madhya-pradesh/Untitled_-_31_May_2026_at_18.52.58-4-800.avif
+        bytes: 61510
+      - width: 800
+        height: 600
+        format: webp
+        path: assets/.variants/madhya-pradesh/Untitled_-_31_May_2026_at_18.52.58-4-800.webp
+        bytes: 75378
+      - width: 800
+        height: 600
+        format: jpeg
+        path: assets/.variants/madhya-pradesh/Untitled_-_31_May_2026_at_18.52.58-4-800.jpg
+        bytes: 90290
+      - width: 1024
+        height: 768
+        format: avif
+        path: assets/.variants/madhya-pradesh/Untitled_-_31_May_2026_at_18.52.58-4-1024.avif
+        bytes: 82743
+      - width: 1024
+        height: 768
+        format: webp
+        path: assets/.variants/madhya-pradesh/Untitled_-_31_May_2026_at_18.52.58-4-1024.webp
+        bytes: 105886
+      - width: 1024
+        height: 768
+        format: jpeg
+        path: assets/.variants/madhya-pradesh/Untitled_-_31_May_2026_at_18.52.58-4-1024.jpg
+        bytes: 133441
+      - width: 1440
+        height: 1080
+        format: avif
+        path: assets/.variants/madhya-pradesh/Untitled_-_31_May_2026_at_18.52.58-4-1440.avif
+        bytes: 112810
+      - width: 1440
+        height: 1080
+        format: webp
+        path: assets/.variants/madhya-pradesh/Untitled_-_31_May_2026_at_18.52.58-4-1440.webp
+        bytes: 154322
+      - width: 1440
+        height: 1080
+        format: jpeg
+        path: assets/.variants/madhya-pradesh/Untitled_-_31_May_2026_at_18.52.58-4-1440.jpg
+        bytes: 214814
+      - width: 1920
+        height: 1440
+        format: avif
+        path: assets/.variants/madhya-pradesh/Untitled_-_31_May_2026_at_18.52.58-4-1920.avif
+        bytes: 147673
+      - width: 1920
+        height: 1440
+        format: webp
+        path: assets/.variants/madhya-pradesh/Untitled_-_31_May_2026_at_18.52.58-4-1920.webp
+        bytes: 212906
+      - width: 1920
+        height: 1440
+        format: jpeg
+        path: assets/.variants/madhya-pradesh/Untitled_-_31_May_2026_at_18.52.58-4-1920.jpg
+        bytes: 317445
+  - kind: video
+    sourcePath: assets/kolkata-netarhat-betla/zipline.mov
+    width: 1920
+    height: 1080
+    sizeBytes: 20773096
+    durationMs: 17837
+    posterPath: assets/.variants/kolkata-netarhat-betla/zipline-poster.jpg
+    caption: ''
+    uploadedAt: '2026-06-07T06:26:50.955Z'
+    processingStatus: ready
+    variants:
+      - width: 1280
+        height: 720
+        codec: h264
+        mime: video/mp4
+        role: web
+        path: assets/.variants/kolkata-netarhat-betla/zipline-web.mp4
+        bytes: 11419033
+      - width: 1920
+        height: 1080
+        codec: hevc
+        mime: video/quicktime
+        role: source
+        path: assets/kolkata-netarhat-betla/zipline.mov
+        bytes: 20773096
+  - kind: image
+    sourcePath: assets/madhya-pradesh/D2FF8B29-FF94-475C-B5E5-5EFCDE313CDD_1_105_c.jpeg
+    width: 1024
+    height: 768
+    sizeBytes: 0
+    blurhash: U-IYRr%2t7t7?wt7s:t7ozofRPWAt7ofR*WA
+    alt: ''
+    uploadedAt: '2026-06-07T09:10:59.799Z'
+    processingStatus: ready
+    variants:
+      - width: 320
+        height: 240
+        format: avif
+        path: assets/.variants/madhya-pradesh/D2FF8B29-FF94-475C-B5E5-5EFCDE313CDD_1_105_c-320.avif
+        bytes: 7368
+      - width: 320
+        height: 240
+        format: webp
+        path: assets/.variants/madhya-pradesh/D2FF8B29-FF94-475C-B5E5-5EFCDE313CDD_1_105_c-320.webp
+        bytes: 11000
+      - width: 320
+        height: 240
+        format: jpeg
+        path: assets/.variants/madhya-pradesh/D2FF8B29-FF94-475C-B5E5-5EFCDE313CDD_1_105_c-320.jpg
+        bytes: 12797
+      - width: 640
+        height: 480
+        format: avif
+        path: assets/.variants/madhya-pradesh/D2FF8B29-FF94-475C-B5E5-5EFCDE313CDD_1_105_c-640.avif
+        bytes: 24229
+      - width: 640
+        height: 480
+        format: webp
+        path: assets/.variants/madhya-pradesh/D2FF8B29-FF94-475C-B5E5-5EFCDE313CDD_1_105_c-640.webp
+        bytes: 38664
+      - width: 640
+        height: 480
+        format: jpeg
+        path: assets/.variants/madhya-pradesh/D2FF8B29-FF94-475C-B5E5-5EFCDE313CDD_1_105_c-640.jpg
+        bytes: 44477
+      - width: 800
+        height: 600
+        format: avif
+        path: assets/.variants/madhya-pradesh/D2FF8B29-FF94-475C-B5E5-5EFCDE313CDD_1_105_c-800.avif
+        bytes: 35579
+      - width: 800
+        height: 600
+        format: webp
+        path: assets/.variants/madhya-pradesh/D2FF8B29-FF94-475C-B5E5-5EFCDE313CDD_1_105_c-800.webp
+        bytes: 55982
+      - width: 800
+        height: 600
+        format: jpeg
+        path: assets/.variants/madhya-pradesh/D2FF8B29-FF94-475C-B5E5-5EFCDE313CDD_1_105_c-800.jpg
+        bytes: 65627
+      - width: 1024
+        height: 768
+        format: avif
+        path: assets/.variants/madhya-pradesh/D2FF8B29-FF94-475C-B5E5-5EFCDE313CDD_1_105_c-1024.avif
+        bytes: 51615
+      - width: 1024
+        height: 768
+        format: webp
+        path: assets/.variants/madhya-pradesh/D2FF8B29-FF94-475C-B5E5-5EFCDE313CDD_1_105_c-1024.webp
+        bytes: 83496
+      - width: 1024
+        height: 768
+        format: jpeg
+        path: assets/.variants/madhya-pradesh/D2FF8B29-FF94-475C-B5E5-5EFCDE313CDD_1_105_c-1024.jpg
+        bytes: 100668
+  - kind: image
+    sourcePath: assets/madhya-pradesh/Untitled_-_07_June_2026_at_15.05.14-1.jpeg
+    width: 2856
+    height: 2142
+    sizeBytes: 0
+    blurhash: U3F#]u-UEy4.00R*~pxCo}%2_2_2z;xaX,x]
+    alt: ''
+    uploadedAt: '2026-06-07T09:48:45.338Z'
+    processingStatus: ready
+    variants:
+      - width: 320
+        height: 240
+        format: avif
+        path: assets/.variants/madhya-pradesh/Untitled_-_07_June_2026_at_15.05.14-1-320.avif
+        bytes: 13865
+      - width: 320
+        height: 240
+        format: webp
+        path: assets/.variants/madhya-pradesh/Untitled_-_07_June_2026_at_15.05.14-1-320.webp
+        bytes: 19700
+      - width: 320
+        height: 240
+        format: jpeg
+        path: assets/.variants/madhya-pradesh/Untitled_-_07_June_2026_at_15.05.14-1-320.jpg
+        bytes: 20012
+      - width: 640
+        height: 480
+        format: avif
+        path: assets/.variants/madhya-pradesh/Untitled_-_07_June_2026_at_15.05.14-1-640.avif
+        bytes: 39658
+      - width: 640
+        height: 480
+        format: webp
+        path: assets/.variants/madhya-pradesh/Untitled_-_07_June_2026_at_15.05.14-1-640.webp
+        bytes: 60514
+      - width: 640
+        height: 480
+        format: jpeg
+        path: assets/.variants/madhya-pradesh/Untitled_-_07_June_2026_at_15.05.14-1-640.jpg
+        bytes: 66438
+      - width: 800
+        height: 600
+        format: avif
+        path: assets/.variants/madhya-pradesh/Untitled_-_07_June_2026_at_15.05.14-1-800.avif
+        bytes: 52538
+      - width: 800
+        height: 600
+        format: webp
+        path: assets/.variants/madhya-pradesh/Untitled_-_07_June_2026_at_15.05.14-1-800.webp
+        bytes: 80566
+      - width: 800
+        height: 600
+        format: jpeg
+        path: assets/.variants/madhya-pradesh/Untitled_-_07_June_2026_at_15.05.14-1-800.jpg
+        bytes: 94906
+      - width: 1024
+        height: 768
+        format: avif
+        path: assets/.variants/madhya-pradesh/Untitled_-_07_June_2026_at_15.05.14-1-1024.avif
+        bytes: 70937
+      - width: 1024
+        height: 768
+        format: webp
+        path: assets/.variants/madhya-pradesh/Untitled_-_07_June_2026_at_15.05.14-1-1024.webp
+        bytes: 108790
+      - width: 1024
+        height: 768
+        format: jpeg
+        path: assets/.variants/madhya-pradesh/Untitled_-_07_June_2026_at_15.05.14-1-1024.jpg
+        bytes: 141791
+      - width: 1440
+        height: 1080
+        format: avif
+        path: assets/.variants/madhya-pradesh/Untitled_-_07_June_2026_at_15.05.14-1-1440.avif
+        bytes: 95469
+      - width: 1440
+        height: 1080
+        format: webp
+        path: assets/.variants/madhya-pradesh/Untitled_-_07_June_2026_at_15.05.14-1-1440.webp
+        bytes: 157338
+      - width: 1440
+        height: 1080
+        format: jpeg
+        path: assets/.variants/madhya-pradesh/Untitled_-_07_June_2026_at_15.05.14-1-1440.jpg
+        bytes: 227841
+      - width: 1920
+        height: 1440
+        format: avif
+        path: assets/.variants/madhya-pradesh/Untitled_-_07_June_2026_at_15.05.14-1-1920.avif
+        bytes: 122274
+      - width: 1920
+        height: 1440
+        format: webp
+        path: assets/.variants/madhya-pradesh/Untitled_-_07_June_2026_at_15.05.14-1-1920.webp
+        bytes: 211080
+      - width: 1920
+        height: 1440
+        format: jpeg
+        path: assets/.variants/madhya-pradesh/Untitled_-_07_June_2026_at_15.05.14-1-1920.jpg
+        bytes: 335195
+  - kind: image
+    sourcePath: assets/madhya-pradesh/Untitled_-_07_June_2026_at_15.05.14-2.jpeg
+    width: 2856
+    height: 2142
+    sizeBytes: 0
+    blurhash: UlI5urt7Rkt6AhW?xtWYacWXRnofVXoJs.WB
+    alt: ''
+    uploadedAt: '2026-06-07T09:48:57.402Z'
+    processingStatus: ready
+    variants:
+      - width: 320
+        height: 240
+        format: avif
+        path: assets/.variants/madhya-pradesh/Untitled_-_07_June_2026_at_15.05.14-2-320.avif
+        bytes: 7783
+      - width: 320
+        height: 240
+        format: webp
+        path: assets/.variants/madhya-pradesh/Untitled_-_07_June_2026_at_15.05.14-2-320.webp
+        bytes: 10942
+      - width: 320
+        height: 240
+        format: jpeg
+        path: assets/.variants/madhya-pradesh/Untitled_-_07_June_2026_at_15.05.14-2-320.jpg
+        bytes: 13224
+      - width: 640
+        height: 480
+        format: avif
+        path: assets/.variants/madhya-pradesh/Untitled_-_07_June_2026_at_15.05.14-2-640.avif
+        bytes: 20501
+      - width: 640
+        height: 480
+        format: webp
+        path: assets/.variants/madhya-pradesh/Untitled_-_07_June_2026_at_15.05.14-2-640.webp
+        bytes: 32302
+      - width: 640
+        height: 480
+        format: jpeg
+        path: assets/.variants/madhya-pradesh/Untitled_-_07_June_2026_at_15.05.14-2-640.jpg
+        bytes: 40335
+      - width: 800
+        height: 600
+        format: avif
+        path: assets/.variants/madhya-pradesh/Untitled_-_07_June_2026_at_15.05.14-2-800.avif
+        bytes: 27330
+      - width: 800
+        height: 600
+        format: webp
+        path: assets/.variants/madhya-pradesh/Untitled_-_07_June_2026_at_15.05.14-2-800.webp
+        bytes: 43852
+      - width: 800
+        height: 600
+        format: jpeg
+        path: assets/.variants/madhya-pradesh/Untitled_-_07_June_2026_at_15.05.14-2-800.jpg
+        bytes: 56550
+      - width: 1024
+        height: 768
+        format: avif
+        path: assets/.variants/madhya-pradesh/Untitled_-_07_June_2026_at_15.05.14-2-1024.avif
+        bytes: 37085
+      - width: 1024
+        height: 768
+        format: webp
+        path: assets/.variants/madhya-pradesh/Untitled_-_07_June_2026_at_15.05.14-2-1024.webp
+        bytes: 60278
+      - width: 1024
+        height: 768
+        format: jpeg
+        path: assets/.variants/madhya-pradesh/Untitled_-_07_June_2026_at_15.05.14-2-1024.jpg
+        bytes: 82837
+      - width: 1440
+        height: 1080
+        format: avif
+        path: assets/.variants/madhya-pradesh/Untitled_-_07_June_2026_at_15.05.14-2-1440.avif
+        bytes: 50824
+      - width: 1440
+        height: 1080
+        format: webp
+        path: assets/.variants/madhya-pradesh/Untitled_-_07_June_2026_at_15.05.14-2-1440.webp
+        bytes: 89216
+      - width: 1440
+        height: 1080
+        format: jpeg
+        path: assets/.variants/madhya-pradesh/Untitled_-_07_June_2026_at_15.05.14-2-1440.jpg
+        bytes: 134033
+      - width: 1920
+        height: 1440
+        format: avif
+        path: assets/.variants/madhya-pradesh/Untitled_-_07_June_2026_at_15.05.14-2-1920.avif
+        bytes: 67904
+      - width: 1920
+        height: 1440
+        format: webp
+        path: assets/.variants/madhya-pradesh/Untitled_-_07_June_2026_at_15.05.14-2-1920.webp
+        bytes: 125332
+      - width: 1920
+        height: 1440
+        format: jpeg
+        path: assets/.variants/madhya-pradesh/Untitled_-_07_June_2026_at_15.05.14-2-1920.jpg
+        bytes: 197791
+  - kind: image
+    sourcePath: assets/madhya-pradesh/Untitled_-_07_June_2026_at_15.05.14-3.jpeg
+    width: 2142
+    height: 2856
+    sizeBytes: 0
+    blurhash: UBECauD%_2xt00Rjf+M{00X9M_xu~ps-WBxu
+    alt: ''
+    uploadedAt: '2026-06-07T09:49:09.684Z'
+    processingStatus: ready
+    variants:
+      - width: 320
+        height: 427
+        format: avif
+        path: assets/.variants/madhya-pradesh/Untitled_-_07_June_2026_at_15.05.14-3-320.avif
+        bytes: 21173
+      - width: 320
+        height: 427
+        format: webp
+        path: assets/.variants/madhya-pradesh/Untitled_-_07_June_2026_at_15.05.14-3-320.webp
+        bytes: 32838
+      - width: 320
+        height: 427
+        format: jpeg
+        path: assets/.variants/madhya-pradesh/Untitled_-_07_June_2026_at_15.05.14-3-320.jpg
+        bytes: 32711
+      - width: 640
+        height: 853
+        format: avif
+        path: assets/.variants/madhya-pradesh/Untitled_-_07_June_2026_at_15.05.14-3-640.avif
+        bytes: 59643
+      - width: 640
+        height: 853
+        format: webp
+        path: assets/.variants/madhya-pradesh/Untitled_-_07_June_2026_at_15.05.14-3-640.webp
+        bytes: 95470
+      - width: 640
+        height: 853
+        format: jpeg
+        path: assets/.variants/madhya-pradesh/Untitled_-_07_June_2026_at_15.05.14-3-640.jpg
+        bytes: 109278
+      - width: 800
+        height: 1067
+        format: avif
+        path: assets/.variants/madhya-pradesh/Untitled_-_07_June_2026_at_15.05.14-3-800.avif
+        bytes: 76347
+      - width: 800
+        height: 1067
+        format: webp
+        path: assets/.variants/madhya-pradesh/Untitled_-_07_June_2026_at_15.05.14-3-800.webp
+        bytes: 126104
+      - width: 800
+        height: 1067
+        format: jpeg
+        path: assets/.variants/madhya-pradesh/Untitled_-_07_June_2026_at_15.05.14-3-800.jpg
+        bytes: 155612
+      - width: 1024
+        height: 1365
+        format: avif
+        path: assets/.variants/madhya-pradesh/Untitled_-_07_June_2026_at_15.05.14-3-1024.avif
+        bytes: 94912
+      - width: 1024
+        height: 1365
+        format: webp
+        path: assets/.variants/madhya-pradesh/Untitled_-_07_June_2026_at_15.05.14-3-1024.webp
+        bytes: 161308
+      - width: 1024
+        height: 1365
+        format: jpeg
+        path: assets/.variants/madhya-pradesh/Untitled_-_07_June_2026_at_15.05.14-3-1024.jpg
+        bytes: 218966
+      - width: 1440
+        height: 1920
+        format: avif
+        path: assets/.variants/madhya-pradesh/Untitled_-_07_June_2026_at_15.05.14-3-1440.avif
+        bytes: 125805
+      - width: 1440
+        height: 1920
+        format: webp
+        path: assets/.variants/madhya-pradesh/Untitled_-_07_June_2026_at_15.05.14-3-1440.webp
+        bytes: 234314
+      - width: 1440
+        height: 1920
+        format: jpeg
+        path: assets/.variants/madhya-pradesh/Untitled_-_07_June_2026_at_15.05.14-3-1440.jpg
+        bytes: 346694
+      - width: 1920
+        height: 2560
+        format: avif
+        path: assets/.variants/madhya-pradesh/Untitled_-_07_June_2026_at_15.05.14-3-1920.avif
+        bytes: 158223
+      - width: 1920
+        height: 2560
+        format: webp
+        path: assets/.variants/madhya-pradesh/Untitled_-_07_June_2026_at_15.05.14-3-1920.webp
+        bytes: 326780
+      - width: 1920
+        height: 2560
+        format: jpeg
+        path: assets/.variants/madhya-pradesh/Untitled_-_07_June_2026_at_15.05.14-3-1920.jpg
+        bytes: 512147
+  - kind: image
+    sourcePath: assets/madhya-pradesh/Untitled_-_07_June_2026_at_15.05.14-4.jpeg
+    width: 1512
+    height: 2016
+    sizeBytes: 0
+    blurhash: U5F~8Wwt_4-q00M_EPE07PV@t-X8S[nh-;sT
+    alt: ''
+    uploadedAt: '2026-06-07T09:49:17.900Z'
+    processingStatus: ready
+    variants:
+      - width: 320
+        height: 427
+        format: avif
+        path: assets/.variants/madhya-pradesh/Untitled_-_07_June_2026_at_15.05.14-4-320.avif
+        bytes: 22361
+      - width: 320
+        height: 427
+        format: webp
+        path: assets/.variants/madhya-pradesh/Untitled_-_07_June_2026_at_15.05.14-4-320.webp
+        bytes: 32996
+      - width: 320
+        height: 427
+        format: jpeg
+        path: assets/.variants/madhya-pradesh/Untitled_-_07_June_2026_at_15.05.14-4-320.jpg
+        bytes: 35071
+      - width: 640
+        height: 853
+        format: avif
+        path: assets/.variants/madhya-pradesh/Untitled_-_07_June_2026_at_15.05.14-4-640.avif
+        bytes: 59099
+      - width: 640
+        height: 853
+        format: webp
+        path: assets/.variants/madhya-pradesh/Untitled_-_07_June_2026_at_15.05.14-4-640.webp
+        bytes: 93304
+      - width: 640
+        height: 853
+        format: jpeg
+        path: assets/.variants/madhya-pradesh/Untitled_-_07_June_2026_at_15.05.14-4-640.jpg
+        bytes: 109854
+      - width: 800
+        height: 1067
+        format: avif
+        path: assets/.variants/madhya-pradesh/Untitled_-_07_June_2026_at_15.05.14-4-800.avif
+        bytes: 73891
+      - width: 800
+        height: 1067
+        format: webp
+        path: assets/.variants/madhya-pradesh/Untitled_-_07_June_2026_at_15.05.14-4-800.webp
+        bytes: 121118
+      - width: 800
+        height: 1067
+        format: jpeg
+        path: assets/.variants/madhya-pradesh/Untitled_-_07_June_2026_at_15.05.14-4-800.jpg
+        bytes: 152549
+      - width: 1024
+        height: 1365
+        format: avif
+        path: assets/.variants/madhya-pradesh/Untitled_-_07_June_2026_at_15.05.14-4-1024.avif
+        bytes: 92264
+      - width: 1024
+        height: 1365
+        format: webp
+        path: assets/.variants/madhya-pradesh/Untitled_-_07_June_2026_at_15.05.14-4-1024.webp
+        bytes: 154570
+      - width: 1024
+        height: 1365
+        format: jpeg
+        path: assets/.variants/madhya-pradesh/Untitled_-_07_June_2026_at_15.05.14-4-1024.jpg
+        bytes: 213575
+      - width: 1440
+        height: 1920
+        format: avif
+        path: assets/.variants/madhya-pradesh/Untitled_-_07_June_2026_at_15.05.14-4-1440.avif
+        bytes: 124045
+      - width: 1440
+        height: 1920
+        format: webp
+        path: assets/.variants/madhya-pradesh/Untitled_-_07_June_2026_at_15.05.14-4-1440.webp
+        bytes: 229268
+      - width: 1440
+        height: 1920
+        format: jpeg
+        path: assets/.variants/madhya-pradesh/Untitled_-_07_June_2026_at_15.05.14-4-1440.jpg
+        bytes: 340398

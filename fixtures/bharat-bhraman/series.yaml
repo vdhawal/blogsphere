@@ -1,0 +1,23 @@
+id: bharat-bhraman
+title: India we saw
+author: Vickramaditya Dhawal
+description: Family of 4 on an adventure roadtrip traveling through India to discover it for themselves.
+theme: travel
+cover: ./assets/cover.jpg
+chapters:
+  - what-why-how
+  - the-first-leg
+  - bastar
+  - enroute-to-kolkata
+  - kolkata-netarhat-betla
+  - madhya-pradesh
+  - temples-of-india
+tags: []
+related: []
+language: en
+updatedAt: '2026-05-31T07:13:43.888Z'
+seo: {}
+ai: {}
+site:
+  baseUrl: https://howiseeindia.com
+  basePath: /

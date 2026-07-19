@@ -1,0 +1,26 @@
+{
+  "name": "blogspace",
+  "version": "0.0.1",
+  "private": true,
+  "description": "Authoring + compiler + viewer for connected blog series",
+  "workspaces": [
+    "packages/*"
+  ],
+  "scripts": {
+    "build": "npm run build --workspaces --if-present",
+    "typecheck": "npm run typecheck --workspaces --if-present",
+    "test": "npm run test --workspaces --if-present",
+    "dev:server": "BLOGSPACE_WORKSPACE=$(pwd)/fixtures npm run dev -w @blogspace/server",
+    "dev:editor": "npm run dev -w @blogspace/editor",
+    "postinstall": "npx playwright install chromium"
+  },
+  "engines": {
+    "node": ">=20"
+  },
+  "devDependencies": {
+    "@types/js-yaml": "^4.0.9",
+    "gray-matter": "^4.0.3",
+    "js-yaml": "^4.1.1",
+    "tsx": "^4.21.0"
+  }
+}

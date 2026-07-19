@@ -1,0 +1,33 @@
+# Per-blog-space author preferences. Not published; never included in the
+# output zip. Edited via the authoring webapp UI, but is plain YAML so it
+# is also hand-editable and git-friendly.
+
+llm:
+  active:
+    provider: openai
+    model: gpt-5.2
+  available:
+    - provider: anthropic
+      model: claude-opus-4-7
+      label: Claude Opus 4.7
+    - provider: anthropic
+      model: claude-sonnet-4-6
+      label: Claude Sonnet 4.6
+    - provider: openai
+      model: gpt-5.2
+      label: GPT-5.2
+
+ai:
+  # Privacy guardrail: these names are scrubbed from ALL AI-generated
+  # output (SEO title/description, AI metadata, chat) even though they
+  # appear in the chapter prose. The model is also told to refer to the
+  # children generically; this is the deterministic backstop.
+  privacy:
+    redactNames:
+      - Dhimahi
+      - Devasya
+    redactReplacement: our child
+
+author:
+  name: Vickramaditya Dhawal
+  email: vdhawal@gmail.com

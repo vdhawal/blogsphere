@@ -1,0 +1,8 @@
+version: 1
+entries:
+  - provider: openai
+    pdfHash: eef9e43e01aa7edff7486dd8b1ca4b9dfddd42a6fbcf5fd7d483e90c62bdda9b
+    fileId: file-9EbVVxmYwhZm16gbYcyNQk
+    fileSize: 794038
+    uploadedAt: '2026-07-19T05:05:45.780Z'
+    filename: bharat-bhraman-eef9e43e01.pdf
