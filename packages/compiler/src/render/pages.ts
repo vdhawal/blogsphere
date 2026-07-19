@@ -35,21 +35,26 @@ function loadCommentsForChapter(rootDir: string, slug: string): Comment[] {
   const comments: Comment[] = [];
   const possibleDirs = [slug, `chapters-${slug}`, `chapters_${slug}`];
   for (const dir of possibleDirs) {
-    const commentsDir = join(rootDir, "_data", "comments", dir);
-    if (existsSync(commentsDir)) {
-      const files = readdirSync(commentsDir).filter((f) => f.endsWith(".json"));
-      for (const file of files) {
-        try {
-          const raw = readFileSync(join(commentsDir, file), "utf8");
-          const data = JSON.parse(raw) as Record<string, unknown>;
-          const id = String(data.id || data._id || file.replace(/\.json$/, ""));
-          const name = String(data.name || data.author || "Anonymous");
-          const message = String(data.message || data.comment || data.body || "");
-          const date = String(data.date || data.createdAt || new Date().toISOString());
-          const replyTo = data.reply_to || data.replyTo ? String(data.reply_to || data.replyTo) : null;
-          comments.push({ id, name, message, date, replyTo });
-        } catch (e) {
-          // Ignore unparseable comment files
+    const commentsDirs = [
+      join(rootDir, "_data", "comments", dir),
+      join(rootDir, "_data", "welcomments", dir),
+    ];
+    for (const commentsDir of commentsDirs) {
+      if (existsSync(commentsDir)) {
+        const files = readdirSync(commentsDir).filter((f) => f.endsWith(".json"));
+        for (const file of files) {
+          try {
+            const raw = readFileSync(join(commentsDir, file), "utf8");
+            const data = JSON.parse(raw) as Record<string, unknown>;
+            const id = String(data.id || data._id || file.replace(/\.json$/, ""));
+            const name = String(data.name || data.author || "Anonymous");
+            const message = String(data.message || data.comment || data.body || "");
+            const date = String(data.date || data.createdAt || new Date().toISOString());
+            const replyTo = data.reply_to || data.replyTo ? String(data.reply_to || data.replyTo) : null;
+            comments.push({ id, name, message, date, replyTo });
+          } catch (e) {
+            // Ignore unparseable comment files
+          }
         }
       }
     }
