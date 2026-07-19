@@ -53,13 +53,13 @@ Compiling the multi-blog landing page (`index.html`) along with all selected sub
 ### Method A: Via the Editor UI
 1. Open the editor UI at `http://localhost:4318/`.
 2. Click **Export** in the top bar.
-3. Check the boxes for the blogs you want to export (e.g. `bharat-bhraman`, `book-reviews`, `movie-reviews`).
+3. Check the boxes for the blogs you want to export (e.g. `bharat-bhraman`, `book-reviews`, `movie-reviews`). Do not include `morocco-2026` in a Cloudflare production export; it is the test blog.
 4. Click **Export Selected**.
 
 ### Method B: Programmatically via Terminal
-Run the following PowerShell command while the backend server is running:
+Run the following PowerShell command while the backend server is running. For Cloudflare export, exclude the test blog `morocco-2026`.
 ```powershell
-$body = '{"spaceIds":["bharat-bhraman","book-reviews","morocco-2026","movie-reviews"]}'
+$body = '{"spaceIds":["bharat-bhraman","book-reviews","movie-reviews"]}'
 Invoke-RestMethod -Method Post -Uri "http://127.0.0.1:4317/api/export" -Headers @{ "Content-Type" = "application/json" } -Body $body
 ```
 
