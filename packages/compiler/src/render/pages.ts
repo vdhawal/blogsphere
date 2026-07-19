@@ -192,17 +192,12 @@ ${commentsList.length > 0 ? commentsThreadHtml : `<p style="font-family: var(--f
 <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 1rem;">
 <div style="display: flex; flex-direction: column;">
 <label for="welcomments__author" style="font-family: var(--font-sans); font-size: 0.8rem; color: var(--muted); margin-bottom: 0.25rem;">Name</label>
-<input type="text" id="welcomments__author" name="author-name" required style="font: inherit; padding: 0.5rem; border: 1px solid var(--rule); border-radius: 4px; background: var(--bg); color: var(--fg);" />
+<input type="text" id="welcomments__author" name="author-name" required placeholder="Your name" style="font: inherit; padding: 0.5rem; border: 1px solid var(--rule); border-radius: 4px; background: var(--bg); color: var(--fg);" />
 </div>
 <div style="display: flex; flex-direction: column;">
-<label for="welcomments__website" style="font-family: var(--font-sans); font-size: 0.8rem; color: var(--muted); margin-bottom: 0.25rem;">Website <span style="font-size: 0.75rem; color: var(--muted);">(optional)</span></label>
-<input type="url" id="welcomments__website" name="author-url" placeholder="https://example.com" style="font: inherit; padding: 0.5rem; border: 1px solid var(--rule); border-radius: 4px; background: var(--bg); color: var(--fg);" />
+<label for="welcomments__email" style="font-family: var(--font-sans); font-size: 0.8rem; color: var(--muted); margin-bottom: 0.25rem;">Email <span style="font-size: 0.75rem; color: var(--muted);">(optional, not published)</span></label>
+<input type="email" id="welcomments__email" name="author-email" placeholder="you@example.com" style="font: inherit; padding: 0.5rem; border: 1px solid var(--rule); border-radius: 4px; background: var(--bg); color: var(--fg);" />
 </div>
-</div>
-
-<div style="display: flex; flex-direction: column;">
-<label for="welcomments__email" style="font-family: var(--font-sans); font-size: 0.8rem; color: var(--muted); margin-bottom: 0.25rem;">Email (not published)</label>
-<input type="email" id="welcomments__email" name="author-email" style="font: inherit; padding: 0.5rem; border: 1px solid var(--rule); border-radius: 4px; background: var(--bg); color: var(--fg);" />
 </div>
 
 <div style="display: flex; flex-direction: column;">
