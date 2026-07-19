@@ -564,3 +564,67 @@ figure figcaption {
 @media (forced-colors: active) {
   .reader-chat { border: 1px solid CanvasText; }
 }
+
+/* ----- comments section ----- */
+.comments-section {
+  max-width: var(--measure);
+  margin: 4rem auto 0;
+  padding-top: 2rem;
+  border-top: 1px solid var(--rule);
+}
+.comments-list, .comment__replies {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.comment__replies {
+  margin-left: 1.5rem;
+  border-left: 2px solid var(--rule);
+  padding-left: 1rem;
+  margin-top: 1rem;
+}
+.comment {
+  margin-bottom: 2rem;
+}
+.comment__meta {
+  font-family: var(--font-sans);
+  font-size: 0.85rem;
+  color: var(--muted);
+  margin-bottom: 0.5rem;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.comment__author {
+  color: var(--fg);
+  font-weight: 600;
+}
+.comment__date {
+  margin-left: 0.5rem;
+}
+.comment__reply-btn {
+  background: none;
+  border: 0;
+  color: var(--accent);
+  cursor: pointer;
+  font-family: var(--font-sans);
+  font-size: 0.75rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  margin-left: auto;
+  padding: 0.2rem 0.5rem;
+  border-radius: 4px;
+  transition: background 0.15s;
+}
+.comment__reply-btn:hover {
+  background: var(--accent-soft);
+}
+.comment__body {
+  line-height: 1.6;
+  font-family: var(--font-serif);
+}
+.comment__body p {
+  margin: 0.5rem 0;
+}
+

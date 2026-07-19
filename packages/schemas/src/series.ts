@@ -70,6 +70,21 @@ export const seriesSchema = z.object({
       basePath: z.string().startsWith("/").default("/"),
     })
     .optional(),
+
+  comments: z
+    .object({
+      provider: z.enum(["none", "welcomments"]).default("none"),
+      welcommentsWebsiteId: z.string().optional(),
+    })
+    .optional(),
+
+  analytics: z
+    .object({
+      provider: z.enum(["none", "umami"]).default("none"),
+      umamiWebsiteId: z.string().optional(),
+      umamiScriptUrl: z.string().default("https://cloud.umami.is/script.js"),
+    })
+    .optional(),
 });
 
 export type Series = z.infer<typeof seriesSchema>;

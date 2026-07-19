@@ -100,6 +100,15 @@ export function renderShell(input: ShellInput): string {
   const header = renderSiteHeader(series, input.pageUrl, input.graph);
   const footer = renderSiteFooter(series, author);
 
+  const analytics = series.analytics;
+  const analyticsScript = analytics && analytics.provider === "umami" && analytics.umamiWebsiteId
+    ? `<script defer src="${escapeHtml(analytics.umamiScriptUrl)}" data-website-id="${escapeHtml(analytics.umamiWebsiteId)}"></script>`
+    : "";
+
+  const commentsScript = series.comments?.provider === "welcomments"
+    ? `<script type="text/javascript" src="https://cdn.welcomments.io/welcomments.js" async></script>`
+    : "";
+
   return `<!doctype html>
 <html lang="${escapeHtml(lang)}">
 <head>
@@ -121,6 +130,7 @@ ${ogTags}
 <link rel="alternate" type="application/rss+xml" title="${escapeHtml(series.title)} — RSS" href="${rssHref}"/>
 <style>${VIEWER_CSS}</style>
 ${jsonLdBlocks}
+${analyticsScript}
 </head>
 <body>
 <a class="skip-link" href="#main">Skip to content</a>
@@ -133,6 +143,7 @@ ${input.pageFooterHtml ?? ""}
 ${footer}
 ${renderViewerChatStub(input.pageUrl)}
 <script src="${jsHref}" defer></script>
+${commentsScript}
 </body>
 </html>`;
 }

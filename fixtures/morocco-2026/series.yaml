@@ -59,3 +59,10 @@ ai:
 site:
   baseUrl: https://blog.example.com
   basePath: /morocco-2026/
+comments:
+  provider: "welcomments"
+  welcommentsWebsiteId: "idKe4M7TmikJNuEyQG25XIq0U"
+analytics:
+  provider: "umami"
+  umamiWebsiteId: "2f31182f-9c1b-4217-a44a-e2de5609e6b7"
+  umamiScriptUrl: "https://cloud.umami.is/script.js"

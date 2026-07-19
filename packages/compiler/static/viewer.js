@@ -307,4 +307,140 @@
       log.scrollTop = log.scrollHeight;
     }
   }
+
+  // --- Welcomments Reply Handlers ---
+  window.welcommentsReply = function (id, author) {
+    const replyInput = document.getElementById("welcomments_reply_to");
+    if (replyInput) {
+      replyInput.value = id;
+      let label = document.getElementById("welcomments__reply-label");
+      if (!label) {
+        label = document.createElement("div");
+        label.id = "welcomments__reply-label";
+        label.style = "font-family: var(--font-sans); font-size: 0.85rem; color: var(--accent); margin-bottom: 0.5rem; display: flex; align-items: center; gap: 0.5rem;";
+        const form = document.getElementById("welcomments__form");
+        form.insertBefore(label, form.firstChild);
+      }
+      label.innerHTML = "";
+      label.appendChild(document.createTextNode("Replying to "));
+      const strong = document.createElement("strong");
+      strong.textContent = author;
+      label.appendChild(strong);
+      const cancelBtn = document.createElement("button");
+      cancelBtn.type = "button";
+      cancelBtn.style = "background: none; border: 0; color: var(--muted); cursor: pointer; text-decoration: underline; padding: 0; margin-left: 0.5rem;";
+      cancelBtn.textContent = "(Cancel)";
+      cancelBtn.onclick = window.welcommentsCancelReply;
+      label.appendChild(cancelBtn);
+      
+      const formEl = document.getElementById("welcomments__form");
+      if (formEl) formEl.scrollIntoView({ behavior: "smooth" });
+    }
+  };
+  window.welcommentsCancelReply = function () {
+    const replyInput = document.getElementById("welcomments_reply_to");
+    if (replyInput) replyInput.value = "";
+    const label = document.getElementById("welcomments__reply-label");
+    if (label) label.remove();
+  };
+
+  // --- Umami Cloud Analytics & Event Tracking ---
+  const trackUmami = (eventName, eventData) => {
+    if (window.umami && typeof window.umami.track === "function") {
+      window.umami.track(eventName, eventData);
+    }
+  };
+
+  // 1. Scroll Depth
+  const scrollTracked = { p25: false, p50: false, p75: false, p100: false };
+  document.addEventListener("scroll", () => {
+    const docHeight = document.documentElement.scrollHeight - window.innerHeight;
+    if (docHeight <= 0) return;
+    const scrollPercent = (window.scrollY / docHeight) * 100;
+    
+    if (scrollPercent >= 25 && !scrollTracked.p25) {
+      scrollTracked.p25 = true;
+      trackUmami("scroll-depth", { percentage: "25%" });
+    }
+    if (scrollPercent >= 50 && !scrollTracked.p50) {
+      scrollTracked.p50 = true;
+      trackUmami("scroll-depth", { percentage: "50%" });
+    }
+    if (scrollPercent >= 75 && !scrollTracked.p75) {
+      scrollTracked.p75 = true;
+      trackUmami("scroll-depth", { percentage: "75%" });
+    }
+    if (scrollPercent >= 95 && !scrollTracked.p100) {
+      scrollTracked.p100 = true;
+      trackUmami("scroll-depth", { percentage: "100%" });
+    }
+  }, { passive: true });
+
+  // 2. Active Reading Time
+  let lastActiveTime = Date.now();
+  let activeSeconds = 0;
+  let isFocused = true;
+
+  const updateActiveTime = () => {
+    if (isFocused && document.visibilityState === "visible") {
+      const now = Date.now();
+      activeSeconds += Math.round((now - lastActiveTime) / 1000);
+      lastActiveTime = now;
+    }
+  };
+
+  setInterval(() => {
+    updateActiveTime();
+    lastActiveTime = Date.now();
+  }, 5000);
+
+  window.addEventListener("focus", () => {
+    lastActiveTime = Date.now();
+    isFocused = true;
+  });
+  window.addEventListener("blur", () => {
+    updateActiveTime();
+    isFocused = false;
+  });
+
+  let timeReported = false;
+  const reportReadingTime = () => {
+    if (timeReported) return;
+    updateActiveTime();
+    if (activeSeconds > 5) {
+      timeReported = true;
+      const mins = Math.floor(activeSeconds / 60);
+      trackUmami("read-time", { 
+        minutes: mins === 0 ? "Under 1m" : `${mins}m`,
+        seconds: String(activeSeconds)
+      });
+    }
+  };
+
+  document.addEventListener("visibilitychange", () => {
+    if (document.visibilityState === "hidden") {
+      reportReadingTime();
+    } else {
+      lastActiveTime = Date.now();
+    }
+  });
+  window.addEventListener("pagehide", reportReadingTime);
+
+  // 3. Image & Carousel Interaction
+  let carouselInteracted = false;
+  document.addEventListener("scroll", (e) => {
+    if (e.target && e.target.classList && e.target.classList.contains("gallery--carousel")) {
+      if (!carouselInteracted) {
+        carouselInteracted = true;
+        trackUmami("gallery-interaction", { type: "carousel-swipe" });
+      }
+    }
+  }, { capture: true, passive: true });
+
+  document.addEventListener("click", (e) => {
+    const img = e.target.closest && e.target.closest(".gallery img, .chapter__body img");
+    if (img) {
+      trackUmami("image-click", { src: img.src });
+    }
+  });
 })();

@@ -2,7 +2,7 @@ import { escapeHtml, formatDate, relativeUrl, normalizeRef, slugifyHeading } fro
 import { renderShell } from "./shell.js";
 import { renderChapterBody, parseChapter, type RenderContext } from "../markdown.js";
 import type { Series } from "@blogspace/schemas";
-import { readFileSync } from "node:fs";
+import { readFileSync, existsSync, readdirSync } from "node:fs";
 import { join, dirname } from "node:path";
 import { fileURLToPath } from "node:url";
 
@@ -19,10 +19,95 @@ import type {
   ProcessedImage,
 } from "../types.js";
 
+interface Comment {
+  id: string;
+  name: string;
+  message: string;
+  date: string;
+  replyTo: string | null;
+}
+
+interface CommentNode extends Comment {
+  replies: CommentNode[];
+}
+
+function loadCommentsForChapter(rootDir: string, slug: string): Comment[] {
+  const comments: Comment[] = [];
+  const possibleDirs = [slug, `chapters-${slug}`, `chapters_${slug}`];
+  for (const dir of possibleDirs) {
+    const commentsDir = join(rootDir, "_data", "comments", dir);
+    if (existsSync(commentsDir)) {
+      const files = readdirSync(commentsDir).filter((f) => f.endsWith(".json"));
+      for (const file of files) {
+        try {
+          const raw = readFileSync(join(commentsDir, file), "utf8");
+          const data = JSON.parse(raw) as Record<string, unknown>;
+          const id = String(data.id || data._id || file.replace(/\.json$/, ""));
+          const name = String(data.name || data.author || "Anonymous");
+          const message = String(data.message || data.comment || data.body || "");
+          const date = String(data.date || data.createdAt || new Date().toISOString());
+          const replyTo = data.reply_to || data.replyTo ? String(data.reply_to || data.replyTo) : null;
+          comments.push({ id, name, message, date, replyTo });
+        } catch (e) {
+          // Ignore unparseable comment files
+        }
+      }
+    }
+  }
+  return comments.sort((a, b) => new Date(a.date).getTime() - new Date(b.date).getTime());
+}
+
+function buildCommentTree(comments: Comment[]): CommentNode[] {
+  const map = new Map<string, CommentNode>();
+  const roots: CommentNode[] = [];
+  for (const c of comments) {
+    map.set(c.id, { ...c, replies: [] });
+  }
+  for (const node of map.values()) {
+    if (node.replyTo && map.has(node.replyTo)) {
+      map.get(node.replyTo)!.replies.push(node);
+    } else {
+      roots.push(node);
+    }
+  }
+  return roots;
+}
+
+function renderCommentNode(node: CommentNode, depth = 0): string {
+  const dateStr = new Date(node.date).toLocaleDateString(undefined, {
+    year: "numeric",
+    month: "long",
+    day: "numeric",
+    hour: "2-digit",
+    minute: "2-digit",
+  });
+  let repliesHtml = "";
+  if (node.replies.length > 0) {
+    repliesHtml = `<ol class="comment__replies">${node.replies.map((r) => renderCommentNode(r, depth + 1)).join("\n")}</ol>`;
+  }
+  const replyButton = depth < 3
+    ? `<button type="button" class="comment__reply-btn" onclick="window.welcommentsReply('${escapeHtml(node.id)}', '${escapeHtml(node.name)}')">Reply</button>`
+    : "";
+  const paragraphs = node.message
+    .split("\n")
+    .map((p) => p.trim())
+    .filter((p) => p.length > 0)
+    .map((p) => `<p>${escapeHtml(p)}</p>`)
+    .join("");
+  return `<li class="comment" id="comment-${escapeHtml(node.id)}">
+<div class="comment__meta">
+<span class="comment__author">${escapeHtml(node.name)}</span>
+<time class="comment__date" datetime="${escapeHtml(node.date)}">${escapeHtml(dateStr)}</time>
+${replyButton}
+</div>
+<div class="comment__body">${paragraphs}</div>
+${repliesHtml}
+</li>`;
+}
+
 export interface RenderedChapter {
   slug: string;
   html: string;
-  /** Plain text version of the body, for embeddings/llms-full.txt later. */
   plainText: string;
 }
 
@@ -71,9 +156,62 @@ ${chapter.frontmatter.tags.length ? ` · <span class="chapter__tags">${chapter.f
 
   const prevNext = renderPrevNext(graphNode, pageUrl, graph);
   const backlinks = renderBacklinks(graphNode, pageUrl, graph);
+
+  let commentsHtml = "";
+  const commentsConfig = space.series.comments;
+  if (commentsConfig && commentsConfig.provider === "welcomments" && commentsConfig.welcommentsWebsiteId) {
+    const commentsList = loadCommentsForChapter(space.rootDir, chapter.slug);
+    const roots = buildCommentTree(commentsList);
+    const commentsThreadHtml = roots.map(r => renderCommentNode(r)).join("\n");
+    const baseUrl = space.series.site?.baseUrl;
+    const basePath = space.series.site?.basePath ?? "/";
+    
+    // Normalise path and form canonical URL
+    const rawCanonical = baseUrl
+      ? `${baseUrl.replace(/\/$/, "")}${join(basePath, pageUrl).replace(/\\/g, "/")}`
+      : "";
+    const canonicalUrl = rawCanonical.replace(/\/index\.html$/, "/");
+
+    commentsHtml = `
+<section class="comments-section" id="comments">
+<h3 style="font-family: var(--font-sans); margin-bottom: 2rem;">Comments (${commentsList.length})</h3>
+${commentsList.length > 0 ? `<ol class="comments-list">${commentsThreadHtml}</ol>` : `<p style="font-family: var(--font-sans); font-size: 0.9rem; color: var(--muted); margin-bottom: 2rem;">No comments yet. Be the first to share your thoughts!</p>`}
+
+<div class="comment-form-section" style="margin-top: 3rem;">
+<h4 style="font-family: var(--font-sans); margin-bottom: 1rem;">Leave a comment</h4>
+<form id="welcomments__form" action="https://api.welcomments.io/api/comments" method="post" style="display: flex; flex-direction: column; gap: 1rem;">
+<input type="hidden" name="welcomments_website_id" value="${escapeHtml(commentsConfig.welcommentsWebsiteId)}" />
+<input type="hidden" name="welcomments_permalink" value="${escapeHtml(canonicalUrl)}" />
+<input type="hidden" name="welcomments_reply_to" id="welcomments_reply_to" value="" />
+
+<div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 1rem;">
+<div style="display: flex; flex-direction: column;">
+<label for="welcomments__author" style="font-family: var(--font-sans); font-size: 0.8rem; color: var(--muted); margin-bottom: 0.25rem;">Name</label>
+<input type="text" id="welcomments__author" name="welcomments_author" required style="font: inherit; padding: 0.5rem; border: 1px solid var(--rule); border-radius: 4px; background: var(--bg); color: var(--fg);" />
+</div>
+<div style="display: flex; flex-direction: column;">
+<label for="welcomments__email" style="font-family: var(--font-sans); font-size: 0.8rem; color: var(--muted); margin-bottom: 0.25rem;">Email (not published)</label>
+<input type="email" id="welcomments__email" name="welcomments_email" required style="font: inherit; padding: 0.5rem; border: 1px solid var(--rule); border-radius: 4px; background: var(--bg); color: var(--fg);" />
+</div>
+</div>
+
+<div style="display: flex; flex-direction: column;">
+<label for="welcomments__comment" style="font-family: var(--font-sans); font-size: 0.8rem; color: var(--muted); margin-bottom: 0.25rem;">Comment</label>
+<textarea id="welcomments__comment" name="welcomments_comment" required rows="4" style="font: inherit; padding: 0.5rem; border: 1px solid var(--rule); border-radius: 4px; background: var(--bg); color: var(--fg); resize: vertical;"></textarea>
+</div>
+
+<div>
+<button type="submit" class="comment__reply-btn" style="margin-left: 0; padding: 0.5rem 1.25rem; font-size: 0.85rem; border: 1px solid var(--rule); border-radius: 4px;">Post Comment</button>
+</div>
+</form>
+</div>
+</section>`;
+  }
+
   const pageFooterHtml = `</div>
 ${prevNext}
 ${backlinks}
+${commentsHtml}
 </article>`;
 
   // JSON-LD: Article + BreadcrumbList. Series-level CreativeWorkSeries goes on

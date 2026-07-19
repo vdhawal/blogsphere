@@ -1,18 +1,18 @@
 version: 2
 compilerVersion: 0.0.2
-lastBuildAt: '2026-06-07T07:54:44.924Z'
-seriesSourceHash: 0d64c1deb0
+lastBuildAt: '2026-07-19T06:40:41.291Z'
+seriesSourceHash: 721309a056
 chapters:
   01-arrival:
     sourceHash: 4cd9a36af7
-    renderDepsHash: 2b9c1ffabf
+    renderDepsHash: b20333c6f3
     outputFilename: 01-arrival.html
   02-the-market:
     sourceHash: b825d4c79c
-    renderDepsHash: ca81bb8ad9
+    renderDepsHash: 49af3a1f1d
     outputFilename: 02-the-market.html
   03-leaving:
     sourceHash: 3c3aab9b94
-    renderDepsHash: 17eae71f71
+    renderDepsHash: 935c5a5776
     outputFilename: 03-leaving.html
 assets: {}
